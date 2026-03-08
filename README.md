@@ -49,7 +49,7 @@ API
 
    - weapon  - Weapon name (string, [see weapon.md](weapon.md))
    - fuse    - Fuse name (string, [see fuse.md](fuse.md))
-   - enemy   - Enemy name (string, [see eneme.md](enemy.md))
+   - enemy   - Enemy name (string, [see enemy.md](enemy.md))
    - options -
         - attackUpMod - Weapon Attack Up Modifier (number)
         - attackType - (string)

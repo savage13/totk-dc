@@ -1,0 +1,361 @@
+[
+    {
+        "weapon": "Master Sword",
+        "enemy": "Chuchu (Small)",
+        "fuse": "None",
+        "expected": {
+            "success": true,
+            "message": "Success",
+            "attackPowerUI": 30,
+            "damageOutput": 30,
+            "properties": [ "Cut" ],
+            "fusedName": "Master Sword",
+            "formula": "Formula: BaseAttack(30)",
+            "damageNumList": [],
+            "blueDamageNum": false,
+            "defeated": true
+        }
+    },
+    {
+        "weapon": "Master Sword",
+        "enemy": "Chuchu (Medium)",
+        "fuse": "None",
+        "expected": {
+            "success": true,
+            "message": "Success",
+            "attackPowerUI": 30,
+            "damageOutput": 30,
+            "properties": [ "Cut" ],
+            "fusedName": "Master Sword",
+            "formula": "Formula: BaseAttack(30)",
+            "damageNumList": [],
+            "blueDamageNum": false,
+            "defeated": true
+        }
+    },
+    {
+        "weapon": "Master Sword",
+        "enemy": "Chuchu (Large)",
+        "fuse": "None",
+        "expected": {
+            "success": true,
+            "message": "Success",
+            "attackPowerUI": 30,
+            "damageOutput": 30,
+            "properties": [ "Cut" ],
+            "fusedName": "Master Sword",
+            "formula": "Formula: BaseAttack(30)",
+            "damageNumList": [],
+            "blueDamageNum": false,
+            "defeated": false
+        }
+    },
+    {
+        "weapon": "Master Sword",
+        "enemy": "Fire Chuchu (Small)",
+        "fuse": "None",
+        "expected": {
+            "success": true,
+            "message": "Success",
+            "attackPowerUI": 30,
+            "damageOutput": 30,
+            "properties": [ "Cut" ],
+            "fusedName": "Master Sword",
+            "formula": "Formula: BaseAttack(30)",
+            "damageNumList": [],
+            "blueDamageNum": false,
+            "defeated": true
+        }
+    },
+    {
+        "weapon": "Master Sword",
+        "enemy": "Fire Chuchu (Medium)",
+        "fuse": "None",
+        "expected": {
+            "success": true,
+            "message": "Success",
+            "attackPowerUI": 30,
+            "damageOutput": 30,
+            "properties": [ "Cut" ],
+            "fusedName": "Master Sword",
+            "formula": "Formula: BaseAttack(30)",
+            "damageNumList": [],
+            "blueDamageNum": false,
+            "defeated": true
+        }
+    },
+    {
+        "weapon": "Master Sword",
+        "enemy": "Fire Chuchu (Large)",
+        "fuse": "None",
+        "expected": {
+            "success": true,
+            "message": "Success",
+            "attackPowerUI": 30,
+            "damageOutput": 30,
+            "properties": [ "Cut" ],
+            "fusedName": "Master Sword",
+            "formula": "Formula: BaseAttack(30)",
+            "damageNumList": [],
+            "blueDamageNum": false,
+            "defeated": false
+        }
+    },
+    {
+        "weapon": "Master Sword",
+        "enemy": "Ice Chuchu (Small)",
+        "fuse": "None",
+        "expected": {
+            "success": true,
+            "message": "Success",
+            "attackPowerUI": 30,
+            "damageOutput": 30,
+            "properties": [ "Cut" ],
+            "fusedName": "Master Sword",
+            "formula": "Formula: BaseAttack(30)",
+            "damageNumList": [],
+            "blueDamageNum": false,
+            "defeated": true
+        }
+    },
+    {
+        "weapon": "Master Sword",
+        "enemy": "Ice Chuchu (Medium)",
+        "fuse": "None",
+        "expected": {
+            "success": true,
+            "message": "Success",
+            "attackPowerUI": 30,
+            "damageOutput": 30,
+            "properties": [ "Cut" ],
+            "fusedName": "Master Sword",
+            "formula": "Formula: BaseAttack(30)",
+            "damageNumList": [],
+            "blueDamageNum": false,
+            "defeated": true
+        }
+    },
+    {
+        "weapon": "Master Sword",
+        "enemy": "Ice Chuchu (Large)",
+        "fuse": "None",
+        "expected": {
+            "success": true,
+            "message": "Success",
+            "attackPowerUI": 30,
+            "damageOutput": 30,
+            "properties": [ "Cut" ],
+            "fusedName": "Master Sword",
+            "formula": "Formula: BaseAttack(30)",
+            "damageNumList": [],
+            "blueDamageNum": false,
+            "defeated": false
+        }
+    },
+    {
+        "weapon": "Master Sword",
+        "enemy": "Electric Chuchu (Small)",
+        "fuse": "None",
+        "expected": {
+            "success": true,
+            "message": "Success",
+            "attackPowerUI": 30,
+            "damageOutput": 30,
+            "properties": [ "Cut" ],
+            "fusedName": "Master Sword",
+            "formula": "Formula: BaseAttack(30)",
+            "damageNumList": [],
+            "blueDamageNum": false,
+            "defeated": true
+        }
+    },
+    {
+        "weapon": "Master Sword",
+        "enemy": "Electric Chuchu (Medium)",
+        "fuse": "None",
+        "expected": {
+            "success": true,
+            "message": "Success",
+            "attackPowerUI": 30,
+            "damageOutput": 30,
+            "properties": [ "Cut" ],
+            "fusedName": "Master Sword",
+            "formula": "Formula: BaseAttack(30)",
+            "damageNumList": [],
+            "blueDamageNum": false,
+            "defeated": true
+        }
+    },
+    {
+        "weapon": "Master Sword",
+        "enemy": "Electric Chuchu (Large)",
+        "fuse": "None",
+        "expected": {
+            "success": true,
+            "message": "Success",
+            "attackPowerUI": 30,
+            "damageOutput": 30,
+            "properties": [ "Cut" ],
+            "fusedName": "Master Sword",
+            "formula": "Formula: BaseAttack(30)",
+            "damageNumList": [],
+            "blueDamageNum": false,
+            "defeated": false
+        }
+    },
+    {
+        "weapon": "Master Sword",
+        "enemy": "Keese",
+        "fuse": "None",
+        "expected": {
+            "success": true,
+            "message": "Success",
+            "attackPowerUI": 30,
+            "damageOutput": 30,
+            "properties": [ "Cut" ],
+            "fusedName": "Master Sword",
+            "formula": "Formula: BaseAttack(30)",
+            "damageNumList": [],
+            "blueDamageNum": false,
+            "defeated": true
+        }
+    },
+    {
+        "weapon": "Master Sword",
+        "enemy": "Fire Keese",
+        "fuse": "None",
+        "expected": {
+            "success": true,
+            "message": "Success",
+            "attackPowerUI": 30,
+            "damageOutput": 30,
+            "properties": [ "Cut" ],
+            "fusedName": "Master Sword",
+            "formula": "Formula: BaseAttack(30)",
+            "damageNumList": [],
+            "blueDamageNum": false,
+            "defeated": true
+        }
+    },
+    {
+        "weapon": "Master Sword",
+        "enemy": "Ice Keese",
+        "fuse": "None",
+        "expected": {
+            "success": true,
+            "message": "Success",
+            "attackPowerUI": 30,
+            "damageOutput": 30,
+            "properties": [ "Cut" ],
+            "fusedName": "Master Sword",
+            "formula": "Formula: BaseAttack(30)",
+            "damageNumList": [],
+            "blueDamageNum": false,
+            "defeated": true
+        }
+    },
+    {
+        "weapon": "Master Sword",
+        "enemy": "Electric Keese",
+        "fuse": "None",
+        "expected": {
+            "success": true,
+            "message": "Success",
+            "attackPowerUI": 30,
+            "damageOutput": 30,
+            "properties": [ "Cut" ],
+            "fusedName": "Master Sword",
+            "formula": "Formula: BaseAttack(30)",
+            "damageNumList": [],
+            "blueDamageNum": false,
+            "defeated": true
+        }
+    },
+    {
+        "weapon": "Master Sword",
+        "enemy": "Water Octorok",
+        "fuse": "None",
+        "expected": {
+            "success": true,
+            "message": "Success",
+            "attackPowerUI": 30,
+            "damageOutput": 30,
+            "properties": [ "Cut" ],
+            "fusedName": "Master Sword",
+            "formula": "Formula: BaseAttack(30)",
+            "damageNumList": [],
+            "blueDamageNum": false,
+            "defeated": true
+        }
+    },
+    {
+        "weapon": "Master Sword",
+        "enemy": "Forest Octorok",
+        "fuse": "None",
+        "expected": {
+            "success": true,
+            "message": "Success",
+            "attackPowerUI": 30,
+            "damageOutput": 30,
+            "properties": [ "Cut" ],
+            "fusedName": "Master Sword",
+            "formula": "Formula: BaseAttack(30)",
+            "damageNumList": [],
+            "blueDamageNum": false,
+            "defeated": true
+        }
+    },
+    {
+        "weapon": "Master Sword",
+        "enemy": "Rock Octorok",
+        "fuse": "None",
+        "expected": {
+            "success": true,
+            "message": "Success",
+            "attackPowerUI": 30,
+            "damageOutput": 30,
+            "properties": [ "Cut" ],
+            "fusedName": "Master Sword",
+            "formula": "Formula: BaseAttack(30)",
+            "damageNumList": [],
+            "blueDamageNum": false,
+            "defeated": true
+        }
+    },
+    {
+        "weapon": "Master Sword",
+        "enemy": "Snow Octorok",
+        "fuse": "None",
+        "expected": {
+            "success": true,
+            "message": "Success",
+            "attackPowerUI": 30,
+            "damageOutput": 30,
+            "properties": [ "Cut" ],
+            "fusedName": "Master Sword",
+            "formula": "Formula: BaseAttack(30)",
+            "damageNumList": [],
+            "blueDamageNum": false,
+            "defeated": true
+        }
+    },
+    {
+        "weapon": "Master Sword",
+        "enemy": "Treasure Octorok",
+        "fuse": "None",
+        "expected": {
+            "success": true,
+            "message": "Success",
+            "attackPowerUI": 30,
+            "damageOutput": 30,
+            "properties": [ "Cut" ],
+            "fusedName": "Master Sword",
+            "formula": "Formula: BaseAttack(30)",
+            "damageNumList": [],
+            "blueDamageNum": false,
+            "defeated": true
+        }
+    }
+
+
+]

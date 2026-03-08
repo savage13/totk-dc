@@ -1,0 +1,181 @@
+ActorID,Name,Type,CanCut,BaseAttack,ProjectileAttack,Durability,Property,CanHaveAttackUpMod,Fuse Extra Durability,Fuse Base Name,NamingRule,IconURL,SortOrder
+Weapon_Sword_070,Master Sword,0,1,30,10,40,-,0,0,Master Sword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_070.png,01
+Weapon_Sword_070_TrueForm,Master Sword (Awakened +15),0,1,45,15,40,-,0,0,Master Sword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_070_TrueForm.png,02
+Weapon_Sword_070_TrueForm_2,Master Sword (Awakened +30),0,1,60,20,40,-,0,0,Master Sword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_070_TrueForm.png,03
+Weapon_Sword_044,Tree Branch,0,0,2,0,4,-,1,10,Branch,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_044.png,04
+Weapon_Sword_043,Torch,0,0,2,0,8,-,1,10,Torch,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_043.png,05
+Weapon_Sword_022,Soup Ladle,0,0,4,0,5,-,1,10,Ladle,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_022.png,06
+Weapon_Sword_105,Boomerang,0,1,6,0,16,Boomerang,1,25,Boomerang,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_105.png,07
+Weapon_Sword_051,Boomerang✨,0,1,8,0,18,Boomerang,1,25,Boomerang,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_051.png,08
+Weapon_Sword_059,Sea-Breeze Boomerang,0,1,16,0,20,Boomerang,0,25,Boomerang,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_059.png,09
+Weapon_Sword_106,Traveler's Sword,0,1,5,0,16,-,1,25,Sword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_106.png,10
+Weapon_Sword_001,Traveler's Sword✨,0,1,7,0,20,-,1,25,Sword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_001.png,11
+Weapon_Sword_112,Soldier's Broadsword,0,1,6,0,17,-,1,25,Broadsword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_112.png,12
+Weapon_Sword_002,Soldier's Broadsword✨,0,1,12,0,23,-,1,25,Sword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_002.png,13
+Weapon_Sword_113,Knight's Broadsword,0,1,7,0,18,Low Health x2,1,25,Broadsword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_113.png,14
+Weapon_Sword_003,Knight's Broadsword✨,0,1,18,0,27,Low Health x2,1,25,Sword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_003.png,15
+Weapon_Sword_124,Royal Broadsword,0,1,10,0,20,Flurry Rush x2,1,25,Broadsword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_124.png,16
+Weapon_Sword_024,Royal Broadsword✨,0,1,24,0,35,Flurry Rush x2,1,25,Broadsword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_024.png,17
+Weapon_Sword_125,Forest Dweller's Sword,0,1,7,0,17,-,1,25,Sword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_125.png,18
+Weapon_Sword_025,Forest Dweller's Sword✨,0,1,16,0,27,-,1,25,Sword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_025.png,19
+Weapon_Sword_127,Zora Sword,0,1,6,0,20,Wet x2,1,25,Sword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_127.png,20
+Weapon_Sword_027,Zora Sword✨,0,1,12,0,27,Wet x2,1,25,Sword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_027.png,21
+Weapon_Sword_131,Feathered Edge,0,1,6,0,18,Wind Burst,1,25,Edge,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_131.png,22
+Weapon_Sword_031,Feathered Edge✨,0,1,13,0,27,Wind Burst,1,25,Edge,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_031.png,23
+Weapon_Sword_129,Gerudo Scimitar,0,1,8,0,10,Gerudo,1,5,Scimitar,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_129.png,24
+Weapon_Sword_029,Gerudo Scimitar✨,0,1,17,0,14,Gerudo,1,5,Scimitar,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_029.png,25
+Weapon_Sword_052,Scimitar of the Seven,0,1,28,0,60,Gerudo,0,25,Scimitar,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_052.png,26
+Weapon_Sword_114,Eightfold Blade,0,1,6,0,16,Sneakstrike x2,1,25,Blade,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_114.png,27
+Weapon_Sword_041,Eightfold Blade✨,0,1,15,0,26,Sneakstrike x2,1,25,Blade,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_041.png,28
+Weapon_Sword_021,Rusty Broadsword,0,1,5,0,6,-,1,10,Broadsword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_021.png,29
+Weapon_Sword_058,Sword of the Hero,0,1,17,0,27,-,0,25,Sword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_058.png,30
+Weapon_Sword_147,Royal Guard's Sword,0,1,22,0,10,Low Durability x2,1,10,Sword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_147.png,31
+Weapon_Sword_047,Royal Guard's Sword✨,0,1,30,0,12,Low Durability x2,1,10,Sword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_047.png,32
+Weapon_Sword_057,White Sword of the Sky,0,1,24,0,45,-,0,25,Sword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_057.png,33
+Weapon_Sword_103,Wooden Stick,0,0,4,0,12,-,1,25,Stick,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_103.png,34
+Weapon_Sword_108,Sturdy Wooden Stick,0,0,5,0,24,-,1,25,Bat,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_108.png,35
+Weapon_Sword_109,Gnarled Wooden Stick,0,0,14,0,14,-,1,25,Club,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_109.png,36
+Weapon_Sword_107,Lizal Boomerang,0,1,8,0,17,Boomerang,1,25,Boomerang,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_107.png,37
+Weapon_Sword_101,Zonaite Sword,0,1,6,0,15,Zonai Lv1,1,25,Sword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_101.png,38
+Weapon_Sword_163,Strong Zonaite Sword,0,1,7,0,16,Zonai Lv2,1,25,Sword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_163.png,39
+Weapon_Sword_164,Mighty Zonaite Sword,0,1,10,0,18,Zonai Lv3,1,25,Sword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_164.png,40
+Weapon_Sword_161,Magic Rod,0,0,6,0,14,Rod,0,25,Rod,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_161.png,41
+Weapon_Sword_019,Bokoblin Arm,0,0,20,0,5,Bone,1,3,Bones,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_019.png,42
+Weapon_Sword_020,Lizalfos Arm,0,0,22,0,5,Bone,1,3,Bones,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_020.png,43
+Weapon_Sword_166,Gloom Sword,0,1,41,0,15,-,1,10,Sword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_166.png,44
+Weapon_Lsword_045,Farming Hoe,1,0,7,0,6,-,1,10,Hoe,ImpressiveGrip,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_045.png,45
+Weapon_Lsword_038,Boat Oar,1,0,5,0,8,-,1,10,Oar,ImpressiveGrip,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_038.png,46
+Weapon_Lsword_174,Giant Boomerang,1,1,12,0,18,Boomerang,1,25,Boomerang,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_174.png,47
+Weapon_Lsword_051,Giant Boomerang✨,1,1,25,0,40,Boomerang,1,25,Boomerang,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_051.png,48
+Weapon_Lsword_106,Traveler's Claymore,1,1,7,0,16,-,1,25,Claymore,UnlikeBat,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_106.png,49
+Weapon_Lsword_001,Traveler's Claymore✨,1,1,10,0,20,-,1,25,Claymore,UnlikeBat,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_001.png,50
+Weapon_Lsword_112,Soldier's Claymore,1,1,9,0,17,-,1,25,Claymore,UnlikeBat,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_112.png,51
+Weapon_Lsword_002,Soldier's Claymore✨,1,1,17,0,25,-,1,25,Claymore,UnlikeBat,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_002.png,52
+Weapon_Lsword_113,Knight's Claymore,1,1,12,0,18,Low Health x2,1,25,Claymore,UnlikeBat,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_113.png,53
+Weapon_Lsword_003,Knight's Claymore✨,1,1,26,0,30,Low Health x2,1,25,Claymore,UnlikeBat,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_003.png,54
+Weapon_Lsword_124,Royal Claymore,1,1,15,0,20,Flurry Rush x2,1,25,Claymore,UnlikeBat,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_124.png,55
+Weapon_Lsword_024,Royal Claymore✨,1,1,36,0,40,Flurry Rush x2,1,25,Claymore,UnlikeBat,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_024.png,56
+Weapon_Lsword_127,Zora Longsword,1,1,9,0,20,Wet x2,1,25,Longsword,UnlikeBat,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_127.png,57
+Weapon_Lsword_027,Zora Longsword✨,1,1,18,0,30,Wet x2,1,25,Longsword,UnlikeBat,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_027.png,58
+Weapon_Lsword_136,Cobble Crusher,1,0,10,0,18,Shatter Rock,1,25,Crusher,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_136.png,59
+Weapon_Lsword_036,Cobble Crusher✨,1,0,15,0,30,Shatter Rock,1,25,Crusher,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_036.png,60
+Weapon_Lsword_054,Boulder Breaker,1,0,40,0,40,Shatter Rock,0,25,Breaker,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_054.png,61
+Weapon_Lsword_059,Biggoron's Sword,1,1,38,0,60,-,0,25,Sword,UnlikeBat,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_059.png,62
+Weapon_Lsword_129,Gerudo Claymore,1,1,11,0,10,Gerudo,1,5,Claymore,UnlikeBat,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_129.png,63
+Weapon_Lsword_029,Gerudo Claymore✨,1,1,24,0,14,Gerudo,1,5,Claymore,UnlikeBat,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_029.png,64
+Weapon_Lsword_114,Eightfold Longblade,1,1,9,10,18,Wind Razor,1,25,Longblade,UnlikeBat,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_114.png,65
+Weapon_Lsword_041,Eightfold Longblade✨,1,1,25,10,25,Wind Razor,1,25,Longblade,UnlikeBat,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_041.png,66
+Weapon_Lsword_057,Dusk Claymore,1,1,34,0,50,-,0,25,Claymore,UnlikeBat,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_057.png,67
+Weapon_Lsword_060,Fierce Deity Sword,1,1,40,0,35,-,0,25,Sword,UnlikeBat,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_060.png,68
+Weapon_Lsword_020,Rusty Claymore,1,1,7,0,8,-,1,10,Claymore,UnlikeBat,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_020.png,69
+Weapon_Lsword_147,Royal Guard's Claymore,1,1,34,0,11,Low Durability x2,1,10,Claymore,UnlikeBat,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_147.png,70
+Weapon_Lsword_047,Royal Guard's Claymore✨,1,1,42,0,12,Low Durability x2,1,10,Claymore,UnlikeBat,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_047.png,71
+Weapon_Lsword_103,Thick Stick,1,0,6,0,14,-,1,25,Stick,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_103.png,72
+Weapon_Lsword_108,Sturdy Thick Stick,1,0,8,0,26,-,1,25,Stick,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_108.png,73
+Weapon_Lsword_109,Gnarled Thick Stick,1,0,21,0,16,-,1,25,Stick,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_109.png,74
+Weapon_Lsword_101,Zonaite Longsword,1,1,9,0,15,Zonai Lv1,1,25,Longsword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_101.png,75
+Weapon_Lsword_163,Strong Zonaite Longsword,1,1,11,0,16,Zonai Lv2,1,25,Longsword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_163.png,76
+Weapon_Lsword_164,Mighty Zonaite Longsword,1,1,16,0,18,Zonai Lv3,1,25,Longsword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_164.png,77
+Weapon_Lsword_161,Magic Scepter,1,0,8,0,14,Rod,0,25,Scepter,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_161.png,78
+Weapon_Lsword_019,Moblin Arm,1,0,30,0,5,Bone,1,3,Bones,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_019.png,79
+Weapon_Lsword_166,Gloom Club,1,0,53,0,14,Shatter Rock,1,10,Club,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_166.png,80
+Weapon_Spear_036,Wooden Mop,2,0,2,0,8,-,1,10,Mop,ImpressiveGrip,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_036.png,81
+Weapon_Spear_022,Farmer's Pitchfork,2,0,3,0,12,-,1,10,Pitchfork,ImpressiveGrip,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_022.png,82
+Weapon_Spear_038,Fishing Harpoon,2,0,3,0,12,-,1,10,Harpoon,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_038.png,83
+Weapon_Spear_173,Throwing Spear,2,0,2,0,20,-,1,25,Spear,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_173.png,84
+Weapon_Spear_030,Throwing Spear✨,2,0,6,0,26,-,1,25,Spear,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_030.png,85
+Weapon_Spear_106,Traveler's Spear,2,0,2,0,24,-,1,25,Spear,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_106.png,86
+Weapon_Spear_001,Traveler's Spear✨,2,0,3,0,30,-,1,25,Spear,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_001.png,87
+Weapon_Spear_112,Soldier's Spear,2,0,3,0,25,-,1,25,Spear,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_112.png,88
+Weapon_Spear_002,Soldier's Spear✨,2,0,7,0,35,-,1,25,Spear,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_002.png,89
+Weapon_Spear_113,Knight's Halberd,2,0,4,0,26,Low Health x2,1,25,Halberd,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_113.png,90
+Weapon_Spear_003,Knight's Halberd✨,2,0,10,0,40,Low Health x2,1,25,Halberd,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_003.png,91
+Weapon_Spear_124,Royal Halberd,2,0,5,0,30,Flurry Rush x2,1,25,Halberd,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_124.png,92
+Weapon_Spear_024,Royal Halberd✨,2,0,13,0,50,Flurry Rush x2,1,25,Halberd,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_024.png,93
+Weapon_Spear_125,Forest Dweller's Spear,2,0,4,0,24,-,1,25,Spear,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_125.png,94
+Weapon_Spear_025,Forest Dweller's Spear✨,2,0,10,0,35,-,1,25,Spear,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_025.png,95
+Weapon_Spear_127,Zora Spear,2,0,4,0,26,Wet x2,1,25,Spear,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_127.png,96
+Weapon_Spear_027,Zora Spear✨,2,0,8,0,40,Wet x2,1,25,Spear,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_027.png,97
+Weapon_Spear_050,Lightscale Trident,2,0,16,0,70,Wet x2,0,25,Trident,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_050.png,98
+Weapon_Spear_132,Feathered Spear,2,0,3,0,25,-,1,25,Spear,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_132.png,99
+Weapon_Spear_032,Feathered Spear✨,2,0,7,0,35,-,1,25,Spear,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_032.png,100
+Weapon_Spear_129,Gerudo Spear,2,0,4,0,15,Gerudo,1,5,Spear,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_129.png,101
+Weapon_Spear_029,Gerudo Spear✨,2,0,9,0,20,Gerudo,1,5,Spear,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_029.png,102
+Weapon_Spear_021,Rusty Halberd,2,0,2,0,12,-,1,10,Halberd,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_021.png,103
+Weapon_Spear_147,Royal Guard's Spear,2,0,11,0,14,Low Durability x2,1,10,Spear,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_147.png,104
+Weapon_Spear_047,Royal Guard's Spear✨,2,0,18,0,15,Low Durability x2,1,10,Spear,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_047.png,105
+Weapon_Spear_103,Long Stick,2,0,1,0,18,-,1,25,Stick,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_103.png,106
+Weapon_Spear_108,Sturdy Long Stick,2,0,3,0,34,-,1,25,Stick,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_108.png,107
+Weapon_Spear_109,Gnarled Long Stick,2,0,7,0,22,-,1,25,Stick,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_109.png,108
+Weapon_Spear_101,Zonaite Spear,2,0,3,0,22,Zonai Lv1,1,25,Spear,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_101.png,109
+Weapon_Spear_163,Strong Zonaite Spear,2,0,4,0,24,Zonai Lv2,1,25,Spear,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_163.png,110
+Weapon_Spear_164,Mighty Zonaite Spear,2,0,6,0,27,Zonai Lv3,1,25,Spear,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_164.png,111
+Weapon_Spear_161,Magic Staff,2,0,3,0,14,Rod,0,25,Staff,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_161.png,112
+Weapon_Spear_166,Gloom Spear,2,0,30,0,16,-,1,10,Spear,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_166.png,113
+Weapon_Bow_107,Old Wooden Bow,3,0,4,0,20,-,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_107.png,114
+Weapon_Bow_038,Wooden Bow,3,0,4,0,20,-,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_038.png,115
+Weapon_Bow_001,Traveler's Bow,3,0,5,0,22,-,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_001.png,116
+Weapon_Bow_002,Soldier’s Bow,3,0,14,0,36,-,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_002.png,117
+Weapon_Bow_035,Knight's Bow,3,0,26,0,48,-,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_035.png,118
+Weapon_Bow_036,Royal Bow,3,0,38,0,60,-,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_036.png,119
+Weapon_Bow_013,Forest Dweller's Bow,3,0,15,0,35,Multishot x3-5,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_013.png,120
+Weapon_Bow_014,Zora Bow,3,0,20,0,40,-,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_014.png,121
+Weapon_Bow_016,Swallow Bow,3,0,8,0,30,-,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_016.png,122
+Weapon_Bow_017,Falcon Bow,3,0,14,0,35,-,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_017.png,123
+Weapon_Bow_028,Great Eagle Bow,3,0,28,0,60,Multishot x3,0,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_028.png,124
+Weapon_Bow_015,Gerudo Bow,3,0,25,0,40,-,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_015.png,125
+Weapon_Bow_029,Phrenic Bow,3,0,10,0,45,-,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_029.png,126
+Weapon_Bow_033,Royal Guard's Bow,3,0,50,0,20,-,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_033.png,127
+Weapon_Bow_072,Dusk Bow,3,0,30,0,40,-,0,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_072.png,128
+Weapon_Bow_004,Boko Bow,3,0,4,0,16,-,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_004.png,129
+Weapon_Bow_003,Spiked Boko Bow,3,0,12,0,20,Bone,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_003.png,130
+Weapon_Bow_027,Dragonbone Boko Bow,3,0,24,0,30,Bone,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_027.png,131
+Weapon_Bow_006,Lizal Bow,3,0,14,0,25,Bone,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_006.png,132
+Weapon_Bow_011,Strengthened Lizal Bow,3,0,25,0,35,-,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_011.png,133
+Weapon_Bow_030,Steel Lizal Bow,3,0,36,0,50,-,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_030.png,134
+Weapon_Bow_009,Lynel Bow,3,0,10,0,30,Multishot x3-5,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_009.png,135
+Weapon_Bow_026,Mighty Lynel Bow,3,0,20,0,35,Multishot x3-5,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_026.png,136
+Weapon_Bow_032,Savage Lynel Bow,3,0,32,0,45,Multishot x3-5,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_032.png,137
+Weapon_Bow_040,Duplex Bow,3,0,14,0,18,Multishot x2,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_040.png,138
+Weapon_Bow_104,Construct Bow,3,0,5,0,18,-,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_104.png,139
+Weapon_Bow_105,Strong Construct Bow,3,0,11,0,26,-,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_105.png,140
+Weapon_Bow_106,Mighty Construct Bow,3,0,24,0,34,-,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_106.png,141
+Weapon_Bow_101,Zonaite Bow,3,0,30,0,50,-,1,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_101.png,142
+Weapon_Bow_166,Demon King's Bow,3,0,60,0,42,-,0,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_166.png,143
+Weapon_Shield_030,Hylian Shield,4,0,0,0,800,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_030.png,144
+Weapon_Shield_040,Pot Lid,4,0,0,0,10,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_040.png,145
+Weapon_Shield_107,Old Wooden Shield,4,0,0,0,12,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_107.png,146
+Weapon_Shield_001,Wooden Shield,4,0,0,0,12,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_001.png,147
+Weapon_Shield_034,Emblazoned Shield,4,0,0,0,12,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_034.png,148
+Weapon_Shield_031,Hunter's Shield,4,0,0,0,10,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_031.png,149
+Weapon_Shield_032,Fisherman's Shield,4,0,0,0,10,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_032.png,150
+Weapon_Shield_035,Traveler's Shield,4,0,0,0,12,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_035.png,151
+Weapon_Shield_002,Soldier’s Shield,4,0,0,0,16,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_002.png,152
+Weapon_Shield_003,Knight's Shield,4,0,0,0,23,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_003.png,153
+Weapon_Shield_022,Royal Shield,4,0,0,0,29,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_022.png,154
+Weapon_Shield_023,Forest Dweller's Shield,4,0,0,0,18,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_023.png,155
+Weapon_Shield_025,Zora Shield,4,0,0,0,20,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_025.png,156
+Weapon_Shield_042,Kite Shield,4,0,0,0,16,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_042.png,157
+Weapon_Shield_026,Gerudo Shield,4,0,0,0,20,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_026.png,158
+Weapon_Shield_036,Radiant Shield,4,0,0,0,26,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_036.png,159
+Weapon_Shield_037,Daybreaker,4,0,0,0,60,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_037.png,160
+Weapon_Shield_041,Shield of the Mind's Eye,4,0,0,0,16,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_041.png,161
+Weapon_Shield_057,Sea-Breeze Shield,4,0,0,0,90,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_057.png,162
+Weapon_Shield_021,Rusty Shield,4,0,0,0,16,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_021.png,163
+Weapon_Shield_033,Royal Guard's Shield,4,0,0,0,14,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_033.png,164
+Weapon_Shield_004,Boko Shield,4,0,0,0,5,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_004.png,165
+Weapon_Shield_005,Spiked Boko Shield,4,0,0,0,7,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_005.png,166
+Weapon_Shield_006,Dragonbone Boko Shield,4,0,0,0,8,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_006.png,167
+Weapon_Shield_007,Lizal Shield,4,0,0,0,8,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_007.png,168
+Weapon_Shield_008,Reinforced Lizal Shield,4,0,0,0,12,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_008.png,169
+Weapon_Shield_009,Steel Lizal Shield,4,0,0,0,15,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_009.png,170
+Weapon_Shield_101,Zonaite Shield,4,0,0,0,15,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_101.png,171
+Weapon_Shield_102,Strong Zonaite Shield,4,0,0,0,15,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_102.png,172
+Weapon_Shield_103,Mighty Zonaite Shield,4,0,0,0,20,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_103.png,173
+Weapon_Shield_016,Lynel Shield,4,0,7,0,12,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_016.png,174
+Weapon_Shield_017,Mighty Lynel Shield,4,0,13,0,15,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_017.png,175
+Weapon_Shield_018,Savage Lynel Shield,4,0,21,0,20,-,0,0,Shield,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_018.png,176
+Weapon_Sword_077,Master Sword (Prologue),0,1,30,10,40,-,0,0,Master Sword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_077.png,177
+Weapon_Sword_070_Broken,Decayed Master Sword,0,0,1,0,4,-,0,25,Decayed Master Sword,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_070_Broken.png,178
+Weapon_RaumiGolem_Left,Mineru's Construct,1,0,27,0,0,-,0,25,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Other/Tutorials/Soul_00.png,179
+PlayerAttackGrave,None (Earthwake Technique),5,0,10,0,0,-,0,0,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Obj_HiddenScroll_00.png,180

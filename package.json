@@ -1,0 +1,9 @@
+{
+    "type": "module",
+    "scripts": {
+        "dev": "esbuild --bundle --sourcemap ./src/totk-dc.ts --outfile=assets/totkdc.js --watch --tree-shaking=false --format=esm"
+    },
+    "dependencies": {
+    "esbuild": "^0.27.3"
+  }
+}

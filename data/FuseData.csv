@@ -1,0 +1,624 @@
+ActorID,Name,BaseAttack,ProjectileAttack,ElementPower,WeaponDurability,MineruDurability,CanFuseToArrow,ArrowMultiplier,CanCut,AddsShieldAttack,ReplaceProperties,Property1,Property2,Property3,NamingRule,Adjective,BindTypeSword,BindTypeSpear,IconURL,SortOrder
+None,None,0,0,0,0,0,1,1,0,0,0,-,-,-,-,-,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Obj_OneTouchBond.png,000
+Item_Enemy_137,Stone Talus Heart,13,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Stone Talus,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Item_Enemy_137.png,001
+Item_Enemy_138,Luminous Stone Talus Heart,21,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Luminous Stone Talus,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Item_Enemy_138.png,002
+Item_Enemy_139,Rare Stone Talus Heart,33,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Rare Stone Talus,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Item_Enemy_139.png,003
+Item_Enemy_140,Igneo Talus Heart,27,0,0,0,10,0,1,0,1,1,Shatter Rock,Fire,-,-,Igneo Talus,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Item_Enemy_140.png,004
+Item_Enemy_141,Frost Talus Heart,27,0,0,0,10,0,1,0,1,1,Shatter Rock,Ice,-,-,Frost Talus,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Item_Enemy_141.png,005
+Item_Enemy_225,Flux Construct I Core,10,0,0,0,10,0,1,0,1,1,Shatter Rock,Zonai Fuse,-,UnlikeHammer,Flux Core I,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Item_Enemy_225.png,006
+Item_Enemy_226,Flux Construct II Core,20,0,0,0,10,0,1,0,1,1,Shatter Rock,Zonai Fuse,-,UnlikeHammer,Flux Core II,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Item_Enemy_226.png,007
+Item_Enemy_227,Flux Construct III Core,32,0,0,0,10,0,1,0,1,1,Shatter Rock,Zonai Fuse,-,UnlikeHammer,Flux Core III,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Item_Enemy_227.png,008
+Item_Enemy_220,Colgera Jaw,36,0,0,0,10,0,1,1,1,1,-,-,-,-,Colgera,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Item_Enemy_220.png,009
+Item_Enemy_221,Marbled Gohma Leg,38,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Marbled Gohma,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Item_Enemy_221.png,010
+Item_Enemy_223,Queen Gibdo Wing,40,0,0,0,10,0,1,0,0,1,-,-,-,Fan,Queen Gibdo,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Item_Enemy_223.png,011
+Item_Fruit_P,Golden Apple,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Apple,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Fruit_P.png,012
+Item_Fruit_G,Palm Fruit,1,0,0,0,5,1,1,0,0,1,-,-,-,-,Palm-Fruit,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Fruit_G.png,013
+Item_Fruit_M,Hylian Tomato,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Tomato,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Fruit_M.png,014
+Item_Fruit_A,Apple,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Apple,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Fruit_A.png,015
+Item_Fruit_B,Wildberry,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Wildberry,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Fruit_B.png,016
+Item_Fruit_C,Voltfruit,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Voltfruit,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Fruit_C.png,017
+Item_Fruit_E,Fleet-Lotus Seeds,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Lotus-Seed,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Fruit_E.png,018
+Item_Fruit_F,Hydromelon,1,0,0,0,5,1,1,0,0,1,-,-,-,-,Hydromelon,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Fruit_F.png,019
+Item_Fruit_H,Mighty Bananas,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Banana,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Fruit_H.png,020
+Item_Fruit_I,Spicy Pepper,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Pepper,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Fruit_I.png,021
+FireFruit,Fire Fruit,1,0,0,0,1,1,1,0,1,0,Fire Burst,-,-,ReuseSeedFireBurst,Fire-Fruit,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/FireFruit.png,022
+IceFruit,Ice Fruit,1,0,0,0,1,1,1,0,1,0,Ice Burst,-,-,ReuseSeedIceBurst,Ice-Fruit,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/IceFruit.png,023
+ElectricalFruit,Shock Fruit,1,0,0,0,1,1,1,0,1,0,Shock Burst,-,-,ReuseSeedShockBurst,Shock-Fruit,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/ElectricalFruit.png,024
+WaterFruit,Splash Fruit,1,0,0,0,1,1,1,0,1,0,Water,-,-,-,Splash-Fruit,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/WaterFruit.png,025
+LightFruit,Dazzlefruit,1,0,0,0,1,1,1,0,1,0,Dazzle,-,-,-,Dazzlefruit,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/LightFruit.png,026
+BombFruit,Bomb Flower,1,0,40,0,1,1,1,0,1,0,Bomb,-,-,-,Bomb-Flower,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/BombFruit.png,027
+SmokeFruit,Puffshroom,1,0,0,0,1,1,1,0,1,1,-,-,-,-,Puffshroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SmokeFruit.png,028
+ConfusionFruit,Muddle Bud,1,0,0,0,1,1,1,0,1,0,-,-,-,-,Muddle-Bud,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/ConfusionFruit.png,029
+Item_Mushroom_N,Big Hearty Truffle,1,0,0,0,5,1,1,0,0,1,-,-,-,PowHammer,Big-Truffle,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Mushroom_N.png,030
+Item_Mushroom_F,Hearty Truffle,1,0,0,0,5,1,1,0,0,1,-,-,-,PowHammer,Truffle,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Mushroom_F.png,031
+Item_Mushroom_O,Endura Shroom,1,0,0,0,5,1,1,0,0,1,-,-,-,PowHammer,Endura-Shroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Mushroom_O.png,032
+Item_MushroomGet_D,Rushroom,1,0,0,0,5,1,1,0,0,1,-,-,-,PowHammer,Rushroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_MushroomGet_D.png,033
+Item_MushroomGet_K,Brightcap,1,0,0,0,5,1,1,0,0,1,-,-,-,PowHammer,Brightcap,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_MushroomGet_K.png,034
+Item_Mushroom_A,Stamella Shroom,1,0,0,0,5,1,1,0,0,1,-,-,-,PowHammer,Stamella-Shroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Mushroom_A.png,035
+Item_Mushroom_B,Chillshroom,1,0,0,0,5,1,1,0,0,1,-,-,-,PowHammer,Chillshroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Mushroom_B.png,036
+Item_Mushroom_C,Sunshroom,1,0,0,0,5,1,1,0,0,1,-,-,-,PowHammer,Sunshroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Mushroom_C.png,037
+Item_Mushroom_E,Hylian Shroom,1,0,0,0,5,1,1,0,0,1,-,-,-,PowHammer,Hylian-Shroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Mushroom_E.png,038
+Item_Mushroom_H,Zapshroom,1,0,0,0,5,1,1,0,0,1,-,-,-,PowHammer,Zapshroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Mushroom_H.png,039
+Item_Mushroom_J,Silent Shroom,1,0,0,0,5,1,1,0,0,1,-,-,-,PowHammer,Silent-Shroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Mushroom_J.png,040
+Item_Mushroom_L,Razorshroom,1,0,0,0,5,1,1,0,0,1,-,-,-,PowHammer,Razorshroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Mushroom_L.png,041
+Item_Mushroom_M,Ironshroom,1,0,0,0,5,1,1,0,0,1,-,-,-,PowHammer,Ironshroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Mushroom_M.png,042
+Item_Mushroom_P,Skyshroom,1,0,0,0,5,1,1,0,0,1,-,-,-,PowHammer,Skyshroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Mushroom_P.png,043
+Item_PlantGet_C,Big Hearty Radish,1,0,0,0,5,1,1,0,0,1,-,-,-,-,Big-Radish,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_PlantGet_C.png,044
+Item_PlantGet_B,Hearty Radish,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Radish,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_PlantGet_B.png,045
+Item_PlantGet_Q,Endura Carrot,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Carrot,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_PlantGet_Q.png,046
+Item_PlantGet_A,Hyrule Herb,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Hyrule-Herb,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_PlantGet_A.png,047
+Item_PlantGet_J,Silent Princess,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Silent-Princess,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_PlantGet_J.png,048
+Item_Fruit_J,Fortified Pumpkin,1,0,0,0,5,1,1,0,0,1,-,-,-,-,Pumpkin,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Fruit_J.png,049
+Item_Fruit_N,Sun Pumpkin,1,0,0,0,5,1,1,0,0,1,-,-,-,-,Pumpkin,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Fruit_N.png,050
+Item_PlantGet_M,Swift Carrot,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Carrot,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_PlantGet_M.png,051
+Item_PlantGet_S,Stambulb,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Stambulb,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_PlantGet_S.png,052
+Item_PlantGet_U,Korok Frond,1,0,0,0,10,1,1,0,0,0,-,-,-,Fan,Korok-Frond,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_PlantGet_U.png,053
+Item_PlantGet_E,Cool Safflina,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Cool-Safflina,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_PlantGet_E.png,054
+Item_PlantGet_F,Warm Safflina,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Warm-Safflina,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_PlantGet_F.png,055
+Item_PlantGet_G,Mighty Thistle,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Mighty-Thistle,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_PlantGet_G.png,056
+Item_PlantGet_H,Armoranth,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Armoranth,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_PlantGet_H.png,057
+Item_PlantGet_I,Blue Nightshade,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Blue-Nightshade,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_PlantGet_I.png,058
+Item_PlantGet_L,Electric Safflina,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Electric-Safflina,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_PlantGet_L.png,059
+Item_PlantGet_O,Swift Violet,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Swift-Violet,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_PlantGet_O.png,060
+Item_PlantGet_R,Sundelion,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Sundelion,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_PlantGet_R.png,061
+Item_Meat_11,Raw Gourmet Meat,1,0,0,0,5,1,1,0,0,1,-,-,-,-,Raw-Meat,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Meat_11.png,062
+Item_Meat_12,Raw Whole Bird,1,0,0,0,5,1,1,0,0,1,-,-,-,-,Raw-Bird,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Meat_12.png,063
+Item_Meat_02,Raw Prime Meat,1,0,0,0,5,1,1,0,0,1,-,-,-,-,Raw-Meat,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Meat_02.png,064
+Item_Meat_07,Raw Bird Thigh,1,0,0,0,5,1,1,0,0,1,-,-,-,-,Raw-Thigh,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Meat_07.png,065
+Item_Meat_01,Raw Meat,1,0,0,0,5,1,1,0,0,1,-,-,-,-,Raw-Meat,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Meat_01.png,066
+Item_Meat_06,Raw Bird Drumstick,1,0,0,0,5,1,1,0,0,1,-,-,-,-,Raw-Drumstick,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Meat_06.png,067
+BeeHome,Courser Bee Honey,1,1,0,0,5,1,1,0,0,1,Melee Projectile,-,-,-,Honeycomb,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/BeeHome.png,068
+Item_Material_03,Hylian Rice,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Rice,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Material_03.png,069
+Item_Material_04,Bird Egg,1,0,0,0,1,1,1,0,0,0,-,-,-,-,Egg,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Material_04.png,070
+Item_Material_07,Tabantha Wheat,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Wheat,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Material_07.png,071
+Item_Material_10,Hateno Cheese,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Cheese,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Material_10.png,072
+Item_Material_05,Fresh Milk,1,0,0,0,1,1,1,0,0,0,-,-,-,-,Milk,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Material_05.png,073
+Item_Fruit_K,Acorn,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Acorn,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Fruit_K.png,074
+Item_Fruit_L,Chickaloo Tree Nut,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Tree-Nut,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Fruit_L.png,075
+Item_Material_01,Cane Sugar,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Cane-Sugar,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Material_01.png,076
+Item_Material_02,Goron Spice,1,0,0,0,1,1,1,0,0,0,-,-,-,-,Goron-Spice,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Material_02.png,077
+Item_Material_06,Goat Butter,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Butter,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Material_06.png,078
+Item_Material_08,Monster Extract,1,0,0,0,1,1,1,0,0,0,-,-,-,-,Monster-Extract,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Material_08.png,079
+Item_Material_09,Oil Jar,1,0,0,0,1,1,1,0,0,1,-,-,-,-,Oil-Jar,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Material_09.png,080
+Item_Material_11,Dark Clump,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Dark-Clump,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Material_11.png,081
+Item_Ore_H,Rock Salt,1,0,0,0,10,1,1,0,0,1,-,-,-,-,Rock-Salt,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Ore_H.png,082
+Item_Ore_J,Star Fragment,1,0,0,0,10,1,1,0,0,1,Melee Projectile,-,-,-,Star-Fragment,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Ore_J.png,083
+Item_Ore_A,Diamond,25,0,0,0,10,1,1,1,1,1,-,-,-,-,Diamond,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Ore_A.png,084
+Item_Ore_B,Ruby,1,6,80,0,10,1,1,0,0,1,Fire Burst,Melee Projectile,-,-,Ruby,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Ore_B.png,085
+Item_Ore_C,Sapphire,1,4,80,0,10,1,1,0,0,1,Ice Burst,Melee Projectile,-,-,Sapphire,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Ore_C.png,086
+Item_Ore_D,Topaz,1,5,80,0,10,1,1,0,0,1,Shock Burst,Melee Projectile,-,-,Topaz,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Ore_D.png,087
+Item_Ore_E,Opal,1,3,10,0,10,1,1,0,0,1,Water,Melee Projectile,-,-,Opal,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Ore_E.png,088
+Item_Ore_F,Amber,4,0,0,0,10,1,1,1,1,1,-,-,-,-,Amber,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Ore_F.png,089
+Item_Ore_G,Luminous Stone,1,0,0,0,10,1,1,0,0,1,-,-,-,-,Luminous-Stone,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Ore_G.png,090
+Item_Ore_I,Flint,1,0,0,0,10,1,1,0,0,1,-,-,-,-,Flint,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Ore_I.png,091
+Item_Enemy_02,Bokoblin Guts,1,0,0,0,5,1,1,0,0,1,-,-,-,-,Boko,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_02.png,092
+Item_Enemy_08,Moblin Guts,1,0,0,0,5,1,1,0,0,1,-,-,-,-,Moblin,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_08.png,093
+Item_Enemy_105,Horriblin Guts,1,0,0,0,5,1,1,0,0,1,-,-,-,-,Horriblin,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_105.png,094
+Item_Enemy_121,Gibdo Guts,1,0,0,0,5,1,1,0,0,1,-,-,-,-,Gibdo,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_121.png,095
+Item_Enemy_136,Boss Bokoblin Guts,1,0,0,0,5,1,1,0,0,1,-,-,-,-,Boss Boko,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_136.png,096
+Item_Enemy_14,Lynel Guts,1,0,0,0,5,1,1,0,0,1,-,-,-,-,Lynel,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_14.png,097
+Item_Enemy_157,Gleeok Guts,1,0,0,0,5,1,1,0,0,1,-,-,-,-,Gleeok,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_157.png,098
+Item_Enemy_190,Frox Guts,1,0,0,0,5,1,1,0,0,1,-,-,-,-,Frox,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_190.png,099
+Item_Enemy_25,Molduga Guts,1,0,0,0,5,1,1,0,0,1,-,-,-,-,Molduga,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_25.png,100
+Item_Enemy_34,Hinox Guts,1,0,0,0,5,1,1,0,0,1,-,-,-,-,Hinox,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_34.png,101
+Item_Enemy_15,Red Chuchu Jelly,1,0,10,0,1,1,1,0,1,0,Fire Burst,-,-,ReuseSeedFireBurst,Red-Jelly,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_15.png,102
+Item_Enemy_17,White Chuchu Jelly,1,0,10,0,1,1,1,0,1,0,Ice Burst,-,-,ReuseSeedIceBurst,White-Jelly,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_17.png,103
+Item_Enemy_16,Yellow Chuchu Jelly,1,0,10,0,1,1,1,0,1,0,Shock Burst,-,-,ReuseSeedShockBurst,Yellow-Jelly,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_16.png,104
+Item_Enemy_40,Chuchu Jelly,1,0,0,0,1,1,1,0,1,0,Water,-,-,-,Chuchu-Jelly,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_40.png,105
+Item_Enemy_57,Octo Balloon,1,0,0,0,1,1,1,0,0,1,-,-,-,PowHammer,Octo-Balloon,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_57.png,106
+Item_Enemy_19,Keese Eyeball,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Keese,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_19.png,107
+Item_Enemy_117,Fire Keese Eyeball,8,0,20,0,5,1,1,0,1,0,Fire,Fire Burst,-,-,Fire Keese,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_117.png,108
+Item_Enemy_119,Ice Keese Eyeball,4,0,20,0,5,1,1,0,1,0,Ice,Ice Burst,-,-,Ice Keese,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_119.png,109
+Item_Enemy_118,Electric Keese Eyeball,6,0,20,0,5,1,1,0,1,0,Shock,Shock Burst,-,-,Electric Keese,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_118.png,110
+Item_Enemy_21,Octorok Eyeball,3,0,0,0,5,1,1,0,0,0,-,-,-,-,Octorok,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_21.png,111
+Item_Enemy_66,Aerocuda Eyeball,4,0,0,0,5,1,1,0,0,0,-,-,-,-,Aerocuda,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_66.png,112
+Item_Enemy_18,Keese Wing,1,0,0,0,5,1,1,0,0,0,-,-,-,LongThrow,Keese,-,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_18.png,113
+Item_Enemy_44,Fire Keese Wing,2,0,20,0,5,1,1,0,1,0,Fire,Fire Burst,-,LongThrow,Fire Keese,-,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_44.png,114
+Item_Enemy_46,Ice Keese Wing,2,0,20,0,5,1,1,0,1,0,Ice,Ice Burst,-,LongThrow,Ice Keese,-,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_46.png,115
+Item_Enemy_45,Electric Keese Wing,2,0,20,0,5,1,1,0,1,0,Shock,Shock Burst,-,LongThrow,Electric Keese,-,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_45.png,116
+Item_Enemy_124,Aerocuda Wing,4,0,0,0,5,1,1,0,0,0,-,-,-,LongThrow,Aerocuda,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_124.png,117
+Item_Enemy_123,Gibdo Wing,8,0,0,0,5,1,1,0,0,0,-,-,-,LongThrow,Gibdo,-,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_123.png,118
+Item_Enemy_156,Gleeok Wing,24,0,0,0,5,1,1,0,0,0,-,-,-,LongThrow,Gleeok,-,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_156.png,119
+Item_Enemy_24,Molduga Fin,12,0,0,0,10,1,1,0,0,0,-,-,-,LongThrow,Molduga,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_24.png,120
+Item_Enemy_77,Bokoblin Horn,4,0,0,0,10,1,1,1,1,1,-,-,-,-,Boko,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_77.png,121
+Item_Enemy_78,Blue Bokoblin Horn,7,0,0,0,10,1,1,1,1,1,-,-,-,-,Blue Boko,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_78.png,122
+Item_Enemy_79,Black Bokoblin Horn,17,0,0,0,10,1,1,1,1,1,-,-,-,-,Black Boko,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_79.png,123
+Item_Enemy_80,Silver Bokoblin Horn,31,0,0,0,10,1,1,1,1,1,-,-,-,-,Silver Boko,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_80.png,124
+Item_Enemy_64,Boss Bokoblin Horn,10,0,0,0,10,1,1,1,1,1,-,-,-,-,Boss Boko,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_64.png,125
+Item_Enemy_132,Blue Boss Bokoblin Horn,16,0,0,0,10,1,1,1,1,1,Tree Cutter,-,-,-,Blue Boss Boko,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_132.png,126
+Item_Enemy_133,Black Boss Bokoblin Horn,27,0,0,0,10,1,1,1,1,1,Tree Cutter,-,-,-,Black Boss Boko,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_133.png,127
+Item_Enemy_134,Silver Boss Bokoblin Horn,37,0,0,0,10,1,1,1,1,1,Tree Cutter,-,-,-,Silver Boss Boko,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_134.png,128
+Item_Enemy_106,Lizalfos Horn,8,0,0,0,10,1,1,1,1,1,-,-,-,-,Lizal,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_106.png,129
+Item_Enemy_107,Blue Lizalfos Horn,16,0,0,0,10,1,1,1,1,1,-,-,-,-,Blue Lizal,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_107.png,130
+Item_Enemy_108,Black Lizalfos Horn,26,0,0,0,10,1,1,1,1,1,-,-,-,-,Black Lizal,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_108.png,131
+Item_Enemy_109,Silver Lizalfos Horn,34,0,0,0,10,1,1,1,1,1,-,-,-,-,Silver Lizal,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_109.png,132
+Item_Enemy_58,Fire-Breath Lizalfos Horn,15,0,20,0,10,1,1,1,1,1,Fire,Fire Burst,-,-,Fire-Breath Lizal,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_58.png,133
+Item_Enemy_59,Ice-Breath Lizalfos Horn,15,0,20,0,10,1,1,1,1,1,Ice,Ice Burst,-,-,Ice-Breath Lizal,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_59.png,134
+Item_Enemy_60,Electric Lizalfos Horn,15,0,20,0,10,1,1,1,1,1,Shock,Shock Burst,-,-,Electric Lizal,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_60.png,135
+Item_Enemy_148,Lynel Saber Horn,22,0,0,0,10,1,1,1,1,1,-,-,-,-,Lynel,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_148.png,136
+Item_Enemy_149,Blue-Maned Lynel Saber Horn,33,0,0,0,10,1,1,1,1,1,-,-,-,-,Blue-Maned Lynel,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_149.png,137
+Item_Enemy_150,White-Maned Lynel Saber Horn,44,0,0,0,10,1,1,1,1,1,-,-,-,-,White-Maned Lynel,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_150.png,138
+Item_Enemy_151,Silver Lynel Saber Horn,55,0,0,0,10,1,1,1,1,1,-,-,-,-,Silver Lynel,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_151.png,139
+Item_Enemy_166,Soldier Construct Horn,3,0,0,0,10,1,1,1,1,1,Zonai Fuse,-,-,-,Soldier,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_166.png,140
+Item_Enemy_167,Soldier Construct II Horn,8,0,0,0,10,1,1,1,1,1,Zonai Fuse,-,-,-,Soldier II,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_167.png,141
+Item_Enemy_168,Soldier Construct III Horn,18,0,0,0,10,1,1,1,1,1,Zonai Fuse,-,-,-,Soldier III,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_168.png,142
+Item_Enemy_169,Soldier Construct IV Horn,24,0,0,0,10,1,1,1,1,1,Zonai Fuse,-,-,-,Soldier IV,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_169.png,143
+Item_Enemy_67,Captain Construct I Horn,5,0,0,0,10,1,1,1,1,1,Zonai Fuse,-,-,-,Captain I,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_67.png,144
+Item_Enemy_191,Captain Construct II Horn,15,0,0,0,10,1,1,1,1,1,Zonai Fuse,-,-,-,Captain II,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_191.png,145
+Item_Enemy_192,Captain Construct III Horn,25,0,0,0,10,1,1,1,1,1,Zonai Fuse,-,-,-,Captain III,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_192.png,146
+Item_Enemy_193,Captain Construct IV Horn,35,0,0,0,10,1,1,1,1,1,Zonai Fuse,-,-,-,Captain IV,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_193.png,147
+Item_Enemy_32,Hinox Toenail,7,0,0,0,10,1,2,1,1,1,Tree Cutter,-,-,-,Hinox,-,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_32.png,148
+Item_Enemy_153,Gleeok Flame Horn,30,0,20,0,10,1,1,1,1,1,Fire,Fire Burst,-,-,Flame-Gleeok,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_153.png,149
+Item_Enemy_154,Gleeok Frost Horn,30,0,20,0,10,1,1,1,1,1,Ice,Ice Burst,-,-,Frost-Gleeok,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_154.png,150
+Item_Enemy_155,Gleeok Thunder Horn,30,0,20,0,10,1,1,1,1,1,Shock,Shock Burst,-,-,Thunder-Gleeok,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_155.png,151
+Item_Enemy_211,Dinraal's Horn,26,0,20,0,10,1,1,1,1,1,Fire,Fire Burst,-,-,Dinraal,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_211.png,152
+Item_Enemy_212,Naydra's Horn,26,0,20,0,10,1,1,1,1,1,Ice,Ice Burst,-,-,Naydra,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_212.png,153
+Item_Enemy_213,Farosh's Horn,26,0,20,0,10,1,1,1,1,1,Shock,Shock Burst,-,-,Farosh,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_213.png,154
+Item_Enemy_214,Light Dragon's Horn,20,0,0,0,10,1,1,1,1,1,-,-,-,-,Light Dragon,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_214.png,155
+Item_Enemy_181,Like Like Stone,4,0,0,0,10,1,1,0,1,1,Shatter Rock,-,-,-,Like Like,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_181.png,156
+Item_Enemy_182,Fire Like Stone,12,0,20,0,10,1,1,0,1,1,Shatter Rock,Fire,Fire Burst,-,Fire Like,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_182.png,157
+Item_Enemy_184,Ice Like Stone,12,0,20,0,10,1,1,0,1,1,Shatter Rock,Ice,Ice Burst,-,Ice Like,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_184.png,158
+Item_Enemy_183,Shock Like Stone,12,0,20,0,10,1,1,0,1,1,Shatter Rock,Shock,Shock Burst,-,Shock Like,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_183.png,159
+Item_Enemy_89,Moblin Horn,6,0,0,0,10,1,1,0,1,1,Shatter Rock,-,-,-,Moblin,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_89.png,160
+Item_Enemy_90,Blue Moblin Horn,13,0,0,0,10,1,1,0,1,1,Shatter Rock,-,-,UnlikeHammer,Blue Moblin,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_90.png,161
+Item_Enemy_91,Black Moblin Horn,24,0,0,0,10,1,1,0,1,1,Shatter Rock,-,-,-,Black Moblin,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_91.png,162
+Item_Enemy_92,Silver Moblin Horn,33,0,0,0,10,1,1,0,1,1,Shatter Rock,-,-,-,Silver Moblin,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_92.png,163
+Item_Enemy_100,Horriblin Horn,5,0,0,0,10,1,1,0,1,1,Shatter Rock,-,-,-,Horriblin,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_100.png,164
+Item_Enemy_101,Blue Horriblin Horn,11,0,0,0,10,1,1,0,1,1,Shatter Rock,-,-,-,Blue Horriblin,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_101.png,165
+Item_Enemy_102,Black Horriblin Horn,22,0,0,0,10,1,1,0,1,1,Shatter Rock,-,-,-,Black Horriblin,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_102.png,166
+Item_Enemy_103,Silver Horriblin Horn,32,0,0,0,10,1,1,0,1,1,Shatter Rock,-,-,UnlikeHammer,Silver Horriblin,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_103.png,167
+Item_Enemy_13,Lynel Hoof,10,0,0,0,10,1,2,0,1,1,Shatter Rock,-,-,-,Lynel,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_13.png,168
+Item_Enemy_215,Lynel Mace Horn,18,0,0,0,10,1,1,0,1,1,Shatter Rock,-,-,UnlikeHammer,Lynel,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_215.png,169
+Item_Enemy_216,Blue-Maned Lynel Mace Horn,29,0,0,0,10,1,1,0,1,1,Shatter Rock,-,-,UnlikeHammer,Blue-Maned Lynel,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_216.png,170
+Item_Enemy_217,White-Maned Lynel Mace Horn,40,0,0,0,10,1,1,0,1,1,Shatter Rock,-,-,UnlikeHammer,White-Maned Lynel,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_217.png,171
+Item_Enemy_218,Silver Lynel Mace Horn,51,0,0,0,10,1,1,0,1,1,Shatter Rock,-,-,UnlikeHammer,Silver Lynel,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_218.png,172
+Item_Enemy_142,Hinox Horn,12,0,0,0,10,1,1,0,1,1,Shatter Rock,-,-,-,Hinox,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_142.png,173
+Item_Enemy_143,Blue Hinox Horn,19,0,0,0,10,1,1,0,1,1,Shatter Rock,-,-,-,Blue Hinox,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_143.png,174
+Item_Enemy_144,Black Hinox Horn,27,0,0,0,10,1,1,0,1,1,Shatter Rock,-,-,-,Black Hinox,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_144.png,175
+Item_Enemy_208,Stalnox Horn,29,0,0,0,10,1,1,0,1,1,Shatter Rock,Bone,-,UnlikeHammer,Stalnox,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_208.png,176
+Item_Enemy_210,Molduga Jaw,32,0,0,0,10,1,1,0,1,1,Shatter Rock,Bone,-,-,Molduga,Replace,Replace,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_210.png,177
+Item_Enemy_186,Frox Fang,14,0,0,0,10,1,1,0,1,1,Shatter Rock,-,-,-,Frox,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_186.png,178
+Item_Enemy_187,Obsidian Frox Fang,24,0,0,0,10,1,1,0,1,1,Shatter Rock,-,-,UnlikeHammer,Obsidian Frox,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_187.png,179
+Item_Enemy_188,Blue-White Frox Fang,35,0,0,0,10,1,1,0,1,1,Shatter Rock,-,-,UnlikeHammer,Blue-White Frox,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_188.png,180
+Item_Enemy_228,Shard of Dinraal's Spike,16,0,20,0,10,1,1,0,1,1,Fire,Fire Burst,Shatter Rock,-,Dinraal,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_228.png,181
+Item_Enemy_229,Shard of Naydra's Spike,16,0,20,0,10,1,1,0,1,1,Ice,Ice Burst,Shatter Rock,-,Naydra,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_229.png,182
+Item_Enemy_230,Shard of Farosh's Spike,16,0,20,0,10,1,1,0,1,1,Shock,Shock Burst,Shatter Rock,-,Farosh,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_230.png,183
+Item_Enemy_231,Shard of Light Dragon's Spike,12,0,0,0,10,1,1,0,1,1,Shatter Rock,-,-,-,Light Dragon,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_231.png,184
+Item_Enemy_05,Lizalfos Tail,6,0,0,0,5,1,1,0,0,1,-,-,-,Whip,Lizal,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_05.png,185
+Item_Enemy_114,Blue Lizalfos Tail,16,0,0,0,5,1,1,0,0,1,-,-,-,Whip,Blue Lizal,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_114.png,186
+Item_Enemy_115,Black Lizalfos Tail,24,0,0,0,5,1,1,0,0,1,-,-,-,Whip,Black Lizal,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_115.png,187
+Item_Enemy_116,Silver Lizalfos Tail,31,0,0,0,5,1,1,0,0,1,-,-,-,Whip,Silver Lizal,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_116.png,188
+Item_Enemy_41,Fire-Breath Lizalfos Tail,10,0,20,0,5,1,1,0,1,1,Fire,Fire Burst,-,Whip,Fire-Breath Lizal,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_41.png,189
+Item_Enemy_42,Ice-Breath Lizalfos Tail,10,0,20,0,5,1,1,0,1,1,Ice,Ice Burst,-,Whip,Ice-Breath Lizal,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_42.png,190
+Item_Enemy_43,Electric Lizalfos Tail,10,0,20,0,5,1,1,0,1,1,Shock,Shock Burst,-,Whip,Electric Lizal,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_43.png,191
+Item_Enemy_69,Gibdo Bone,40,0,0,0,1,1,1,0,1,1,Bone,-,-,-,Gibdo,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_69.png,192
+Item_Enemy_20,Octorok Tentacle,3,0,0,0,5,1,1,0,0,1,-,-,-,-,Octorok,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_20.png,193
+Item_Enemy_01,Bokoblin Fang,2,0,0,0,10,1,2,0,0,0,-,-,-,-,Boko,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_01.png,194
+Item_Enemy_07,Moblin Fang,4,0,0,0,10,1,2,0,0,1,-,-,-,-,Moblin,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_07.png,195
+Item_Enemy_135,Boss Bokoblin Fang,6,0,0,0,10,1,2,0,0,1,-,-,-,-,Boss Boko,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_135.png,196
+Item_Enemy_33,Hinox Tooth,8,0,0,0,10,1,2,0,0,1,-,-,-,-,Hinox,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_33.png,197
+Item_Enemy_104,Horriblin Claw,4,0,0,0,10,1,2,0,0,1,-,-,-,-,Horriblin,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_104.png,198
+Item_Enemy_04,Lizalfos Talon,5,0,0,0,10,1,2,0,1,1,-,-,-,-,Lizal,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_04.png,199
+Item_Enemy_189,Frox Fingernail,10,0,0,0,10,1,2,0,0,1,-,-,-,-,Frox,-,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_189.png,200
+Item_Enemy_38,Dinraal's Scale,16,0,20,0,10,1,1,0,1,1,Fire,Fire Burst,-,-,Dinraal,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_38.png,201
+Item_Enemy_49,Naydra's Scale,16,0,20,0,10,1,1,0,1,1,Ice,Ice Burst,-,-,Naydra,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_49.png,202
+Item_Enemy_53,Farosh's Scale,16,0,20,0,10,1,1,0,1,1,Shock,Shock Burst,-,-,Farosh,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_53.png,203
+Item_Enemy_158,Light Dragon's Scale,12,0,0,0,10,1,1,0,1,1,-,-,-,-,Light Dragon,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_158.png,204
+Item_Enemy_39,Dinraal's Claw,18,0,20,0,10,1,2,0,1,1,Fire,Fire Burst,-,-,Dinraal,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_39.png,205
+Item_Enemy_50,Naydra's Claw,18,0,20,0,10,1,2,0,1,1,Ice,Ice Burst,-,-,Naydra,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_50.png,206
+Item_Enemy_54,Farosh's Claw,18,0,20,0,10,1,2,0,1,1,Shock,Shock Burst,-,-,Farosh,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_54.png,207
+Item_Enemy_159,Light Dragon's Talon,14,0,0,0,10,1,2,0,1,1,-,-,-,-,Light Dragon,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_159.png,208
+Item_Enemy_47,Shard of Dinraal's Fang,20,0,20,0,10,1,2,0,1,1,Fire,Fire Burst,-,-,Dinraal,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_47.png,209
+Item_Enemy_51,Shard of Naydra's Fang,20,0,20,0,10,1,2,0,1,1,Ice,Ice Burst,-,-,Naydra,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_51.png,210
+Item_Enemy_55,Shard of Farosh's Fang,20,0,20,0,10,1,2,0,1,1,Shock,Shock Burst,-,-,Farosh,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_55.png,211
+Item_Enemy_160,Shard of Light Dragon's Fang,16,0,0,0,10,1,2,0,1,1,-,-,-,-,Light Dragon,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_160.png,212
+Item_Weapon_01,Ancient Blade,50,0,0,0,1,1,1,1,1,1,-,-,-,-,Ancient-Blade,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Weapon_01.png,213
+Item_KingScale,King's Scale,5,0,0,0,1,1,1,0,1,0,Water,-,-,LongThrow,King's-Scale,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_KingScale.png,214
+LightBall_Small,Brightbloom Seed,1,0,0,0,1,1,1,0,1,0,-,-,-,-,Brightbloom-Seed,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/LightBall_Small.png,215
+LightBall_Large,Giant Brightbloom Seed,1,0,0,0,1,1,1,0,1,0,-,-,-,-,Brightbloom-Seed,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/LightBall_Large.png,216
+FldObj_Pinecone_A_01,Hylian Pine Cone,1,0,0,0,5,1,1,0,0,0,-,-,-,-,Pine-Cone,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/FldObj_Pinecone_A_01.png,217
+Obj_FireWoodBundle,Wood,1,0,0,0,5,1,1,0,0,1,-,-,-,Torch,Wood,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Obj_FireWoodBundle.png,218
+Item_Ore_L,Zonaite,1,0,0,0,10,1,1,0,0,1,Zonai Fuse,-,-,-,Zonaite,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Ore_L.png,219
+Item_Ore_M,Large Zonaite,1,0,0,0,10,1,1,0,0,1,Zonai Fuse,-,-,-,Zonaite,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Ore_M.png,220
+Item_Enemy_130,Zonai Charge,2,0,0,0,10,1,1,0,0,1,Zonai Fuse,-,-,-,Zonaite,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_130.png,221
+Item_Enemy_131,Large Zonai Charge,3,0,0,0,10,1,1,0,0,1,Zonai Fuse,-,-,-,Zonaite,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Enemy_131.png,222
+Item_Roast_03,Baked Apple,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Baked-Apple,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_03.png,223
+Item_Roast_59,Baked Golden Apple,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Apple,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_59.png,224
+Item_Roast_13,Charred Pepper,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Charred-Pepper,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_13.png,225
+Item_Roast_54,Roasted Hylian Tomato,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Tomato,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_54.png,226
+Item_Roast_07,Roasted Wildberry,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Wildberry,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_07.png,227
+Item_Roast_08,Roasted Voltfruit,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Voltfruit,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_08.png,228
+Item_Roast_12,Roasted Hydromelon,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Hydromelon,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_12.png,229
+Item_Roast_10,Baked Palm Fruit,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Baked-Palm-Fruit,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_10.png,230
+Item_Roast_11,Roasted Mighty Bananas,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Banana,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_11.png,231
+Item_Roast_16,Roasted Lotus Seeds,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Lotus-Seed,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_16.png,232
+Item_Roast_27,Roasted Mighty Thistle,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Thistle,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_27.png,233
+Item_Roast_28,Roasted Armoranth,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Armoranth,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_28.png,234
+Item_Roast_24,Roasted Swift Carrot,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Carrot,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_24.png,235
+Item_Roast_50,Roasted Endura Carrot,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Carrot,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_50.png,236
+Item_Roast_15,Baked Fortified Pumpkin,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Baked-Pumpkin,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_15.png,237
+Item_Roast_55,Baked Sun Pumpkin,1,0,0,0,5,0,1,0,0,1,-,-,-,-,Baked-Pumpkin,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_55.png,238
+Item_Roast_18,Roasted Radish,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Radish,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_18.png,239
+Item_Roast_19,Roasted Big Radish,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Radish,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_19.png,240
+Item_Roast_56,Toasty Skyshroom,1,0,0,0,5,0,1,0,0,1,-,-,-,PowHammer,Toasty-Shroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_56.png,241
+Item_Roast_06,Toasty Hylian Shroom,1,0,0,0,5,0,1,0,0,0,-,-,-,PowHammer,Toasty-Shroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_06.png,242
+Item_Roast_04,Toasty Stamella Shroom,1,0,0,0,5,0,1,0,0,0,-,-,-,PowHammer,Toasty-Shroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_04.png,243
+Item_Roast_36,Toasty Rushroom,1,0,0,0,5,0,1,0,0,1,-,-,-,PowHammer,Toasty-Shroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_36.png,244
+Item_Roast_32,Toasty Sunshroom,1,0,0,0,5,0,1,0,0,1,-,-,-,PowHammer,Toasty-Shroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_32.png,245
+Item_Roast_31,Toasty Chillshroom,1,0,0,0,5,0,1,0,0,1,-,-,-,PowHammer,Toasty-Shroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_31.png,246
+Item_Roast_33,Toasty Zapshroom,1,0,0,0,5,0,1,0,0,1,-,-,-,PowHammer,Toasty-Shroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_33.png,247
+Item_Roast_37,Toasty Razorshroom,1,0,0,0,5,0,1,0,0,1,-,-,-,PowHammer,Toasty-Shroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_37.png,248
+Item_Roast_38,Toasty Ironshroom,1,0,0,0,5,0,1,0,0,1,-,-,-,PowHammer,Toasty-Shroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_38.png,249
+Item_Roast_39,Toasty Silent Shroom,1,0,0,0,5,0,1,0,0,1,-,-,-,PowHammer,Toasty-Shroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_39.png,250
+Item_Roast_58,Toasty Brightcap,1,0,0,0,5,0,1,0,0,1,-,-,-,PowHammer,Toasty-Shroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_58.png,251
+Item_Roast_53,Toasty Endura Shroom,1,0,0,0,5,0,1,0,0,1,-,-,-,PowHammer,Toasty-Shroom,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_53.png,252
+Item_Roast_05,Toasted Hearty Truffle,1,0,0,0,5,0,1,0,0,0,-,-,-,PowHammer,Toasted-Truffle,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_05.png,253
+Item_Roast_49,Toasted Big Hearty Truffle,1,0,0,0,5,0,1,0,0,1,-,-,-,PowHammer,Toasted-Truffle,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_49.png,254
+Item_Roast_01,Seared Steak,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Seared-Steak,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_01.png,255
+Item_Roast_40,Seared Prime Steak,1,0,0,0,5,0,1,0,0,1,-,-,-,-,Seared-Steak,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_40.png,256
+Item_Roast_45,Seared Gourmet Steak,1,0,0,0,5,0,1,0,0,1,-,-,-,-,Seared-Steak,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_45.png,257
+Item_Roast_02,Roasted Bird Drumstick,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Drumstick,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_02.png,258
+Item_Roast_41,Roasted Bird Thigh,1,0,0,0,5,0,1,0,0,1,-,-,-,-,Seared-Bird,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_41.png,259
+Item_Roast_46,Roasted Whole Bird,1,0,0,0,5,0,1,0,0,1,-,-,-,-,Seared-Bird,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_46.png,260
+Item_RoastFish_16,Roasted Arowana,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Grilled-Arowana,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_RoastFish_16.png,261
+Item_RoastFish_01,Roasted Bass,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Bass,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_RoastFish_01.png,262
+Item_RoastFish_03,Roasted Trout,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Trout,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_RoastFish_03.png,263
+Item_RoastFish_07_E,Roasted Carp,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Carp,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_RoastFish_07.png,264
+Item_RoastFish_09_F,Roasted Porgy,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Porgy,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_RoastFish_09.png,265
+Item_RoastFish_18,Roasted Cave Fish,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Fish,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_RoastFish_18.png,266
+Item_RoastFish_02,Roasted Hearty Bass,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Bass,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_RoastFish_02.png,267
+Item_RoastFish_04,Roasted Hearty Salmon,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Salmon,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_RoastFish_04.png,268
+Item_RoastFish_15_O,Blackened Crab,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Blackened-Crab,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_RoastFish_15.png,269
+Item_RoastFish_13,Sneaky River Escargot,1,0,0,0,10,0,1,0,0,0,-,-,-,-,River-Escargot,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_RoastFish_13.png,270
+Item_Roast_52,Roasted Tree Nut,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Tree-Nut,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_52.png,271
+Item_Roast_48,Roasted Acorn,1,0,0,0,5,0,1,0,0,0,-,-,-,-,Roasted-Acorn,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_48.png,272
+Item_Roast_51,Campfire Egg,1,0,0,0,1,0,1,0,0,0,-,-,-,-,Campfire-Egg,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Roast_51.png,273
+Item_Boiled_01,Hard-Boiled Egg,1,0,0,0,1,0,1,0,0,0,-,-,-,-,Boiled-Egg,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Boiled_01.png,274
+Item_Chilled_01,Icy Meat,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Icy-Meat,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Chilled_01.png,275
+Item_Chilled_02,Icy Prime Meat,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Icy-Meat,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Chilled_02.png,276
+Item_Chilled_03,Icy Gourmet Meat,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Icy-Meat,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Chilled_03.png,277
+Item_Chilled_04,Frozen Bird Drumstick,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Frozen-Drumstick,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Chilled_04.png,278
+Item_Chilled_05,Frozen Bird Thigh,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Frozen-Thigh,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Chilled_05.png,279
+Item_Chilled_06,Frozen Whole Bird,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Frozen-Bird,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_Chilled_06.png,280
+Item_ChilledFish_16,Frozen Arowana,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Frozen-Arowana,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_ChilledFish_16.png,281
+Item_ChilledFish_01,Frozen Bass,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Frozen-Bass,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_ChilledFish_01.png,282
+Item_ChilledFish_03,Frozen Trout,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Frozen-Trout,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_ChilledFish_03.png,283
+Item_ChilledFish_04_E,Frozen Carp,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Frozen-Carp,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_ChilledFish_04.png,284
+Item_ChilledFish_05_F,Frozen Porgy,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Frozen-Porgy,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_ChilledFish_05.png,285
+Item_ChilledFish_18,Frozen Cave Fish,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Frozen-Fish,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_ChilledFish_18.png,286
+Item_ChilledFish_06,Frozen Hearty Bass,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Frozen-Bass,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_ChilledFish_06.png,287
+Item_ChilledFish_02,Frozen Hearty Salmon,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Frozen-Salmon,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_ChilledFish_02.png,288
+Item_ChilledFish_07_O,Frozen Crab,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Frozen-Crab,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_ChilledFish_07.png,289
+Item_ChilledFish_08,Frozen River Snail,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Frozen-Snail,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/Item_ChilledFish_08.png,290
+Weapon_Sword_044,Tree Branch,2,0,0,4,4,0,1,0,1,1,-,-,-,-,Tree-Branch,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_044.png,291
+Weapon_Sword_043,Torch,2,0,0,8,8,0,1,0,1,1,-,-,-,Torch,Torch,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_043.png,292
+Weapon_Sword_022,Soup Ladle,4,0,0,5,5,0,1,0,1,1,-,-,-,-,Soup-Ladle,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_022.png,293
+Weapon_Sword_105,Boomerang,6,0,0,16,15,0,1,1,1,1,-,-,-,-,Boomerang,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_105.png,294
+Weapon_Sword_051,Boomerang✨,8,0,0,18,15,0,1,1,1,1,-,-,-,-,Boomerang,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_051.png,295
+Weapon_Sword_059,Sea-Breeze Boomerang,16,0,0,20,15,0,1,1,1,1,-,-,-,-,Boomerang,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_059.png,296
+Weapon_Sword_106,Traveler's Sword,5,0,0,16,15,0,1,1,1,1,-,-,-,-,Traveler's-Sword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_106.png,297
+Weapon_Sword_001,Traveler's Sword✨,7,0,0,20,15,0,1,1,1,1,-,-,-,-,Traveler's-Sword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_001.png,298
+Weapon_Sword_112,Soldier's Broadsword,6,0,0,17,15,0,1,1,1,1,-,-,-,-,Soldier's-Broadsword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_112.png,299
+Weapon_Sword_002,Soldier's Broadsword✨,12,0,0,23,15,0,1,1,1,1,-,-,-,-,Soldier's-Sword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_002.png,300
+Weapon_Sword_113,Knight's Broadsword,7,0,0,18,15,0,1,1,1,1,-,-,-,-,Knight's-Broadsword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_113.png,301
+Weapon_Sword_003,Knight's Broadsword✨,18,0,0,27,15,0,1,1,1,1,-,-,-,-,Knight's-Sword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_003.png,302
+Weapon_Sword_124,Royal Broadsword,10,0,0,20,15,0,1,1,1,1,-,-,-,-,Royal-Broadsword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_124.png,303
+Weapon_Sword_024,Royal Broadsword✨,24,0,0,35,15,0,1,1,1,1,-,-,-,-,Royal-Broadsword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_024.png,304
+Weapon_Sword_125,Forest Dweller's Sword,7,0,0,17,15,0,1,1,1,1,-,-,-,-,Forest-Sword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_125.png,305
+Weapon_Sword_025,Forest Dweller's Sword✨,16,0,0,27,15,0,1,1,1,1,-,-,-,-,Forest-Sword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_025.png,306
+Weapon_Sword_127,Zora Sword,6,0,0,20,15,0,1,1,1,1,-,-,-,-,Zora-Sword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_127.png,307
+Weapon_Sword_027,Zora Sword✨,12,0,0,27,15,0,1,1,1,1,-,-,-,-,Zora-Sword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_027.png,308
+Weapon_Sword_131,Feathered Edge,6,0,0,18,15,0,1,1,1,1,-,-,-,-,Feathered-Edge,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_131.png,309
+Weapon_Sword_031,Feathered Edge✨,13,0,0,27,15,0,1,1,1,1,-,-,-,-,Feathered-Edge,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_031.png,310
+Weapon_Sword_129,Gerudo Scimitar,8,0,0,10,10,0,1,1,1,1,-,-,-,-,Gerudo-Scimitar,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_129.png,311
+Weapon_Sword_029,Gerudo Scimitar✨,17,0,0,14,14,0,1,1,1,1,-,-,-,-,Gerudo-Scimitar,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_029.png,312
+Weapon_Sword_052,Scimitar of the Seven,28,0,0,60,15,0,1,1,1,1,-,-,-,-,Scimitar of the Seven,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_052.png,313
+Weapon_Sword_114,Eightfold Blade,6,0,0,16,15,0,1,1,1,1,-,-,-,-,Eightfold-Blade,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_114.png,314
+Weapon_Sword_041,Eightfold Blade✨,15,0,0,26,15,0,1,1,1,1,-,-,-,-,Eightfold-Blade,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_041.png,315
+Weapon_Sword_021,Rusty Broadsword,5,0,0,6,6,0,1,1,1,1,-,-,-,-,Rusty-Broadsword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_021.png,316
+Weapon_Sword_058,Sword of the Hero,17,0,0,27,15,0,1,1,1,1,-,-,-,-,Sword of the Hero,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_058.png,317
+Weapon_Sword_147,Royal Guard's Sword,22,0,0,10,10,0,1,1,1,1,-,-,-,-,Guard's-Sword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_147.png,318
+Weapon_Sword_047,Royal Guard's Sword✨,30,0,0,12,12,0,1,1,1,1,-,-,-,-,Guard's-Sword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_047.png,319
+Weapon_Sword_057,White Sword of the Sky,24,0,0,45,15,0,1,1,1,1,-,-,-,-,White Sword of the Sky,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_057.png,320
+Weapon_Sword_103,Wooden Stick,4,0,0,12,12,0,1,0,1,1,-,-,-,-,Wooden-Stick,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_103.png,321
+Weapon_Sword_108,Sturdy Wooden Stick,5,0,0,24,15,0,1,0,1,1,-,-,-,-,Sturdy-Stick,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_108.png,322
+Weapon_Sword_109,Gnarled Wooden Stick,14,0,0,14,14,0,1,0,1,1,-,-,-,-,Mighty-Stick,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_109.png,323
+Weapon_Sword_107,Lizal Boomerang,8,0,0,17,15,0,1,1,1,1,-,-,-,-,Boomerang,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_107.png,324
+Weapon_Sword_101,Zonaite Sword,6,0,0,15,15,0,1,1,1,1,Zonai Fuse,-,-,-,Zonaite-Sword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_101.png,325
+Weapon_Sword_163,Strong Zonaite Sword,7,0,0,16,15,0,1,1,1,1,Zonai Fuse,-,-,-,Strong-Zonaite-Sword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_163.png,326
+Weapon_Sword_164,Mighty Zonaite Sword,10,0,0,18,15,0,1,1,1,1,Zonai Fuse,-,-,-,Mighty-Zonaite-Sword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_164.png,327
+Weapon_Sword_161,Magic Rod,6,0,0,14,14,0,1,0,1,1,-,-,-,-,Magic-Rod,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_161.png,328
+Weapon_Sword_019,Bokoblin Arm,20,0,0,5,5,0,1,0,1,1,Bone,-,-,-,Bokoblin-Arm,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_019.png,329
+Weapon_Sword_020,Lizalfos Arm,22,0,0,5,5,0,1,0,1,1,Bone,-,-,-,Lizalfos-Arm,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_020.png,330
+Weapon_Sword_166,Gloom Sword,41,0,0,15,15,0,1,1,1,1,-,-,-,-,Gloom-Sword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Sword_166.png,331
+Weapon_Lsword_045,Farming Hoe,6,0,0,6,6,0,1,0,1,1,-,-,-,-,Farming-Hoe,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_045.png,332
+Weapon_Lsword_038,Boat Oar,4,0,0,8,8,0,1,0,1,1,-,-,-,-,Boat-Oar,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_038.png,333
+Weapon_Lsword_174,Giant Boomerang,11,0,0,18,15,0,1,1,1,1,-,-,-,-,Boomerang,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_174.png,334
+Weapon_Lsword_051,Giant Boomerang✨,23,0,0,40,15,0,1,1,1,1,-,-,-,-,Giant-Boomerang,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_051.png,335
+Weapon_Lsword_106,Traveler's Claymore,6,0,0,16,15,0,1,1,1,1,-,-,-,-,Traveler's-Claymore,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_106.png,336
+Weapon_Lsword_001,Traveler's Claymore✨,9,0,0,20,15,0,1,1,1,1,-,-,-,-,Traveler's-Claymore,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_001.png,337
+Weapon_Lsword_112,Soldier's Claymore,8,0,0,17,15,0,1,1,1,1,-,-,-,-,Soldier's-Claymore,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_112.png,338
+Weapon_Lsword_002,Soldier's Claymore✨,16,0,0,25,15,0,1,1,1,1,-,-,-,-,Soldier's-Claymore,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_002.png,339
+Weapon_Lsword_113,Knight's Claymore,11,0,0,18,15,0,1,1,1,1,-,-,-,-,Knight's-Claymore,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_113.png,340
+Weapon_Lsword_003,Knight's Claymore✨,24,0,0,30,15,0,1,1,1,1,-,-,-,-,Knight's-Claymore,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_003.png,341
+Weapon_Lsword_124,Royal Claymore,14,0,0,20,15,0,1,1,1,1,-,-,-,-,Royal-Claymore,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_124.png,342
+Weapon_Lsword_024,Royal Claymore✨,34,0,0,40,15,0,1,1,1,1,-,-,-,-,Royal-Claymore,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_024.png,343
+Weapon_Lsword_127,Zora Longsword,8,0,0,20,15,0,1,1,1,1,-,-,-,-,Zora-Longsword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_127.png,344
+Weapon_Lsword_027,Zora Longsword✨,17,0,0,30,15,0,1,1,1,1,-,-,-,-,Zora-Longsword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_027.png,345
+Weapon_Lsword_136,Cobble Crusher,9,0,0,18,15,0,1,0,1,1,Shatter Rock,-,-,-,Cobble-Crusher,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_136.png,346
+Weapon_Lsword_036,Cobble Crusher✨,14,0,0,30,15,0,1,0,1,1,Shatter Rock,-,-,-,Cobble-Crusher,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_036.png,347
+Weapon_Lsword_054,Boulder Breaker,38,0,0,40,15,0,1,0,1,1,Shatter Rock,-,-,-,Boulder Breaker,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_054.png,348
+Weapon_Lsword_059,Biggoron's Sword,36,0,0,60,15,0,1,1,1,1,-,-,-,-,Biggoron's Sword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_059.png,349
+Weapon_Lsword_129,Gerudo Claymore,10,0,0,10,10,0,1,1,1,1,-,-,-,-,Gerudo-Claymore,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_129.png,350
+Weapon_Lsword_029,Gerudo Claymore✨,22,0,0,14,14,0,1,1,1,1,-,-,-,-,Gerudo-Claymore,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_029.png,351
+Weapon_Lsword_114,Eightfold Longblade,8,0,0,18,15,0,1,1,1,1,-,-,-,-,Eightfold-Longblade,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_114.png,352
+Weapon_Lsword_041,Eightfold Longblade✨,23,0,0,25,15,0,1,1,1,1,-,-,-,-,Eightfold-Longblade,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_041.png,353
+Weapon_Lsword_057,Dusk Claymore,32,0,0,50,15,0,1,1,1,1,-,-,-,-,Dusk-Claymore,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_057.png,354
+Weapon_Lsword_060,Fierce Deity Sword,38,0,0,35,15,0,1,1,1,1,-,-,-,-,Fierce Deity Sword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_060.png,355
+Weapon_Lsword_020,Rusty Claymore,6,0,0,8,8,0,1,1,1,1,-,-,-,-,Rusty-Claymore,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_020.png,356
+Weapon_Lsword_147,Royal Guard's Claymore,32,0,0,11,11,0,1,1,1,1,-,-,-,-,Guard's-Claymore,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_147.png,357
+Weapon_Lsword_047,Royal Guard's Claymore✨,39,0,0,12,12,0,1,1,1,1,-,-,-,-,Guard's-Claymore,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_047.png,358
+Weapon_Lsword_103,Thick Stick,5,0,0,14,14,0,1,0,1,1,-,-,-,-,Thick-Stick,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_103.png,359
+Weapon_Lsword_108,Sturdy Thick Stick,7,0,0,26,15,0,1,0,1,1,-,-,-,-,Thick-Stick,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_108.png,360
+Weapon_Lsword_109,Gnarled Thick Stick,19,0,0,16,15,0,1,0,1,1,-,-,-,-,Thick-Stick,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_109.png,361
+Weapon_Lsword_101,Zonaite Longsword,8,0,0,15,15,0,1,1,1,1,Zonai Fuse,-,-,-,Zonaite-Longsword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_101.png,362
+Weapon_Lsword_163,Strong Zonaite Longsword,10,0,0,16,15,0,1,1,1,1,Zonai Fuse,-,-,-,Zonaite-Longsword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_163.png,363
+Weapon_Lsword_164,Mighty Zonaite Longsword,15,0,0,18,15,0,1,1,1,1,Zonai Fuse,-,-,-,Zonaite-Longsword,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_164.png,364
+Weapon_Lsword_161,Magic Scepter,7,0,0,14,14,0,1,0,1,1,-,-,-,-,Magic-Scepter,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_161.png,365
+Weapon_Lsword_019,Moblin Arm,28,0,0,5,5,0,1,0,1,1,Bone,-,-,-,Moblin-Arm,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_019.png,366
+Weapon_Lsword_166,Gloom Club,50,0,0,14,14,0,1,0,1,1,Shatter Rock,-,-,-,Gloom-Club,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Lsword_166.png,367
+Weapon_Spear_036,Wooden Mop,3,0,0,8,8,0,1,0,1,1,-,-,-,-,Wooden-Mop,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_036.png,368
+Weapon_Spear_022,Farmer's Pitchfork,4,0,0,12,12,0,1,0,1,1,-,-,-,-,Farmer's-Pitchfork,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_022.png,369
+Weapon_Spear_038,Fishing Harpoon,4,0,0,12,12,0,1,1,1,1,-,-,-,-,Fishing-Harpoon,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_038.png,370
+Weapon_Spear_173,Throwing Spear,3,0,0,20,15,0,1,1,1,1,-,-,-,-,Throwing-Spear,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_173.png,371
+Weapon_Spear_030,Throwing Spear✨,8,0,0,26,15,0,1,1,1,1,-,-,-,-,Throwing-Spear,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_030.png,372
+Weapon_Spear_106,Traveler's Spear,3,0,0,24,15,0,1,1,1,1,-,-,-,-,Traveler's-Spear,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_106.png,373
+Weapon_Spear_001,Traveler's Spear✨,4,0,0,30,15,0,1,1,1,1,-,-,-,-,Traveler's-Spear,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_001.png,374
+Weapon_Spear_112,Soldier's Spear,4,0,0,25,15,0,1,1,1,1,-,-,-,-,Soldier's-Spear,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_112.png,375
+Weapon_Spear_002,Soldier's Spear✨,10,0,0,35,15,0,1,1,1,1,-,-,-,-,Soldier's-Spear,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_002.png,376
+Weapon_Spear_113,Knight's Halberd,6,0,0,26,15,0,1,1,1,1,-,-,-,-,Knight's-Halberd,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_113.png,377
+Weapon_Spear_003,Knight's Halberd✨,14,0,0,40,15,0,1,1,1,1,-,-,-,-,Knight's-Halberd,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_003.png,378
+Weapon_Spear_124,Royal Halberd,7,0,0,30,15,0,1,1,1,1,-,-,-,-,Royal-Halberd,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_124.png,379
+Weapon_Spear_024,Royal Halberd✨,18,0,0,50,15,0,1,1,1,1,-,-,-,-,Royal-Halberd,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_024.png,380
+Weapon_Spear_125,Forest Dweller's Spear,6,0,0,24,15,0,1,1,1,1,-,-,-,-,Forest-Spear,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_125.png,381
+Weapon_Spear_025,Forest Dweller's Spear✨,14,0,0,35,15,0,1,1,1,1,-,-,-,-,Forest-Spear,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_025.png,382
+Weapon_Spear_127,Zora Spear,6,0,0,26,15,0,1,1,1,1,-,-,-,-,Zora-Spear,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_127.png,383
+Weapon_Spear_027,Zora Spear✨,11,0,0,40,15,0,1,1,1,1,-,-,-,-,Zora-Spear,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_027.png,384
+Weapon_Spear_050,Lightscale Trident,22,0,0,70,15,0,1,1,1,1,-,-,-,-,Lightscale Trident,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_050.png,385
+Weapon_Spear_132,Feathered Spear,4,0,0,25,15,0,1,1,1,1,-,-,-,-,Feathered-Spear,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_132.png,386
+Weapon_Spear_032,Feathered Spear✨,10,0,0,35,15,0,1,1,1,1,-,-,-,-,Feathered-Spear,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_032.png,387
+Weapon_Spear_129,Gerudo Spear,6,0,0,15,15,0,1,1,1,1,-,-,-,-,Gerudo-Spear,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_129.png,388
+Weapon_Spear_029,Gerudo Spear✨,12,0,0,20,15,0,1,1,1,1,-,-,-,-,Gerudo-Spear,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_029.png,389
+Weapon_Spear_021,Rusty Halberd,3,0,0,12,12,0,1,1,1,1,-,-,-,-,Rusty-Halberd,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_021.png,390
+Weapon_Spear_147,Royal Guard's Spear,15,0,0,14,14,0,1,1,1,1,-,-,-,-,Guard's-Spear,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_147.png,391
+Weapon_Spear_047,Royal Guard's Spear✨,24,0,0,15,15,0,1,1,1,1,-,-,-,-,Guard's-Spear,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_047.png,392
+Weapon_Spear_103,Long Stick,2,0,0,18,15,0,1,0,1,1,-,-,-,-,Long-Stick,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_103.png,393
+Weapon_Spear_108,Sturdy Long Stick,4,0,0,34,15,0,1,0,1,1,-,-,-,-,Sturdy-Long-Stick,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_108.png,394
+Weapon_Spear_109,Gnarled Long Stick,10,0,0,22,15,0,1,0,1,1,-,-,-,-,Strong-Long-Stick,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_109.png,395
+Weapon_Spear_101,Zonaite Spear,4,0,0,22,15,0,1,1,1,1,Zonai Fuse,-,-,-,Zonaite-Spear,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_101.png,396
+Weapon_Spear_163,Strong Zonaite Spear,6,0,0,24,15,0,1,1,1,1,Zonai Fuse,-,-,-,Zonaite-Spear,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_163.png,397
+Weapon_Spear_164,Mighty Zonaite Spear,8,0,0,27,15,0,1,1,1,1,Zonai Fuse,-,-,-,Zonaite-Spear,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_164.png,398
+Weapon_Spear_161,Magic Staff,4,0,0,14,14,0,1,0,1,1,-,-,-,-,Magic-Staff,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_161.png,399
+Weapon_Spear_166,Gloom Spear,40,0,0,16,15,0,1,1,1,1,-,-,-,-,Gloom-Spear,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Spear_166.png,400
+Weapon_Bow_107,Old Wooden Bow,1,0,0,20,5,0,1,0,0,1,-,-,-,-,Old-Wooden-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_107.png,401
+Weapon_Bow_038,Wooden Bow,1,0,0,20,5,0,1,0,0,1,-,-,-,-,Wooden-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_038.png,402
+Weapon_Bow_001,Traveler's Bow,1,0,0,22,5,0,1,0,0,1,-,-,-,-,Traveler's-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_001.png,403
+Weapon_Bow_002,Soldier’s Bow,3,0,0,36,5,0,1,0,0,1,-,-,-,-,Soldier's-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_002.png,404
+Weapon_Bow_035,Knight's Bow,6,0,0,48,15,0,1,0,0,1,-,-,-,-,Knight's-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_035.png,405
+Weapon_Bow_036,Royal Bow,9,0,0,60,15,0,1,0,0,1,-,-,-,-,Royal-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_036.png,406
+Weapon_Bow_013,Forest Dweller's Bow,3,0,0,35,5,0,1,0,0,1,-,-,-,-,Forest-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_013.png,407
+Weapon_Bow_014,Zora Bow,3,0,0,40,15,0,1,0,0,1,-,-,-,-,Zora-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_014.png,408
+Weapon_Bow_016,Swallow Bow,2,0,0,30,5,0,1,0,0,1,-,-,-,-,Swallow-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_016.png,409
+Weapon_Bow_017,Falcon Bow,5,0,0,35,5,0,1,0,0,1,-,-,-,-,Falcon-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_017.png,410
+Weapon_Bow_028,Great Eagle Bow,7,0,0,60,15,0,1,0,0,1,-,-,-,-,Great Eagle Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_028.png,411
+Weapon_Bow_015,Gerudo Bow,3,0,0,40,15,0,1,0,0,1,-,-,-,-,Gerudo-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_015.png,412
+Weapon_Bow_029,Phrenic Bow,2,0,0,45,5,0,1,0,0,1,-,-,-,-,Phrenic-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_029.png,413
+Weapon_Bow_033,Royal Guard's Bow,12,0,0,20,15,0,1,0,0,1,-,-,-,-,Guard's-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_033.png,414
+Weapon_Bow_072,Dusk Bow,7,0,0,40,5,0,1,0,0,1,-,-,-,-,Dusk-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_072.png,415
+Weapon_Bow_004,Boko Bow,1,0,0,16,5,0,1,0,0,1,-,-,-,-,Boko-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_004.png,416
+Weapon_Bow_003,Spiked Boko Bow,3,0,0,20,5,0,1,0,0,1,Bone,-,-,-,Spiked-Boko-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_003.png,417
+Weapon_Bow_027,Dragonbone Boko Bow,6,0,0,30,5,0,1,0,0,1,Bone,-,-,-,Dragonbone-Boko-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_027.png,418
+Weapon_Bow_006,Lizal Bow,3,0,0,25,5,0,1,0,0,1,Bone,-,-,-,Lizal-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_006.png,419
+Weapon_Bow_011,Strengthened Lizal Bow,6,0,0,35,15,0,1,0,0,1,-,-,-,-,Strengthened-Lizal-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_011.png,420
+Weapon_Bow_030,Steel Lizal Bow,9,0,0,50,15,0,1,0,0,1,-,-,-,-,Steel-Lizal-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_030.png,421
+Weapon_Bow_009,Lynel Bow,2,0,0,30,15,0,1,0,0,1,-,-,-,-,Lynel-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_009.png,422
+Weapon_Bow_026,Mighty Lynel Bow,5,0,0,35,15,0,1,0,0,1,-,-,-,-,Mighty-Lynel-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_026.png,423
+Weapon_Bow_032,Savage Lynel Bow,8,0,0,45,15,0,1,0,0,1,-,-,-,-,Savage-Lynel-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_032.png,424
+Weapon_Bow_040,Duplex Bow,3,0,0,18,5,0,1,0,0,1,-,-,-,-,Duplex-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_040.png,425
+Weapon_Bow_104,Construct Bow,1,0,0,18,10,0,1,0,0,1,Zonai Fuse,-,-,-,Construct-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_104.png,426
+Weapon_Bow_105,Strong Construct Bow,3,0,0,26,10,0,1,0,0,1,Zonai Fuse,-,-,-,Strong-Construct-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_105.png,427
+Weapon_Bow_106,Mighty Construct Bow,6,0,0,34,10,0,1,0,0,1,Zonai Fuse,-,-,-,Mighty-Construct-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_106.png,428
+Weapon_Bow_101,Zonaite Bow,7,0,0,50,10,0,1,0,0,1,Zonai Fuse,-,-,-,Zonaite-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_101.png,429
+Weapon_Bow_166,Demon King's Bow,11,0,0,42,10,0,1,0,0,1,-,-,-,-,Demon-King's-Bow,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Bow_166.png,430
+Weapon_Shield_030,Hylian Shield,22,0,0,800,15,0,1,0,0,0,-,-,-,-,Hylian-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_030.png,431
+Weapon_Shield_040,Pot Lid,1,0,0,10,5,0,1,0,0,0,-,-,-,-,Pot-Lid,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_040.png,432
+Weapon_Shield_107,Old Wooden Shield,1,0,0,12,5,0,1,0,0,0,-,-,-,-,Old-Wooden-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_107.png,433
+Weapon_Shield_001,Wooden Shield,1,0,0,12,5,0,1,0,0,0,-,-,-,-,Wooden-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_001.png,434
+Weapon_Shield_034,Emblazoned Shield,1,0,0,12,5,0,1,0,0,0,-,-,-,-,Emblazoned-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_034.png,435
+Weapon_Shield_031,Hunter's Shield,1,0,0,10,5,0,1,0,0,0,-,-,-,-,Hunter's-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_031.png,436
+Weapon_Shield_032,Fisherman's Shield,1,0,0,10,5,0,1,0,0,0,-,-,-,-,Fisherman's-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_032.png,437
+Weapon_Shield_035,Traveler's Shield,1,0,0,12,5,0,1,0,0,0,-,-,-,-,Traveler's-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_035.png,438
+Weapon_Shield_002,Soldier’s Shield,4,0,0,16,5,0,1,0,0,0,-,-,-,-,Soldier's-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_002.png,439
+Weapon_Shield_003,Knight's Shield,10,0,0,23,15,0,1,0,0,0,-,-,-,-,Knight's-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_003.png,440
+Weapon_Shield_022,Royal Shield,13,0,0,29,15,0,1,0,0,0,-,-,-,-,Royal-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_022.png,441
+Weapon_Shield_023,Forest Dweller's Shield,7,0,0,18,5,0,1,0,0,0,-,-,-,-,Forest-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_023.png,442
+Weapon_Shield_025,Zora Shield,4,0,0,20,15,0,1,0,0,0,-,-,-,-,Zora-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_025.png,443
+Weapon_Shield_042,Kite Shield,3,0,0,16,5,0,1,0,0,0,-,-,-,SpWing,Kite-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_042.png,444
+Weapon_Shield_026,Gerudo Shield,5,0,0,20,15,0,1,0,0,0,-,-,-,-,Gerudo-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_026.png,445
+Weapon_Shield_036,Radiant Shield,8,0,0,26,15,0,1,0,0,0,-,-,-,-,Radiant-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_036.png,446
+Weapon_Shield_037,Daybreaker,12,0,0,60,15,0,1,0,0,0,-,-,-,-,Daybreaker,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_037.png,447
+Weapon_Shield_041,Shield of the Mind's Eye,4,0,0,16,5,0,1,0,0,0,-,-,-,-,Shield of the Mind's Eye,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_041.png,448
+Weapon_Shield_057,Sea-Breeze Shield,16,0,0,90,15,0,1,0,0,0,-,-,-,-,Sea-Breeze-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_057.png,449
+Weapon_Shield_021,Rusty Shield,1,0,0,16,15,0,1,0,0,0,-,-,-,-,Rusty-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_021.png,450
+Weapon_Shield_033,Royal Guard's Shield,17,0,0,14,15,0,1,0,0,0,-,-,-,-,Guard's-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_033.png,451
+Weapon_Shield_004,Boko Shield,1,0,0,5,5,0,1,0,0,0,-,-,-,-,Boko-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_004.png,452
+Weapon_Shield_005,Spiked Boko Shield,2,0,0,7,5,0,1,0,0,0,Bone,-,-,-,Spiked-Boko-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_005.png,453
+Weapon_Shield_006,Dragonbone Boko Shield,6,0,0,8,5,0,1,0,0,0,Bone,-,-,-,Dragonbone-Boko-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_006.png,454
+Weapon_Shield_007,Lizal Shield,3,0,0,8,15,0,1,0,0,0,-,-,-,-,Lizal-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_007.png,455
+Weapon_Shield_008,Reinforced Lizal Shield,5,0,0,12,15,0,1,0,0,0,-,-,-,-,Reinforced-Lizal-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_008.png,456
+Weapon_Shield_009,Steel Lizal Shield,8,0,0,15,15,0,1,0,0,0,-,-,-,-,Steel-Lizal-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_009.png,457
+Weapon_Shield_101,Zonaite Shield,2,0,0,15,10,0,1,0,0,0,Zonai Fuse,-,-,-,Zonaite-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_101.png,458
+Weapon_Shield_102,Strong Zonaite Shield,9,0,0,15,10,0,1,0,0,0,Zonai Fuse,-,-,-,Zonaite-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_102.png,459
+Weapon_Shield_103,Mighty Zonaite Shield,12,0,0,20,10,0,1,0,0,0,Zonai Fuse,-,-,-,Zonaite-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_103.png,460
+Weapon_Shield_016,Lynel Shield,7,0,0,12,15,0,1,1,1,1,-,-,-,-,Lynel-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_016.png,461
+Weapon_Shield_017,Mighty Lynel Shield,13,0,0,15,15,0,1,1,1,1,-,-,-,-,Mighty-Lynel-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_017.png,462
+Weapon_Shield_018,Savage Lynel Shield,21,0,0,20,15,0,1,1,1,1,-,-,-,-,Savage-Lynel-Shield,-,-,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Weapons/Weapon_Shield_018.png,463
+SpObj_WindGenerator_A_01,Fan,1,0,0,0,0,1,1,0,0,1,Zonai Fuse,Melee Projectile,-,Fan,Fan,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_WindGenerator_A_01_0.png,464
+SpObj_LiftGeneratorWing_A_01,Wing,1,0,0,0,10,1,1,0,0,0,Zonai Fuse,-,-,SpWing,Wing,-,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_LiftGeneratorWing_A_01_0.png,465
+SpObj_Cart_A_01,Cart,1,0,0,0,10,1,1,0,0,1,Zonai Fuse,-,-,Fan,Cart,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_Cart_A_01_0.png,466
+SpObj_BalloonEnvelope_A_01,Balloon,1,0,0,0,10,1,1,0,0,1,Zonai Fuse,-,-,PowHammer,Balloon,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_BalloonEnvelope_A_01_0.png,467
+SpObj_Rocket_A_01,Rocket,10,0,0,0,1,1,1,0,0,1,Zonai Fuse,-,-,-,Rocket,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_Rocket_A_01_0.png,468
+SpObj_TimerBomb_A_01,Time Bomb,1,0,30,0,1,1,1,0,0,1,Zonai Fuse,Bomb,-,-,Time-Bomb,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_TimerBomb_A_01_0.png,469
+SpObj_CookSetOnFire_A_01,Portable Pot,1,0,0,0,10,1,1,0,0,1,Zonai Fuse,Shatter Rock,-,-,Portable-Pot,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_CookSetOnFire_A_01_0.png,470
+SpObj_FlameThrower_A_01,Flame Emitter,1,0,0,0,0,1,1,0,0,1,Zonai Fuse,Fire Burst,-,-,Flame-Emitter,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_FlameThrower_A_01_0.png,471
+SpObj_SnowMachine_A_01,Frost Emitter,1,0,0,0,0,1,1,0,0,1,Zonai Fuse,Ice Burst,-,-,Frost-Emitter,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_SnowMachine_A_01_0.png,472
+SpObj_ElectricBoxGenerator,Shock Emitter,1,0,0,0,0,1,1,0,0,1,Zonai Fuse,Shock Burst,-,-,Shock-Emitter,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_ElectricBoxGenerator_0.png,473
+SpObj_Beamos_A_01,Beam Emitter,1,0,12,0,0,1,1,0,0,1,Zonai Fuse,-,-,-,Beam-Emitter,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_Beamos_A_01_0.png,474
+SpObj_WaterPump_A_01,Hydrant,1,0,0,0,0,1,1,0,0,1,Shatter Rock,Zonai Fuse,Water,-,Hydrant,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_WaterPump_A_01_0.png,475
+SpObj_ControlStick_A_01,Steering Stick,1,0,0,0,10,1,1,0,0,1,Zonai Fuse,-,-,-,Steering-Stick,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_ControlStick_A_01_0.png,476
+SpObj_SwitchWheel_B_01,Big Wheel,1,0,0,0,10,1,1,0,0,1,Zonai Fuse,-,-,-,Big-Wheel,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_SwitchWheel_B_01_0.png,477
+SpObj_FastWheel_A_01,Small Wheel,1,0,0,0,10,1,1,0,0,1,Zonai Fuse,-,-,-,Small-Wheel,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_FastWheel_A_01_0.png,478
+SpObj_SlipBoard_A_01,Sled,1,0,0,0,10,1,1,0,0,1,Zonai Fuse,-,-,Fan,Sled,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_SlipBoard_A_01_0.png,479
+SpObj_EnergyBank_A_01,Battery,1,0,0,0,10,1,1,0,0,1,Zonai Fuse,-,-,-,Battery,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_EnergyBank_A_01_0.png,480
+SpObj_EnergyBank_A_02,Big Battery,2,0,0,0,10,1,1,0,0,1,Zonai Fuse,-,-,-,Battery,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_EnergyBank_A_02_0.png,481
+SpObj_SpringPiston_A_01,Spring,1,0,0,0,10,1,1,0,0,1,Zonai Fuse,-,-,PowHammer,Spring,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_SpringPiston_A_01_0.png,482
+SpObj_Cannon_A_01,Cannon,1,0,40,0,20,1,1,0,0,1,Zonai Fuse,Bomb,Melee Projectile,-,Cannon,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_Cannon_A_01_0.png,483
+SpObj_TiltingDoll_A_01,Stabilizer,5,0,0,0,10,1,1,0,0,1,Zonai Fuse,Shatter Rock,-,-,Stabilizer,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_TiltingDoll_A_01_0.png,484
+SpObj_FloatingStone_A_01,Hover Stone,1,0,0,0,10,1,1,0,0,1,Shatter Rock,Zonai Fuse,-,-,Hover-Stone,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_FloatingStone_A_01_0.png,485
+SpObj_FlashLight_A_01,Light,1,0,0,0,0,1,1,0,0,1,Zonai Fuse,-,-,-,Light,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_FlashLight_A_01_0.png,486
+SpObj_Pile_A_01,Stake,5,0,0,0,10,1,1,0,0,1,Zonai Fuse,Shatter Rock,-,-,Stake,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_Pile_A_01_0.png,487
+SpObj_LightMirror_A_01,Mirror,1,0,0,0,10,1,1,0,0,1,Zonai Fuse,-,-,-,Mirror,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_LightMirror_A_01_0.png,488
+SpObj_Chaser_A_01,Homing Cart,1,0,0,0,10,1,1,0,0,1,Shatter Rock,Zonai Fuse,-,-,Homing-Cart,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_Chaser_A_01_0.png,489
+SpObj_GolemHead_A_01,Construct Head,1,0,0,0,10,1,1,0,0,1,Zonai Fuse,-,-,-,Construct-Head,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Items/SpObj_GolemHead_A_01_0.png,490
+Obj_ArmorSpike_A,Armor Shard (Bokoblin),5,0,0,0,10,0,1,0,1,1,-,-,-,-,Armor-Shard,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_ArmorSpike_A.png,491
+Obj_ArmorSpike_B,Armor Shard (Lynel),10,0,0,0,10,0,1,0,1,1,-,-,-,-,Armor-Shard,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_ArmorSpike_B.png,492
+AsbObj_SpikeDynamic_A_01,Spikes (Armor),10,0,0,0,15,0,1,0,1,1,-,-,-,-,Spiky,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/AsbObj_SpikeDynamic_A_01.png,493
+DgnObj_Small_SpikeDynamic_A_01,Spikes (Shrine),5,0,0,0,15,0,1,0,1,1,-,-,-,-,Spiky,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Small_SpikeDynamic_A_01.png,494
+DgnObj_SpikeBallWood_A,Spikes (Bramble),5,0,0,0,5,0,1,0,1,1,-,-,-,-,Spiky,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_SpikeBallWood_A.png,495
+WoodBall_Golf,Ball,1,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Ball,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/WoodBall_Golf.png,496
+Barrel,Barrel,1,0,0,0,5,0,1,0,0,1,-,-,-,-,Barrel,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Barrel.png,497
+DgnObj_MetalBarrel_A,Barrel (Shrine),3,0,0,0,15,0,1,0,0,1,Shatter Rock,-,-,-,Barrel,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_MetalBarrel_A.png,498
+Obj_ShieldFenceWood_A_M_01,Barricade,1,0,0,0,5,0,1,0,0,1,-,-,-,Fan,Barricade,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_ShieldFenceWood_A_M_01.png,499
+AsbObj_BalloonEnvelopeBase_Zonau_A_01,Basket,1,0,0,0,15,0,1,0,0,1,-,-,-,-,Basket,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/AsbObj_BalloonEnvelopeBase_Zonau_A_01.png,500
+DgnObj_SwitchElectric_Dynamic,Battery (Shrine),1,0,0,0,10,0,1,0,0,1,-,-,-,-,Battery,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_SwitchElectric_Dynamic.png,501
+DgnObj_Small_PuzzleBlock_A_01,Block #1,2,0,0,0,10,0,1,0,0,1,Shatter Rock,-,-,-,Block,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Small_PuzzleBlock_A_01.png,502
+DgnObj_Small_PuzzleBlock_A_02,Block #2,2,0,0,0,10,0,1,0,0,1,Shatter Rock,-,-,-,Block,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Small_PuzzleBlock_A_02.png,503
+DgnObj_Small_PuzzleBlock_A_03,Block #3,2,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Block,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Small_PuzzleBlock_A_03.png,504
+DgnObj_Small_PuzzleRing_B_01,Block #4,3,0,0,0,10,0,1,0,0,1,Shatter Rock,-,-,-,Block,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Small_PuzzleRing_B_01.png,505
+AsbObj_RockParts_C_S_05,Blue Rock,1,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Blue-Rock,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/AsbObj_RockParts_C_S_05.png,506
+AsbObj_WhiteWoodRectangle_A_LL_01,Board,1,0,0,0,5,0,1,0,0,1,-,-,-,Fan,Board,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/AsbObj_WhiteWoodRectangle_A_LL_01.png,507
+TwnObj_Village_Fishing_Boat_A_02_ForAttachment,Boat (Tenoko Island),1,0,0,0,5,0,1,0,0,1,-,-,-,-,Boat,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/TwnObj_Village_Fishing_Boat_A_02.png,508
+BarrelBomb,Bomb Barrel (Lv1),1,0,12,0,1,0,1,0,0,1,Bomb,-,-,-,Bomb-Barrel,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/BarrelBomb.png,509
+BarrelBomb2,Bomb Barrel (Lv2),1,0,40,0,1,0,1,0,0,1,Bomb,-,-,-,Bomb-Barrel,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/BarrelBomb.png,510
+BarrelBomb3,Bomb Barrel (Lv3),1,0,80,0,1,0,1,0,0,1,Bomb,-,-,-,Bomb-Barrel,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/BarrelBomb.png,511
+DgnObj_Small_BarrelBomb_A_01,Bomb Barrel (Shrine Lv1),1,0,12,0,1,0,1,0,0,1,Bomb,-,-,-,Bomb-Barrel,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Small_BarrelBomb_A_01.png,512
+DgnObj_Small_BarrelBomb_A_02,Bomb Barrel (Shrine Lv2),1,0,40,0,1,0,1,0,0,1,Bomb,-,-,-,Bomb-Barrel,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Small_BarrelBomb_A_01.png,513
+TimerBarrelBomb,Bomb Barrel (Timed),1,0,40,0,15,0,1,0,0,1,Bomb,-,-,-,Time-Bomb,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/TimerBarrelBomb.png,514
+TwnObj_HyruleCastleObject_BookShelf_Iron_A_01,Bookcase,2,0,0,0,15,0,1,0,0,1,-,-,-,-,Bookcase,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/TwnObj_HyruleCastleObject_BookShelf_Iron_A_01.png,515
+AsbObj_RockParts_C_L_01,Boulder #1,3,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Boulder,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/AsbObj_RockParts_C_L_01.png,516
+FldObj_FallingRock_B_01,Boulder #2,2,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Boulder,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/FldObj_FallingRock_B_01.png,517
+FldObj_FallingRock_B_02,Boulder #3,2,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Boulder,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/FldObj_FallingRock_B_02.png,518
+FldObj_PushRock_A_M_01,Boulder #4,3,0,0,0,10,0,1,0,0,0,-,-,-,-,Boulder,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/FldObj_PushRock_A_M_01.png,519
+FldObj_FallingRock_A_01,Boulder #5,2,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Boulder,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/FldObj_FallingRock_A_01.png,520
+FldObj_FallingRock_A_02,Boulder #6,2,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Boulder,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/FldObj_FallingRock_A_02.png,521
+RockBall,Boulder (Death Mountain),3,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Boulder,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/RockBall.png,522
+LikeLikeRock_ForAttachment,Boulder (Like Like),2,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Boulder,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/LikeLikeRock_ForAttachment.png,523
+DgnObj_Dish_A_01,Bowl,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Bowl,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Dish_A_01.png,524
+AsbObj_Icicle_A_02,Icicle (Large),6,0,0,0,10,0,1,0,1,1,Ice,-,-,-,Icicle,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/AsbObj_Icicle_A_02.png,525
+AsbObj_Icicle_A_01,Icicle (Small),2,0,0,0,10,0,1,0,1,1,Ice,-,-,-,Icicle,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/AsbObj_Icicle_A_01.png,526
+Drake_IcicleForAttachment,Icicle (Frost Gleeok),9,0,0,0,10,0,1,0,1,1,Ice,-,-,-,Icicle,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Drake_Icicle.png,527
+Obj_CageIron_A_01,Cage,1,0,0,0,15,0,1,0,0,1,-,-,-,-,Cage,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_CageIron_A_01.png,528
+DgnObj_Candle,Candle,1,0,0,0,10,0,1,0,0,1,-,-,-,Torch,Candle,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Candle.png,529
+Obj_GerudoHoleCover_A_02,Desk,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Desk,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_GerudoHoleCover_A_02.png,530
+Obj_ScaffoldWood_A_01_ForAttachment,Enemy Lookout Support Log,1,0,0,0,5,0,1,0,0,1,-,-,-,-,Log,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_ScaffoldWood_A_01_ForAttachment.png,531
+Obj_TreeWood_A_L_Treant_ForAttachment,Evermean Log,8,0,0,0,5,0,1,0,0,1,-,-,-,-,Evermean,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_TreeWood_A_L_Treant_ForAttachment.png,532
+MinusObj_TreeGeneralleaf_A_01_Treant_ForAttachment,Evermean Log (Depths),8,0,0,0,5,0,1,0,0,1,-,-,-,-,Evermean,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/MinusObj_TreeGeneralleaf_A_01_Treant_ForAttachment.png,533
+DgnObj_StoneBall_Fire,Flame Ball,2,0,0,0,10,0,1,0,0,1,-,-,-,-,Flame-Ball,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_StoneBall_NoFire.png,534
+DgnObj_StoneBall_NoFire,Flame Ball (Extinguished),2,0,0,0,10,0,1,0,0,1,-,-,-,-,Flame-Ball,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_StoneBall_NoFire.png,535
+DgnObj_Float_A_01,Float,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Float,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Float_A_01.png,536
+Zonau_BlockMaster_Block_ForAttachment,Flux Construct I Body Block,3,0,0,0,10,0,1,0,1,1,Shatter Rock,Zonai Fuse,-,-,Block,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Zonau_BlockMaster_Block.png,537
+Zonau_BlockMaster_Block_Middle_ForAttachment,Flux Construct II Body Block,4,0,0,0,10,0,1,0,1,1,Shatter Rock,Zonai Fuse,-,-,Block,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Zonau_BlockMaster_Block_Middle.png,538
+Zonau_BlockMaster_Block_Senior_ForAttachment,Flux Construct III Body Block,5,0,0,0,10,0,1,0,1,1,Shatter Rock,Zonai Fuse,-,-,Block,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Zonau_BlockMaster_Block_Senior.png,539
+DungeonBoss_Goron_Rock_Weapon,Gloom Rock,1,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Gloom-Rock,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DungeonBoss_Goron_Rock_Weapon.png,540
+TwnObj_GerudoDollBlue_A_02,Blue-Seal Toy,4,0,0,0,10,0,1,0,0,1,-,-,-,PowHammer,Blue-Seal-Toy,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/TwnObj_GerudoDollBlue_A_02.png,541
+TwnObj_GerudoDollGreen_A_02,Green-Seal Toy,4,0,0,0,10,0,1,0,0,1,-,-,-,PowHammer,Green-Seal-Toy,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/TwnObj_GerudoDollGreen_A_02.png,542
+TwnObj_GerudoDollSmallRed_A_01,Red-Seal Toy,3,0,0,0,10,0,1,0,0,1,-,-,-,PowHammer,Red-Seal-Toy,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/TwnObj_GerudoDollSmallRed_A_01.png,543
+AsbObj_RopewayArm_A_01,Hook,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Hook,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/AsbObj_RopewayArm_A_01.png,544
+IceWall_Piece,Ice #1,2,0,0,0,10,0,1,0,1,1,Ice,-,-,-,Ice,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/IceWall_Piece.png,545
+Obj_FreezeBoard_A_01,Ice #2,1,0,0,0,10,0,1,0,1,1,Ice,-,-,Fan,Ice,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_FreezeBoard_A_01.png,546
+Obj_FreezeBoard_A_02,Ice #3,1,0,0,0,10,0,1,0,1,1,Ice,-,-,Fan,Ice,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_FreezeBoard_A_02.png,547
+DgnObj_IceBlock,Ice #4,1,0,0,0,10,0,1,0,1,1,Ice,-,-,-,Ice,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_IceBlock.png,548
+RockRollA,Iron Ball (Smallest),1,0,0,0,15,0,1,0,0,1,Shatter Rock,-,-,-,Iron-Ball,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/RockRollA.png,549
+DgnObj_Small_IronBall_02,Iron Ball (Small),1,0,0,0,15,0,1,0,1,1,Shatter Rock,-,-,-,Iron-Ball,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Small_IronBall_02.png,550
+IronBall_Light,Iron Ball (Small) (Light),1,0,0,0,15,0,1,0,0,1,-,-,-,-,Iron-Ball,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/IronBall_Light.png,551
+DgnObj_Small_IronBall_03,Iron Ball (Medium),2,0,0,0,15,0,1,0,1,1,Shatter Rock,-,-,-,Iron-Ball,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Small_IronBall_03.png,552
+DgnObj_Small_IronBall_04,Iron Ball (Large),2,0,0,0,15,0,1,0,1,1,Shatter Rock,-,-,-,Iron-Ball,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Small_IronBall_04.png,553
+IronBall,Iron Ball (Very Large),3,0,0,0,15,0,1,0,1,1,Shatter Rock,-,-,-,Iron-Ball,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/IronBall.png,554
+DgnObj_Small_IronBall_05,Iron Ball (Largest),3,0,0,0,15,0,1,0,1,1,Shatter Rock,-,-,-,Iron-Ball,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Small_IronBall_05.png,555
+Obj_BoxIron_A_M_01,Iron Box,3,0,0,0,15,0,1,0,1,1,Shatter Rock,-,-,-,Iron-Box,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_BoxIron_A_M_01.png,556
+DgnObj_Small_BoxIron_B_03,Iron Box (Shrine) #1,2,0,0,0,15,0,1,0,1,1,Shatter Rock,-,-,-,Iron-Box,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Small_BoxIron_B_03.png,557
+DgnObj_Small_BoxIron_B_04,Iron Box (Shrine) #2,2,0,0,0,15,0,1,0,1,1,Shatter Rock,-,-,-,Iron-Box,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Small_BoxIron_B_04.png,558
+DgnObj_Small_BoxIron_B_06,Iron Box (Shrine) #3,1,0,0,0,15,0,1,0,0,1,-,-,-,-,Iron-Box,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Small_BoxIron_B_06.png,559
+DgnObj_Small_IronStick_A_01,Iron Box (Shrine) #4,1,0,0,0,15,0,1,0,0,1,-,-,-,-,Iron-Pole,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Small_IronStick_A_01.png,560
+FldObj_PushRockIron_A_M_01,Iron Lump,2,0,0,0,15,0,1,0,1,1,Shatter Rock,-,-,-,Iron-Lump,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/FldObj_PushRockIron_A_M_01.png,561
+AsbObj_MetalPole_A_LL_01,Iron Pole,1,0,0,0,15,0,1,0,0,1,-,-,-,-,Iron-Pole,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/AsbObj_MetalPole_A_LL_01.png,562
+AsbObj_HyliaWoodRuinShelter_Wood_C_01,Korok Puzzle Roof Piece (Thick),1,0,0,0,5,0,1,0,0,1,-,-,-,Fan,Board,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/AsbObj_HyliaWoodRuinShelter_Wood_C_01.png,563
+AsbObj_HyliaWoodRuinShelter_Wood_B_01,Korok Puzzle Roof Piece (Thin),1,0,0,0,5,0,1,0,0,1,-,-,-,-,Board,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/AsbObj_HyliaWoodRuinShelter_Wood_B_01.png,564
+AsbObj_StoneLightSquare_A_M_01,Lattice #1,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Lattice,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/AsbObj_StoneLightSquare_A_M_01.png,565
+DgnObj_LargeDungeonWind_Grate_A_01,Lattice #2,1,0,0,0,15,0,1,0,0,1,-,-,-,-,Lattice,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_LargeDungeonWind_Grate_A_01.png,566
+DgnObj_Small_Grate_A_01,Lattice #3,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Lattice,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Small_Grate_A_01.png,567
+DgnObj_Small_BoardNet_A_02,Lattice #4,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Lattice,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Small_BoardNet_A_02.png,568
+Obj_HardLavaBlock_A_01,Lava Slab,1,0,0,0,10,0,1,0,0,1,Shatter Rock,-,-,Fan,Lava-Slab,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_HardLavaBlock_A_01.png,569
+DgnObj_Small_Lift_A_01,Lift,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Lift,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Small_Lift_A_01.png,570
+Obj_TreeApple_A_L_01_Trunk,Log,1,0,0,0,5,0,1,0,0,1,-,-,-,-,Log,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_TreeApple_A_L_01_Trunk.png,571
+AsbObj_WhiteWoodStick_A_LL_01,Lumber,1,0,0,0,5,0,1,0,0,1,-,-,-,-,Lumber,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/AsbObj_WhiteWoodStick_A_LL_01.png,572
+Obj_MeatRock_Miasma_A_01,Marbled Rock Roast,2,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Marbled-Rock-Roast,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_MeatRock_Miasma_A_01.png,573
+DgnObj_BoxNet_A,Metal Mesh Block,2,0,0,0,15,0,1,0,0,1,Shatter Rock,-,-,-,Mesh-Block,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_BoxNet_A.png,574
+Obj_BoardIron_A_01,Metal Plate,1,0,0,0,15,0,1,0,0,1,-,-,-,Fan,Metal-Plate,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_BoardIron_A_01.png,575
+DgnObj_Train_A_01,Mine Cart,1,0,0,0,15,0,1,0,0,1,Shatter Rock,-,-,-,Mine-Cart,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Train_A_01.png,576
+DgnObj_Motor_A_01,Motor,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Motor,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Motor_A_01.png,577
+DgnObj_Small_StonePole_A_01,Pole,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Pole,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Small_StonePole_A_01.png,578
+DgnObj_ElectricSwitchCapstan_A_02,Pole (Gerudo Mirror),1,0,0,0,10,0,1,0,0,1,-,-,-,-,Pole,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_ElectricSwitchCapstan_A_02.png,579
+Pot,Pot,1,0,0,0,1,0,1,0,0,1,-,-,-,-,Pot,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Pot.png,580
+Obj_Village_IchikaraEnokidaCutout_A_01,President Hudson Cutout,6,0,0,0,5,0,1,0,0,1,-,-,-,Fan,President Hudson,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_Village_IchikaraEnokidaCutout_A_01.png,581
+DgnObj_PropellerAndWind,Propeller,1,0,0,0,10,0,1,0,0,1,-,-,-,-,Propeller,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_PropellerAndWind.png,582
+AsbObj_Assassin_Raft_01,Raft,1,0,0,0,5,0,1,0,0,1,-,-,-,Fan,Raft,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/AsbObj_Assassin_Raft_01.png,583
+Obj_SheikerWakkaCharm_A_01,Ring Garland,3,0,0,0,5,0,1,0,0,1,-,-,-,-,Ring-Garland,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_SheikerWakkaCharm_A_01.png,584
+AsbObj_RockParts_C_S_01,Rock,1,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Rock,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/AsbObj_RockParts_C_S_01.png,585
+Obj_MeatRock,Rock Roast,9,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Rock-Roast,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_MeatRock.png,586
+FldObj_ZonauFallingParts_B_Block_Fall_A_01,Ruins Rubble #1,2,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Ruins-Rubble,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/FldObj_ZonauFallingParts_B_Block_Fall_A_01.png,587
+Obj_FallFloor_A_01,Ruins Rubble #2,2,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Ruins-Rubble,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_FallFloor_A_01.png,588
+Obj_FallFloor_A_04,Ruins Rubble #3,2,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Ruins-Rubble,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_FallFloor_A_04.png,589
+Obj_SkyFallenBox_A_01,Ruins Rubble (Sky) #1,2,0,0,0,10,0,1,0,1,1,Shatter Rock,Zonai Fuse,-,-,Ruins-Rubble,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_SkyFallenBox_A_01.png,590
+Obj_SkyFallenBox_A_02,Ruins Rubble (Sky) #2,2,0,0,0,10,0,1,0,1,1,Shatter Rock,Zonai Fuse,-,-,Ruins-Rubble,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_SkyFallenBox_A_02.png,591
+Obj_SkyFallenBox_A_03,Ruins Rubble (Sky) #3,2,0,0,0,10,0,1,0,1,1,Shatter Rock,Zonai Fuse,-,-,Ruins-Rubble,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_SkyFallenBox_A_03.png,592
+SkyObj_Remains_Block_Fall_A_01,Ruins Rubble (Sky / Sky Mine),2,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Ruins-Rubble,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/SkyObj_Remains_Block_Fall_A_01.png,593
+Obj_FallFloor_A_07,Ruins Rubble (Rising Island Chain),2,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Ruins-Rubble,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_FallFloor_A_07.png,594
+Obj_FallFloor_A_06,Ruins Rubble (Wellspring Island),2,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Ruins-Rubble,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_FallFloor_A_06.png,595
+Obj_FallFloor_A_05,Ruins Rubble (Depths),2,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Ruins-Rubble,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_FallFloor_A_05.png,596
+Obj_FallFloor_A_02,Ruins Rubble (Gerudo Desert),2,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Ruins-Rubble,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_FallFloor_A_02.png,597
+Obj_FallFloor_A_03,Ruins Rubble (Lightning Temple),2,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Ruins-Rubble,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_FallFloor_A_03.png,598
+AsbObj_WoodSail_A_01_ForAttachment,Sail,1,0,0,0,5,0,1,0,0,1,-,-,-,Fan,Sail,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/AsbObj_WoodSail_A_01.png,599
+Obj_GerudoHoleCover_A_03,Sand-Seal Statue,10,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Sand-Seal-Statue,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_GerudoHoleCover_A_03.png,600
+FldObj_SignboardWood_A_01_Trunk,Signboard,1,0,0,0,5,0,1,0,0,1,-,-,-,-,Signboard,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/FldObj_SignboardWood_A_01_Trunk.png,601
+BrokenSnowBallForAttachmentLarge,Snowball (Large),3,0,0,0,1,0,1,0,1,1,Ice,-,-,-,Snowball,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/BrokenSnowBallForAttachmentSmall.png,602
+BrokenSnowBallForAttachmentSmall,Snowball (Small),1,0,0,0,1,0,1,0,1,1,Ice,-,-,-,Snowball,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/BrokenSnowBallForAttachmentSmall.png,603
+Obj_SpikeBall_B,Spiked Iron Ball,15,0,0,0,15,0,1,0,1,1,Shatter Rock,-,-,-,Spiked-Iron-Ball,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_SpikeBall_B.png,604
+DgnObj_SpikeBall_A,Spiked Iron Ball (Shrine),9,0,0,0,15,0,1,0,1,1,Shatter Rock,-,-,-,Spiked-Iron-Ball,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_SpikeBall_A.png,605
+AsbObj_BoneStick_A_01,Spiny Bone,7,0,0,0,10,0,1,0,0,1,Bone,-,-,-,Spiny-Bone,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/AsbObj_BoneStick_A_01.png,606
+AsbObj_SharpRock_A_S_01,Stone,1,0,0,0,10,0,1,1,1,1,Tree Cutter,-,-,-,Stone,-,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/AsbObj_SharpRock_A_S_01.png,607
+StoneBall,Stone Ball,3,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Stone-Ball,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/StoneBall.png,608
+DgnObj_ElectricBoxStone_A_02,Stone Block,5,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Stone-Block,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_ElectricBoxStone_A_02.png,609
+DgnObj_BoxStone_A,Stone Box #1,1,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Stone-Box,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_BoxStone_A.png,610
+DgnObj_Small_BoxStone_A_02,Stone Box #2,2,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Stone-Box,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Small_BoxStone_A_02.png,611
+DgnObj_Small_BoxStone_A_03,Stone Box #3,2,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Stone-Box,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Small_BoxStone_A_03.png,612
+DgnObj_Small_BoxStone_A_04,Stone Box #4,3,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Stone-Box,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_Small_BoxStone_A_04.png,613
+DgnObj_SecretBox_A,Stone Box #5,1,0,0,0,10,0,1,0,0,1,Shatter Rock,-,-,Fan,Stone-Box,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_SecretBox_A.png,614
+Obj_FallFloor_HyruleCastle_A_01,Stone Shard,2,0,0,0,10,0,1,0,1,1,Shatter Rock,-,-,-,Stone-Shard,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_FallFloor_HyruleCastle_A_01.png,615
+DgnObj_LargeDungeonWind_Debris_A_01,Stone Shard (Wind Temple),1,0,0,0,10,0,1,0,0,1,Shatter Rock,-,-,Fan,Stone-Shard,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_LargeDungeonWind_Debris_A_01.png,616
+AsbObj_StoneRectangle_B_LL_01,Stone Slab,1,0,0,0,10,0,1,0,0,1,-,-,-,Fan,Stone-Slab,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/AsbObj_StoneRectangle_B_LL_01.png,617
+Obj_Tumbleweed_A_01,Tumbleweed,1,0,0,0,5,0,1,0,0,1,-,-,-,-,Tumbleweed,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Obj_Tumbleweed_A_01.png,618
+DgnObj_FloatingWater_A_01_ForAttachment,Water Globule,1,0,0,0,1,0,1,0,0,1,Water,-,-,-,Water-Globule,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_FloatingWater_A_01.png,619
+AsbObj_WoodWheel_A_01,Wheel,1,0,0,0,5,0,1,0,0,1,-,-,-,-,Wheel,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/AsbObj_WoodWheel_A_01.png,620
+DgnObj_BoardLight_A,Wire Mesh,1,0,0,0,15,0,1,0,0,1,-,-,-,-,Wire-Mesh,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/DgnObj_BoardLight_A.png,621
+Kibako_Contain_01,Wooden Box,1,0,0,0,5,0,1,0,1,1,-,-,-,-,Wooden-Box,Attach,Attach,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Objects/Kibako_Contain_01.png,622

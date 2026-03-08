@@ -1,0 +1,150 @@
+ActorID,Name,HP,Element,FireDamage,FireDamageContinuous,CanFreeze,IceDamage,ShockDamage,WaterDamage,RijuDamage,AncientBladeDefeat,IsRock,CanSneakstrike,CanMeleeHeadshot,HeadshotMultiplier,ArrowMultiplier,BeamMultiplier,BombMultiplier,IconURL,SortOrder
+Enemy_Chuchu_Junior,Chuchu (Small),10,-,10,1,0,10,10,0,10,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Chuchu_Junior_Icon.png,1
+Enemy_Chuchu_Middle,Chuchu (Medium),20,-,10,1,0,10,20,0,20,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Chuchu_Junior_Icon.png,2
+Enemy_Chuchu_Senior,Chuchu (Large),48,-,10,1,0,10,20,0,48,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Chuchu_Junior_Icon.png,3
+Enemy_Chuchu_Fire_Junior,Fire Chuchu (Small),10,Fire,0,0,0,10,10,10,10,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Chuchu_Fire_Junior_Icon.png,4
+Enemy_Chuchu_Fire_Middle,Fire Chuchu (Medium),20,Fire,0,0,0,20,20,20,20,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Chuchu_Fire_Junior_Icon.png,5
+Enemy_Chuchu_Fire_Senior,Fire Chuchu (Large),48,Fire,0,0,0,48,20,48,48,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Chuchu_Fire_Junior_Icon.png,6
+Enemy_Chuchu_Ice_Junior,Ice Chuchu (Small),10,Ice,10,0,0,0,10,0,10,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Chuchu_Ice_Junior_Icon.png,7
+Enemy_Chuchu_Ice_Middle,Ice Chuchu (Medium),20,Ice,20,0,0,0,20,0,20,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Chuchu_Ice_Junior_Icon.png,8
+Enemy_Chuchu_Ice_Senior,Ice Chuchu (Large),48,Ice,48,0,0,0,20,0,48,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Chuchu_Ice_Junior_Icon.png,9
+Enemy_Chuchu_Electric_Junior,Electric Chuchu (Small),10,Shock,10,1,0,10,0,0,0,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Chuchu_Electric_Junior_Icon.png,10
+Enemy_Chuchu_Electric_Middle,Electric Chuchu (Medium),20,Shock,10,1,0,10,0,0,0,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Chuchu_Electric_Junior_Icon.png,11
+Enemy_Chuchu_Electric_Senior,Electric Chuchu (Large),48,Shock,10,1,0,10,0,0,0,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Chuchu_Electric_Junior_Icon.png,12
+Enemy_Keese,Keese,1,-,1,0,0,1,1,0,1,1,0,0,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Keese_Icon.png,13
+Enemy_Keese_Fire,Fire Keese,1,Fire,0,0,0,1,1,1,1,1,0,0,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Keese_Fire_Icon.png,14
+Enemy_Keese_Ice,Ice Keese,1,Ice,1,0,0,0,1,0,1,1,0,0,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Keese_Ice_Icon.png,15
+Enemy_Keese_Electric,Electric Keese,1,Shock,1,0,0,1,0,0,0,1,0,0,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Keese_Electric_Icon.png,16
+Enemy_Octarock,Water Octorok,8,-,8,0,1,8,8,0,8,1,0,0,0,2,10,1,10,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Octarock_Icon.png,17
+Enemy_Octarock_Forest,Forest Octorok,8,-,8,0,1,8,8,0,8,1,0,0,0,2,10,1,10,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Octarock_Forest_Icon.png,18
+Enemy_Octarock_Stone,Rock Octorok,8,-,8,0,1,8,8,0,8,1,0,0,0,2,10,1,10,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Octarock_Stone_Icon.png,19
+Enemy_Octarock_Snow,Snow Octorok,8,-,8,0,1,8,8,0,8,1,0,0,0,2,10,1,10,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Octarock_Snow_Icon.png,20
+Enemy_Octarock_Desert,Treasure Octorok,8,-,8,0,1,8,8,0,8,1,0,0,0,2,10,1,10,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Octarock_Desert_Icon.png,21
+Enemy_Wizzrobe_Fire,Fire Wizzrobe,150,Fire,0,0,0,150,20,0,60,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Wizzrobe_Fire_Icon.png,22
+Enemy_Wizzrobe_Ice,Ice Wizzrobe,150,Ice,150,0,0,0,20,0,60,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Wizzrobe_Ice_Icon.png,23
+Enemy_Wizzrobe_Electric,Electric Wizzrobe,150,Shock,10,5,1,10,0,0,0,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Wizzrobe_Electric_Icon.png,24
+Enemy_Wizzrobe_Fire_Senior,Meteo Wizzrobe,300,Fire,0,0,0,300,20,0,60,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Wizzrobe_Fire_Senior_Icon.png,25
+Enemy_Wizzrobe_Ice_Senior,Blizzrobe,300,Ice,300,0,0,0,20,0,60,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Wizzrobe_Ice_Senior_Icon.png,26
+Enemy_Wizzrobe_Electric_Senior,Thunder Wizzrobe,300,Shock,10,5,1,10,0,0,0,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Wizzrobe_Electric_Senior_Icon.png,27
+Enemy_LikeLike_Plane,Like Like,200,-,3,3,1,10,20,0,60,1,0,0,1,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_LikeLike_Plane_Icon.png,28
+Enemy_LikeLike_Fire,Fire Like,250,Fire,0,0,1,10,20,0,60,1,0,0,1,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_LikeLike_Fire_Icon.png,29
+Enemy_LikeLike_Ice,Ice Like,250,Ice,3,3,0,0,20,0,60,1,0,0,1,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_LikeLike_Ice_Icon.png,30
+Enemy_LikeLike_Electric,Shock Like,400,Shock,3,3,1,10,0,0,60,1,0,0,1,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_LikeLike_Electric_Icon.png,31
+Enemy_LikeLike_Crack,Rock Like,250,-,3,3,1,10,20,0,60,1,0,0,1,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_LikeLike_Crack_Icon.png,32
+Enemy_Treant_Broadleaf,Evermean,40,-,10,15,0,0,0,0,40,1,0,0,0,1,1,1,100,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Treant_Broadleaf_Icon.png,33
+Enemy_Toby_Junior,Aerocuda,2,-,2,2,1,2,2,0,2,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Toby_Junior_Icon.png,34
+Enemy_Zombie_Junior,Gibdo,60,-,10,4,1,10,10,10,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Zombie_Junior_Icon.png,35
+Enemy_Zombie_Boss_Junior,Moth Gibdo,40,-,10,4,1,10,10,10,40,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Zombie_Boss_Junior_Icon.png,36
+Enemy_Bokoblin_Junior,Bokoblin,25,-,3,3,1,10,20,0,25,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Bokoblin_Junior_Icon.png,37
+Enemy_Bokoblin_Armor_Junior,Bokoblin (Armored),65,-,3,3,0,10,20,0,60,1,1,1,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Bokoblin_Junior_Icon.png,38
+Enemy_Bokoblin_Guard_Junior,Bokoblin (Lookout),25,-,3,3,1,10,20,0,25,1,0,1,0,10,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Bokoblin_Junior_Icon.png,39
+Enemy_Bokoblin_Middle,Blue Bokoblin,72,-,3,5,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Bokoblin_Middle_Icon.png,40
+Enemy_Bokoblin_Armor_Middle,Blue Bokoblin (Armored),112,-,3,5,0,10,20,0,60,1,1,1,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Bokoblin_Middle_Icon.png,41
+Enemy_Bokoblin_Guard_Middle,Blue Bokoblin (Lookout),72,-,3,5,1,10,20,0,60,1,0,1,0,10,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Bokoblin_Middle_Icon.png,42
+Enemy_Bokoblin_Senior,Black Bokoblin,240,-,3,5,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Bokoblin_Senior_Icon.png,43
+Enemy_Bokoblin_Armor_Senior,Black Bokoblin (Armored),280,-,3,5,0,10,20,0,60,1,1,1,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Bokoblin_Senior_Icon.png,44
+Enemy_Bokoblin_Dark,Silver Bokoblin,720,-,3,5,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Bokoblin_Dark_Icon.png,45
+Enemy_Bokoblin_Armor_Dark,Silver Bokoblin (Armored),760,-,3,5,0,10,20,0,60,1,1,1,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Bokoblin_Dark_Icon.png,46
+Enemy_Bokoblin_Bone_Junior,Stalkoblin,1,-,1,0,1,1,1,0,1,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Bokoblin_Bone_Junior_Icon.png,47
+Enemy_Bokoblin_Boss_Junior,Boss Bokoblin,200,-,3,3,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Bokoblin_Boss_Junior_Icon.png,48
+Enemy_Bokoblin_Boss_Middle,Blue Boss Bokoblin,400,-,3,3,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Bokoblin_Boss_Middle_Icon.png,49
+Enemy_Bokoblin_Boss_Senior,Black Boss Bokoblin,750,-,3,3,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Bokoblin_Boss_Senior_Icon.png,50
+Enemy_Bokoblin_Boss_Dark,Silver Boss Bokoblin,"1,200",-,3,3,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Bokoblin_Boss_Dark_Icon.png,51
+Enemy_Moriblin_Junior,Moblin,62,-,10,5,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Moriblin_Junior_Icon.png,52
+Enemy_Moriblin_Junior_Lookout_Cliff,Moblin (Lookout),62,-,10,5,1,10,20,0,60,1,0,1,0,10,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Moriblin_Junior_Icon.png,53
+Enemy_Moriblin_Middle,Blue Moblin,144,-,10,5,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Moriblin_Middle_Icon.png,54
+Enemy_Moriblin_Senior,Black Moblin,360,-,10,5,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Moriblin_Senior_Icon.png,55
+Enemy_Moriblin_Dark,Silver Moblin,"1,080",-,10,5,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Moriblin_Dark_Icon.png,56
+Enemy_Moriblin_Bone_Junior,Stalmoblin,1,-,1,0,1,1,1,0,1,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Moriblin_Bone_Junior_Icon.png,57
+Enemy_Lizalfos_Junior,Lizalfos,50,-,10,5,1,10,20,0,50,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Lizalfos_Junior_Icon.png,58
+Enemy_Lizalfos_Guard_Junior,Lizalfos (Lookout),50,-,10,5,1,10,20,0,50,1,0,1,0,10,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Lizalfos_Junior_Icon.png,59
+Enemy_Lizalfos_Middle,Blue Lizalfos,120,-,10,5,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Lizalfos_Middle_Icon.png,60
+Enemy_Lizalfos_Guard_Middle,Blue Lizalfos (Lookout),120,-,10,5,1,10,20,0,60,1,0,1,0,10,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Lizalfos_Middle_Icon.png,61
+Enemy_Lizalfos_Senior,Black Lizalfos,288,-,10,5,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Lizalfos_Senior_Icon.png,62
+Enemy_Lizalfos_Dark,Silver Lizalfos,864,-,10,5,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Lizalfos_Dark_Icon.png,63
+Enemy_Lizalfos_Fire,Fire-Breath Lizalfos,160,Fire,0,0,0,160,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Lizalfos_Fire_Icon.png,64
+Enemy_Lizalfos_Ice,Ice-Breath Lizalfos,160,Ice,160,0,0,0,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Lizalfos_Ice_Icon.png,65
+Enemy_Lizalfos_Electric,Electric Lizalfos,288,Shock,10,5,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Lizalfos_Electric_Icon.png,66
+Enemy_Lizalfos_Bone_Junior,Stalizalfos,1,-,1,0,1,1,1,0,1,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Lizalfos_Bone_Junior_Icon.png,67
+Enemy_Horablin_Junior,Horriblin,35,-,10,5,1,10,20,0,35,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Horablin_Junior_Icon.png,68
+Enemy_Horablin_Guard_Junior,Horriblin (Lookout),35,-,10,5,1,10,20,0,35,1,0,1,0,10,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Horablin_Junior_Icon.png,69
+Enemy_Horablin_Middle,Blue Horriblin,106,-,10,5,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Horablin_Middle_Icon.png,70
+Enemy_Horablin_Guard_Middle,Blue Horriblin (Lookout),106,-,10,5,1,10,20,0,60,1,0,1,0,10,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Horablin_Middle_Icon.png,71
+Enemy_Horablin_Senior,Black Horriblin,280,-,10,5,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Horablin_Senior_Icon.png,72
+Enemy_Horablin_Dark,Silver Horriblin,840,-,10,5,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Horablin_Dark_Icon.png,73
+Enemy_Lynel_Junior,Lynel,"2,000",-,0,0,0,0,0,0,60,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Lynel_Junior_Icon.png,74
+Enemy_Lynel_Boss,Lynel (Armored),"2,500",-,0,0,0,0,0,0,60,1,1,0,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Lynel_Junior_Icon.png,75
+Enemy_Lynel_Middle,Blue-Maned Lynel,"3,000",-,0,0,0,0,0,0,60,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Lynel_Middle_Icon.png,76
+Enemy_Lynel_Boss_Middle,Blue-Maned Lynel (Armored),"3,500",-,0,0,0,0,0,0,60,1,1,0,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Lynel_Middle_Icon.png,77
+Enemy_Lynel_Senior,White-Maned Lynel,"4,000",-,0,0,0,0,0,0,60,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Lynel_Senior_Icon.png,78
+Enemy_Lynel_Boss_Senior,White-Maned Lynel (Armored),"4,500",-,0,0,0,0,0,0,60,1,1,0,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Lynel_Senior_Icon.png,79
+Enemy_Lynel_Dark,Silver Lynel,"5,000",-,0,0,0,0,0,0,60,1,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Lynel_Dark_Icon.png,80
+Enemy_Lynel_Boss_Dark,Silver Lynel (Armored),"5,500",-,0,0,0,0,0,0,60,1,1,0,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Lynel_Dark_Icon.png,81
+Enemy_Zonau_Robot_Junior,Soldier Construct I,15,-,3,1,1,10,15,0,15,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Zonau_Robot_Junior_Icon.png,82
+Enemy_Zonau_Robot_Junior_Lookout,Soldier Construct I (Lookout),15,-,3,1,1,10,15,0,15,1,0,1,0,2,10,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Zonau_Robot_Junior_Icon.png,83
+Enemy_Zonau_Robot_Middle,Soldier Construct II,72,-,3,1,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Zonau_Robot_Middle_Icon.png,84
+Enemy_Zonau_Robot_Middle_Lookout,Soldier Construct II (Lookout),72,-,3,1,1,10,20,0,60,1,0,1,0,2,10,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Zonau_Robot_Middle_Icon.png,85
+Enemy_Zonau_Robot_Senior,Soldier Construct III,160,-,3,1,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Zonau_Robot_Senior_Icon.png,86
+Enemy_Zonau_Robot_Dark,Soldier Construct IV,720,-,3,1,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Zonau_Robot_Dark_Icon.png,87
+Enemy_Zonau_Golem_Junior,Captain Construct I,80,-,3,3,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Zonau_Golem_Junior_Icon.png,88
+Enemy_Zonau_Golem_Middle,Captain Construct II,200,-,3,3,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Zonau_Golem_Middle_Icon.png,89
+Enemy_Zonau_Golem_Senior,Captain Construct III,380,-,3,3,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Zonau_Golem_Senior_Icon.png,90
+Enemy_Zonau_Golem_Dark,Captain Construct IV,"1,200",-,3,3,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Zonau_Golem_Dark_Icon.png,91
+Enemy_CDungeon_Practice,Training Construct,80,-,0,0,0,0,0,0,0,0,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_CDungeon_Practice_Icon.png,92
+Enemy_Zonau_BlockMaster_Junior_Beginning,Flux Construct I (Great Sky Island),200,-,0,0,0,0,0,0,60,0,0,0,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Zonau_BlockMaster_Junior_Icon.png,93
+Enemy_Zonau_BlockMaster_Junior,Flux Construct I,360,-,0,0,0,0,0,0,60,0,0,0,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Zonau_BlockMaster_Junior_Icon.png,94
+Enemy_Zonau_BlockMaster_Middle,Flux Construct II,720,-,0,0,0,0,0,0,60,0,0,0,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Zonau_BlockMaster_Middle_Icon.png,95
+Enemy_Zonau_BlockMaster_Senior,Flux Construct III,"1,080",-,0,0,0,0,0,0,60,0,0,0,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Zonau_BlockMaster_Senior_Icon.png,96
+Enemy_Assassin_Junior,Yiga Footsoldier,72,-,10,5,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Assassin_Junior_Icon.png,97
+Enemy_Assassin_Shooter_Junior,Yiga Footsoldier (Bow),64,-,10,5,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Assassin_Junior_Icon.png,98
+Enemy_Assassin_Junior_GateKeeper,Yiga Footsoldier (Yiga Hideouts),72,-,10,5,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Assassin_Junior_Icon.png,99
+Enemy_Assassin_Junior_Rider,Yiga Footsoldier (Depths Hideouts),1,-,1,0,1,1,1,0,1,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Assassin_Junior_Icon.png,100
+Enemy_Assassin_Junior_Shooter_Subordinates,Yiga Footsoldier (Master Kohga Battle),1,-,1,0,1,1,1,0,1,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Assassin_Junior_Icon.png,101
+Enemy_Assassin_Middle,Yiga Blademaster,400,-,10,5,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Assassin_Middle_Icon.png,102
+Enemy_Assassin_Middle_Gatekeeper,Yiga Blademaster (Yiga Hideouts),400,-,10,5,1,10,20,0,60,1,0,1,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Assassin_Middle_Icon.png,103
+Enemy_Assassin_Senior,Master Kohga (Abandoned Lanayru Mine),"1,200",-,0,0,0,0,0,0,60,0,0,0,0,2,1,0.2,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Assassin_Senior_Icon.png,104
+Enemy_Kohga_GolemRider,Master Kohga's Ultimate Weapon,"2,200",-,0,0,0,10,0,0,60,0,0,0,0,2,1,0.2,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Screenshots/Enemy_Kohga_Golem_Icon.png,105
+Enemy_Golem_Little,Stone Pebblit,20,-,0,0,0,0,0,0,20,1,1,0,0,1,1,1,10,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Golem_Little_Icon.png,106
+Enemy_Golem_Little_Fire,Igneo Pebblit,20,-,0,0,0,0,0,0,20,1,1,0,0,1,1,1,10,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Golem_Little_Fire_Icon.png,107
+Enemy_Golem_Little_Ice,Frost Pebblit,20,-,0,0,0,0,0,0,20,1,1,0,0,1,1,1,10,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Golem_Little_Ice_Icon.png,108
+Enemy_Golem_Junior,Stone Talus,380,-,0,0,0,0,0,0,70,0,1,0,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Golem_Junior_Icon.png,109
+Enemy_Golem_Middle,Stone Talus (Luminous),620,-,0,0,0,0,0,0,70,0,1,0,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Golem_Middle_Icon.png,110
+Enemy_Golem_Senior,Stone Talus (Rare),"1,080",-,0,0,0,0,0,0,70,0,1,0,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Golem_Senior_Icon.png,111
+Enemy_Golem_Fort_A,Battle Talus,380,-,0,0,0,0,0,0,70,0,1,0,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Golem_Fort_A_Icon.png,112
+Enemy_Golem_Fire,Igneo Talus,"1,000",-,0,0,0,0,0,0,70,0,1,0,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Golem_Fire_Icon.png,113
+Enemy_Golem_Ice,Frost Talus,"1,000",-,0,0,0,0,0,0,70,0,1,0,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Golem_Ice_Icon.png,114
+Enemy_Giant_Junior,Hinox,600,-,0,0,0,0,10,0,60,0,0,0,1,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Giant_Junior_Icon.png,115
+Enemy_Giant_Middle,Blue Hinox,800,-,0,0,0,0,10,0,60,0,0,0,1,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Giant_Middle_Icon.png,116
+Enemy_Giant_Senior,Black Hinox,"1,000",-,0,0,0,0,10,0,60,0,0,0,1,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Giant_Senior_Icon.png,117
+Enemy_Giant_Bone,Stalnox,"1,000",-,0,0,0,0,10,0,60,0,0,0,1,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Giant_Bone_Icon.png,118
+Enemy_Sandworm,Molduga,"1,500",-,0,0,0,0,0,0,60,0,0,0,0,1.2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Sandworm_Icon.png,119
+Enemy_Drake_Fire,Flame Gleeok,"8,000",Fire,0,0,0,0,0,0,60,0,0,0,1,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Drake_Fire_Icon.png,120
+Enemy_Drake_Ice,Frost Gleeok,"8,000",Ice,0,0,0,0,0,0,60,0,0,0,1,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Drake_Ice_Icon.png,121
+Enemy_Drake_Electric,Thunder Gleeok,"8,000",Shock,0,0,0,0,0,0,60,0,0,0,1,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Drake_Electric_Icon.png,122
+Enemy_Drake_Mix_Fire,King Gleeok (Flame Head),"12,000",Fire,0,0,0,0,0,0,60,0,0,0,1,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Drake_Mix_Icon.png,123
+Enemy_Drake_Mix_Ice,King Gleeok (Frost Head),"12,000",Ice,0,0,0,0,0,0,60,0,0,0,1,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Drake_Mix_Icon.png,124
+Enemy_Drake_Mix_Electric,King Gleeok (Thunder Head),"12,000",Shock,0,0,0,0,0,0,60,0,0,0,1,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Drake_Mix_Icon.png,125
+Enemy_Mogurudo_Baby_Junior,Little Frox,16,-,10,3,1,10,16,0,16,1,1,0,0,20,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Mogurudo_Baby_Junior_Icon.png,126
+Enemy_Mogurudo_Junior,Frox,700,-,0,0,0,0,0,0,1,0,1,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Mogurudo_Junior_Icon.png,127
+Enemy_Mogurudo_Middle,Obsidian Frox,"1,350",-,0,0,0,0,0,0,1,0,1,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Mogurudo_Middle_Icon.png,128
+Enemy_Mogurudo_Senior,Blue-White Frox,"2,100",-,0,0,0,0,0,0,1,0,1,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Mogurudo_Senior_Icon.png,129
+Enemy_DungeonBoss_Goron,Marbled Gohma (4th Boss),"2,000",-,0,0,0,0,0,0,60,0,0,0,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_DungeonBoss_Goron_Icon.png,130
+Enemy_DungeonBoss_Goron_Uncleared,Marbled Gohma (Final Boss),"2,000",-,0,0,0,0,0,0,60,0,0,0,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_DungeonBoss_Goron_Icon.png,131
+Enemy_DungeonBoss_Goron_Underground,Marbled Gohma (Depths),"2,000",-,0,0,0,0,0,0,60,0,0,0,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_DungeonBoss_Goron_Icon.png,132
+Enemy_LikeLike_Tar,Sludge Like,"1,000",-,3,3,1,10,20,0,60,0,0,0,1,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_LikeLike_Tar_Icon.png,133
+Enemy_DungeonBoss_Zora,Mucktorok (4th Boss),"1,950",-,0,0,0,0,20,0,60,0,0,0,0,1,0.6,0.2,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_DungeonBoss_Zora_Icon.png,134
+Enemy_DungeonBoss_Zora_Uncleared,Mucktorok (Final Boss),"1,950",-,0,0,0,0,20,0,60,0,0,0,0,1,0.6,0.2,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_DungeonBoss_Zora_Icon.png,135
+Enemy_DungeonBoss_Zora_Underground,Mucktorok (Depths),"2,850",-,0,0,0,0,20,0,60,0,0,0,0,1,0.6,0.2,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_DungeonBoss_Zora_Icon.png,136
+Enemy_DungeonBoss_Gerudo,Queen Gibdo (4th Boss),"3,178",-,25,20,1,25,25,25,150,0,0,0,0,1.5,1,0.2,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_DungeonBoss_Gerudo_Icon.png,137
+Enemy_DungeonBoss_Gerudo_Uncleared,Queen Gibdo (Final Boss),"3,178",-,25,20,1,25,25,25,150,0,0,0,0,1.5,1,0.2,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_DungeonBoss_Gerudo_Icon.png,138
+Enemy_DungeonBoss_Gerudo_Underground,Queen Gibdo (Depths),"2,800",-,25,20,1,25,25,25,150,0,0,0,0,1.5,1,0.2,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_DungeonBoss_Gerudo_Icon.png,139
+Enemy_DungeonBoss_Zonau,Seized Construct,"20,000",-,10,3,1,10,10,0,60,0,0,0,0,1,1,0.2,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_DungeonBoss_Zonau_Icon.png,140
+Enemy_DungeonBoss_Zonau_Uncleared,Seized Construct (Final Boss),"20,000",-,10,3,1,10,10,0,60,0,0,0,0,1,1,0.2,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_DungeonBoss_Zonau_Icon.png,141
+MiasmaTentacle,Gloom Spawn,"1,250",-,3,3,1,10,20,0,60,0,0,0,0,2,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Screenshots/MiasmaTentacle_Icon.jpg,142
+MiasmaSwarm,Phantom Ganon (Gloom Spawn),"1,200",-,0,0,0,0,0,0,60,0,0,0,0,2,1,0.2,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_PhantomGanon_Icon.png,143
+MiasmaSwarm_DekuTree,Phantom Ganon (Deku Tree),"1,800",-,0,0,0,0,0,0,60,0,0,0,0,2,1,0.2,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_PhantomGanon_Icon.png,144
+Enemy_PhantomGanon,Phantom Ganon (Boss),"4,500",-,0,0,0,0,0,0,60,0,0,0,0,2,1,0.2,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_PhantomGanon_Icon.png,145
+Enemy_Ganondorf,Demon King Ganondorf,"2,500",-,0,0,0,0,0,0,60,0,0,0,0,2,1,0.2,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Ganondorf_Icon.png,146
+Enemy_Ganondorf_Miasma,Demon King Ganondorf (2nd Form),"5,000",-,0,0,0,0,0,0,60,0,0,0,0,2,1,0.2,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Ganondorf_Miasma_Icon.png,147
+Ganondorf_Miasma_Parturition,Demon King Ganondorf (2nd Form) Clone,900,-,0,0,0,0,0,0,60,0,0,0,0,2,1,0.2,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Ganondorf_Miasma_Icon.png,148
+Enemy_Dragon_Darkness,Demon Dragon,"6,000",-,0,0,0,0,0,0,60,0,0,0,0,1,1,1,1,https://raw.githubusercontent.com/TOTKSheet/TOTKImages/main/Compendium/Enemy_Dragon_Darkness_Icon.png,149

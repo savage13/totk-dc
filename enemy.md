@@ -1,0 +1,149 @@
+- Aerocuda
+- Battle Talus
+- Black Bokoblin
+- Black Bokoblin (Armored)
+- Black Boss Bokoblin
+- Black Hinox
+- Black Horriblin
+- Black Lizalfos
+- Black Moblin
+- Blizzrobe
+- Blue Bokoblin
+- Blue Bokoblin (Armored)
+- Blue Bokoblin (Lookout)
+- Blue Boss Bokoblin
+- Blue Hinox
+- Blue Horriblin
+- Blue Horriblin (Lookout)
+- Blue Lizalfos
+- Blue Lizalfos (Lookout)
+- Blue Moblin
+- Blue-Maned Lynel
+- Blue-Maned Lynel (Armored)
+- Blue-White Frox
+- Bokoblin
+- Bokoblin (Armored)
+- Bokoblin (Lookout)
+- Boss Bokoblin
+- Captain Construct I
+- Captain Construct II
+- Captain Construct III
+- Captain Construct IV
+- Chuchu (Large)
+- Chuchu (Medium)
+- Chuchu (Small)
+- Demon Dragon
+- Demon King Ganondorf
+- Demon King Ganondorf (2nd Form)
+- Demon King Ganondorf (2nd Form) Clone
+- Electric Chuchu (Large)
+- Electric Chuchu (Medium)
+- Electric Chuchu (Small)
+- Electric Keese
+- Electric Lizalfos
+- Electric Wizzrobe
+- Evermean
+- Fire Chuchu (Large)
+- Fire Chuchu (Medium)
+- Fire Chuchu (Small)
+- Fire Keese
+- Fire Like
+- Fire Wizzrobe
+- Fire-Breath Lizalfos
+- Flame Gleeok
+- Flux Construct I
+- Flux Construct I (Great Sky Island)
+- Flux Construct II
+- Flux Construct III
+- Forest Octorok
+- Frost Gleeok
+- Frost Pebblit
+- Frost Talus
+- Frox
+- Gibdo
+- Gloom Spawn
+- Hinox
+- Horriblin
+- Horriblin (Lookout)
+- Ice Chuchu (Large)
+- Ice Chuchu (Medium)
+- Ice Chuchu (Small)
+- Ice Keese
+- Ice Like
+- Ice Wizzrobe
+- Ice-Breath Lizalfos
+- Igneo Pebblit
+- Igneo Talus
+- Keese
+- King Gleeok (Flame Head)
+- King Gleeok (Frost Head)
+- King Gleeok (Thunder Head)
+- Like Like
+- Little Frox
+- Lizalfos
+- Lizalfos (Lookout)
+- Lynel
+- Lynel (Armored)
+- Marbled Gohma (4th Boss)
+- Marbled Gohma (Depths)
+- Marbled Gohma (Final Boss)
+- Master Kohga (Abandoned Lanayru Mine)
+- Master Kohga's Ultimate Weapon
+- Meteo Wizzrobe
+- Moblin
+- Moblin (Lookout)
+- Molduga
+- Moth Gibdo
+- Mucktorok (4th Boss)
+- Mucktorok (Depths)
+- Mucktorok (Final Boss)
+- Obsidian Frox
+- Phantom Ganon (Boss)
+- Phantom Ganon (Deku Tree)
+- Phantom Ganon (Gloom Spawn)
+- Queen Gibdo (4th Boss)
+- Queen Gibdo (Depths)
+- Queen Gibdo (Final Boss)
+- Rock Like
+- Rock Octorok
+- Seized Construct
+- Seized Construct (Final Boss)
+- Shock Like
+- Silver Bokoblin
+- Silver Bokoblin (Armored)
+- Silver Boss Bokoblin
+- Silver Horriblin
+- Silver Lizalfos
+- Silver Lynel
+- Silver Lynel (Armored)
+- Silver Moblin
+- Sludge Like
+- Snow Octorok
+- Soldier Construct I
+- Soldier Construct I (Lookout)
+- Soldier Construct II
+- Soldier Construct II (Lookout)
+- Soldier Construct III
+- Soldier Construct IV
+- Stalizalfos
+- Stalkoblin
+- Stalmoblin
+- Stalnox
+- Stone Pebblit
+- Stone Talus
+- Stone Talus (Luminous)
+- Stone Talus (Rare)
+- Thunder Gleeok
+- Thunder Wizzrobe
+- Training Construct
+- Treasure Octorok
+- Water Octorok
+- White-Maned Lynel
+- White-Maned Lynel (Armored)
+- Yiga Blademaster
+- Yiga Blademaster (Yiga Hideouts)
+- Yiga Footsoldier
+- Yiga Footsoldier (Bow)
+- Yiga Footsoldier (Depths Hideouts)
+- Yiga Footsoldier (Master Kohga Battle)
+- Yiga Footsoldier (Yiga Hideouts)

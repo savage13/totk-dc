@@ -1,0 +1,623 @@
+- Acorn
+- Aerocuda Eyeball
+- Aerocuda Wing
+- Amber
+- Ancient Blade
+- Apple
+- Armor Shard (Bokoblin)
+- Armor Shard (Lynel)
+- Armoranth
+- Baked Apple
+- Baked Fortified Pumpkin
+- Baked Golden Apple
+- Baked Palm Fruit
+- Baked Sun Pumpkin
+- Ball
+- Balloon
+- Barrel
+- Barrel (Shrine)
+- Barricade
+- Basket
+- Battery
+- Battery (Shrine)
+- Beam Emitter
+- Big Battery
+- Big Hearty Radish
+- Big Hearty Truffle
+- Big Wheel
+- Biggoron's Sword
+- Bird Egg
+- Black Bokoblin Horn
+- Black Boss Bokoblin Horn
+- Black Hinox Horn
+- Black Horriblin Horn
+- Black Lizalfos Horn
+- Black Lizalfos Tail
+- Black Moblin Horn
+- Blackened Crab
+- Block #1
+- Block #2
+- Block #3
+- Block #4
+- Blue Bokoblin Horn
+- Blue Boss Bokoblin Horn
+- Blue Hinox Horn
+- Blue Horriblin Horn
+- Blue Lizalfos Horn
+- Blue Lizalfos Tail
+- Blue Moblin Horn
+- Blue Nightshade
+- Blue Rock
+- Blue-Maned Lynel Mace Horn
+- Blue-Maned Lynel Saber Horn
+- Blue-Seal Toy
+- Blue-White Frox Fang
+- Board
+- Boat (Tenoko Island)
+- Boat Oar
+- Boko Bow
+- Boko Shield
+- Bokoblin Arm
+- Bokoblin Fang
+- Bokoblin Guts
+- Bokoblin Horn
+- Bomb Barrel (Lv1)
+- Bomb Barrel (Lv2)
+- Bomb Barrel (Lv3)
+- Bomb Barrel (Shrine Lv1)
+- Bomb Barrel (Shrine Lv2)
+- Bomb Barrel (Timed)
+- Bomb Flower
+- Bookcase
+- Boomerang
+- Boomerang*
+- Boss Bokoblin Fang
+- Boss Bokoblin Guts
+- Boss Bokoblin Horn
+- Boulder (Death Mountain)
+- Boulder (Like Like)
+- Boulder #1
+- Boulder #2
+- Boulder #3
+- Boulder #4
+- Boulder #5
+- Boulder #6
+- Boulder Breaker
+- Bowl
+- Brightbloom Seed
+- Brightcap
+- Cage
+- Campfire Egg
+- Candle
+- Cane Sugar
+- Cannon
+- Captain Construct I Horn
+- Captain Construct II Horn
+- Captain Construct III Horn
+- Captain Construct IV Horn
+- Cart
+- Charred Pepper
+- Chickaloo Tree Nut
+- Chillshroom
+- Chuchu Jelly
+- Cobble Crusher
+- Cobble Crusher*
+- Colgera Jaw
+- Construct Bow
+- Construct Head
+- Cool Safflina
+- Courser Bee Honey
+- Dark Clump
+- Daybreaker
+- Dazzlefruit
+- Demon King's Bow
+- Desk
+- Diamond
+- Dinraal's Claw
+- Dinraal's Horn
+- Dinraal's Scale
+- Dragonbone Boko Bow
+- Dragonbone Boko Shield
+- Duplex Bow
+- Dusk Bow
+- Dusk Claymore
+- Eightfold Blade
+- Eightfold Blade*
+- Eightfold Longblade
+- Eightfold Longblade*
+- Electric Keese Eyeball
+- Electric Keese Wing
+- Electric Lizalfos Horn
+- Electric Lizalfos Tail
+- Electric Safflina
+- Emblazoned Shield
+- Endura Carrot
+- Endura Shroom
+- Enemy Lookout Support Log
+- Evermean Log
+- Evermean Log (Depths)
+- Falcon Bow
+- Fan
+- Farmer's Pitchfork
+- Farming Hoe
+- Farosh's Claw
+- Farosh's Horn
+- Farosh's Scale
+- Feathered Edge
+- Feathered Edge*
+- Feathered Spear
+- Feathered Spear*
+- Fierce Deity Sword
+- Fire Fruit
+- Fire Keese Eyeball
+- Fire Keese Wing
+- Fire Like Stone
+- Fire-Breath Lizalfos Horn
+- Fire-Breath Lizalfos Tail
+- Fisherman's Shield
+- Fishing Harpoon
+- Flame Ball
+- Flame Ball (Extinguished)
+- Flame Emitter
+- Fleet-Lotus Seeds
+- Flint
+- Float
+- Flux Construct I Body Block
+- Flux Construct I Core
+- Flux Construct II Body Block
+- Flux Construct II Core
+- Flux Construct III Body Block
+- Flux Construct III Core
+- Forest Dweller's Bow
+- Forest Dweller's Shield
+- Forest Dweller's Spear
+- Forest Dweller's Spear*
+- Forest Dweller's Sword
+- Forest Dweller's Sword*
+- Fortified Pumpkin
+- Fresh Milk
+- Frost Emitter
+- Frost Talus Heart
+- Frox Fang
+- Frox Fingernail
+- Frox Guts
+- Frozen Arowana
+- Frozen Bass
+- Frozen Bird Drumstick
+- Frozen Bird Thigh
+- Frozen Carp
+- Frozen Cave Fish
+- Frozen Crab
+- Frozen Hearty Bass
+- Frozen Hearty Salmon
+- Frozen Porgy
+- Frozen River Snail
+- Frozen Trout
+- Frozen Whole Bird
+- Gerudo Bow
+- Gerudo Claymore
+- Gerudo Claymore*
+- Gerudo Scimitar
+- Gerudo Scimitar*
+- Gerudo Shield
+- Gerudo Spear
+- Gerudo Spear*
+- Giant Boomerang
+- Giant Boomerang*
+- Giant Brightbloom Seed
+- Gibdo Bone
+- Gibdo Guts
+- Gibdo Wing
+- Gleeok Flame Horn
+- Gleeok Frost Horn
+- Gleeok Guts
+- Gleeok Thunder Horn
+- Gleeok Wing
+- Gloom Club
+- Gloom Rock
+- Gloom Spear
+- Gloom Sword
+- Gnarled Long Stick
+- Gnarled Thick Stick
+- Gnarled Wooden Stick
+- Goat Butter
+- Golden Apple
+- Goron Spice
+- Great Eagle Bow
+- Green-Seal Toy
+- Hard-Boiled Egg
+- Hateno Cheese
+- Hearty Radish
+- Hearty Truffle
+- Hinox Guts
+- Hinox Horn
+- Hinox Toenail
+- Hinox Tooth
+- Homing Cart
+- Hook
+- Horriblin Claw
+- Horriblin Guts
+- Horriblin Horn
+- Hover Stone
+- Hunter's Shield
+- Hydrant
+- Hydromelon
+- Hylian Pine Cone
+- Hylian Rice
+- Hylian Shield
+- Hylian Shroom
+- Hylian Tomato
+- Hyrule Herb
+- Ice #1
+- Ice #2
+- Ice #3
+- Ice #4
+- Ice Fruit
+- Ice Keese Eyeball
+- Ice Keese Wing
+- Ice Like Stone
+- Ice-Breath Lizalfos Horn
+- Ice-Breath Lizalfos Tail
+- Icicle (Frost Gleeok)
+- Icicle (Large)
+- Icicle (Small)
+- Icy Gourmet Meat
+- Icy Meat
+- Icy Prime Meat
+- Igneo Talus Heart
+- Iron Ball (Large)
+- Iron Ball (Largest)
+- Iron Ball (Medium)
+- Iron Ball (Small)
+- Iron Ball (Small) (Light)
+- Iron Ball (Smallest)
+- Iron Ball (Very Large)
+- Iron Box
+- Iron Box (Shrine) #1
+- Iron Box (Shrine) #2
+- Iron Box (Shrine) #3
+- Iron Box (Shrine) #4
+- Iron Lump
+- Iron Pole
+- Ironshroom
+- Keese Eyeball
+- Keese Wing
+- King's Scale
+- Kite Shield
+- Knight's Bow
+- Knight's Broadsword
+- Knight's Broadsword*
+- Knight's Claymore
+- Knight's Claymore*
+- Knight's Halberd
+- Knight's Halberd*
+- Knight's Shield
+- Korok Frond
+- Korok Puzzle Roof Piece (Thick)
+- Korok Puzzle Roof Piece (Thin)
+- Large Zonai Charge
+- Large Zonaite
+- Lattice #1
+- Lattice #2
+- Lattice #3
+- Lattice #4
+- Lava Slab
+- Lift
+- Light
+- Light Dragon's Horn
+- Light Dragon's Scale
+- Light Dragon's Talon
+- Lightscale Trident
+- Like Like Stone
+- Lizal Boomerang
+- Lizal Bow
+- Lizal Shield
+- Lizalfos Arm
+- Lizalfos Horn
+- Lizalfos Tail
+- Lizalfos Talon
+- Log
+- Long Stick
+- Lumber
+- Luminous Stone
+- Luminous Stone Talus Heart
+- Lynel Bow
+- Lynel Guts
+- Lynel Hoof
+- Lynel Mace Horn
+- Lynel Saber Horn
+- Lynel Shield
+- Magic Rod
+- Magic Scepter
+- Magic Staff
+- Marbled Gohma Leg
+- Marbled Rock Roast
+- Metal Mesh Block
+- Metal Plate
+- Mighty Bananas
+- Mighty Construct Bow
+- Mighty Lynel Bow
+- Mighty Lynel Shield
+- Mighty Thistle
+- Mighty Zonaite Longsword
+- Mighty Zonaite Shield
+- Mighty Zonaite Spear
+- Mighty Zonaite Sword
+- Mine Cart
+- Mirror
+- Moblin Arm
+- Moblin Fang
+- Moblin Guts
+- Moblin Horn
+- Molduga Fin
+- Molduga Guts
+- Molduga Jaw
+- Monster Extract
+- Motor
+- Muddle Bud
+- Naydra's Claw
+- Naydra's Horn
+- Naydra's Scale
+- None
+- Obsidian Frox Fang
+- Octo Balloon
+- Octorok Eyeball
+- Octorok Tentacle
+- Oil Jar
+- Old Wooden Bow
+- Old Wooden Shield
+- Opal
+- Palm Fruit
+- Phrenic Bow
+- Pole
+- Pole (Gerudo Mirror)
+- Portable Pot
+- Pot
+- Pot Lid
+- President Hudson Cutout
+- Propeller
+- Puffshroom
+- Queen Gibdo Wing
+- Radiant Shield
+- Raft
+- Rare Stone Talus Heart
+- Raw Bird Drumstick
+- Raw Bird Thigh
+- Raw Gourmet Meat
+- Raw Meat
+- Raw Prime Meat
+- Raw Whole Bird
+- Razorshroom
+- Red Chuchu Jelly
+- Red-Seal Toy
+- Reinforced Lizal Shield
+- Ring Garland
+- Roasted Acorn
+- Roasted Armoranth
+- Roasted Arowana
+- Roasted Bass
+- Roasted Big Radish
+- Roasted Bird Drumstick
+- Roasted Bird Thigh
+- Roasted Carp
+- Roasted Cave Fish
+- Roasted Endura Carrot
+- Roasted Hearty Bass
+- Roasted Hearty Salmon
+- Roasted Hydromelon
+- Roasted Hylian Tomato
+- Roasted Lotus Seeds
+- Roasted Mighty Bananas
+- Roasted Mighty Thistle
+- Roasted Porgy
+- Roasted Radish
+- Roasted Swift Carrot
+- Roasted Tree Nut
+- Roasted Trout
+- Roasted Voltfruit
+- Roasted Whole Bird
+- Roasted Wildberry
+- Rock
+- Rock Roast
+- Rock Salt
+- Rocket
+- Royal Bow
+- Royal Broadsword
+- Royal Broadsword*
+- Royal Claymore
+- Royal Claymore*
+- Royal Guard's Bow
+- Royal Guard's Claymore
+- Royal Guard's Claymore*
+- Royal Guard's Shield
+- Royal Guard's Spear
+- Royal Guard's Spear*
+- Royal Guard's Sword
+- Royal Guard's Sword*
+- Royal Halberd
+- Royal Halberd*
+- Royal Shield
+- Ruby
+- Ruins Rubble (Depths)
+- Ruins Rubble (Gerudo Desert)
+- Ruins Rubble (Lightning Temple)
+- Ruins Rubble (Rising Island Chain)
+- Ruins Rubble (Sky / Sky Mine)
+- Ruins Rubble (Sky) #1
+- Ruins Rubble (Sky) #2
+- Ruins Rubble (Sky) #3
+- Ruins Rubble (Wellspring Island)
+- Ruins Rubble #1
+- Ruins Rubble #2
+- Ruins Rubble #3
+- Rushroom
+- Rusty Broadsword
+- Rusty Claymore
+- Rusty Halberd
+- Rusty Shield
+- Sail
+- Sand-Seal Statue
+- Sapphire
+- Savage Lynel Bow
+- Savage Lynel Shield
+- Scimitar of the Seven
+- Sea-Breeze Boomerang
+- Sea-Breeze Shield
+- Seared Gourmet Steak
+- Seared Prime Steak
+- Seared Steak
+- Shard of Dinraal's Fang
+- Shard of Dinraal's Spike
+- Shard of Farosh's Fang
+- Shard of Farosh's Spike
+- Shard of Light Dragon's Fang
+- Shard of Light Dragon's Spike
+- Shard of Naydra's Fang
+- Shard of Naydra's Spike
+- Shield of the Mind's Eye
+- Shock Emitter
+- Shock Fruit
+- Shock Like Stone
+- Signboard
+- Silent Princess
+- Silent Shroom
+- Silver Bokoblin Horn
+- Silver Boss Bokoblin Horn
+- Silver Horriblin Horn
+- Silver Lizalfos Horn
+- Silver Lizalfos Tail
+- Silver Lynel Mace Horn
+- Silver Lynel Saber Horn
+- Silver Moblin Horn
+- Skyshroom
+- Sled
+- Small Wheel
+- Sneaky River Escargot
+- Snowball (Large)
+- Snowball (Small)
+- Soldier Construct Horn
+- Soldier Construct II Horn
+- Soldier Construct III Horn
+- Soldier Construct IV Horn
+- Soldier's Broadsword
+- Soldier's Broadsword*
+- Soldier's Claymore
+- Soldier's Claymore*
+- Soldier's Spear
+- Soldier's Spear*
+- Soldier’s Bow
+- Soldier’s Shield
+- Soup Ladle
+- Spicy Pepper
+- Spiked Boko Bow
+- Spiked Boko Shield
+- Spiked Iron Ball
+- Spiked Iron Ball (Shrine)
+- Spikes (Armor)
+- Spikes (Bramble)
+- Spikes (Shrine)
+- Spiny Bone
+- Splash Fruit
+- Spring
+- Stabilizer
+- Stake
+- Stalnox Horn
+- Stambulb
+- Stamella Shroom
+- Star Fragment
+- Steel Lizal Bow
+- Steel Lizal Shield
+- Steering Stick
+- Stone
+- Stone Ball
+- Stone Block
+- Stone Box #1
+- Stone Box #2
+- Stone Box #3
+- Stone Box #4
+- Stone Box #5
+- Stone Shard
+- Stone Shard (Wind Temple)
+- Stone Slab
+- Stone Talus Heart
+- Strengthened Lizal Bow
+- Strong Construct Bow
+- Strong Zonaite Longsword
+- Strong Zonaite Shield
+- Strong Zonaite Spear
+- Strong Zonaite Sword
+- Sturdy Long Stick
+- Sturdy Thick Stick
+- Sturdy Wooden Stick
+- Sun Pumpkin
+- Sundelion
+- Sunshroom
+- Swallow Bow
+- Swift Carrot
+- Swift Violet
+- Sword of the Hero
+- Tabantha Wheat
+- Thick Stick
+- Throwing Spear
+- Throwing Spear*
+- Time Bomb
+- Toasted Big Hearty Truffle
+- Toasted Hearty Truffle
+- Toasty Brightcap
+- Toasty Chillshroom
+- Toasty Endura Shroom
+- Toasty Hylian Shroom
+- Toasty Ironshroom
+- Toasty Razorshroom
+- Toasty Rushroom
+- Toasty Silent Shroom
+- Toasty Skyshroom
+- Toasty Stamella Shroom
+- Toasty Sunshroom
+- Toasty Zapshroom
+- Topaz
+- Torch
+- Traveler's Bow
+- Traveler's Claymore
+- Traveler's Claymore*
+- Traveler's Shield
+- Traveler's Spear
+- Traveler's Spear*
+- Traveler's Sword
+- Traveler's Sword*
+- Tree Branch
+- Tumbleweed
+- Voltfruit
+- Warm Safflina
+- Water Globule
+- Wheel
+- White Chuchu Jelly
+- White Sword of the Sky
+- White-Maned Lynel Mace Horn
+- White-Maned Lynel Saber Horn
+- Wildberry
+- Wing
+- Wire Mesh
+- Wood
+- Wooden Bow
+- Wooden Box
+- Wooden Mop
+- Wooden Shield
+- Wooden Stick
+- Yellow Chuchu Jelly
+- Zapshroom
+- Zonai Charge
+- Zonaite
+- Zonaite Bow
+- Zonaite Longsword
+- Zonaite Shield
+- Zonaite Spear
+- Zonaite Sword
+- Zora Bow
+- Zora Longsword
+- Zora Longsword*
+- Zora Shield
+- Zora Spear
+- Zora Spear*
+- Zora Sword
+- Zora Sword*

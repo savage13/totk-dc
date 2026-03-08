@@ -1,0 +1,180 @@
+- Biggoron's Sword
+- Boat Oar
+- Boko Bow
+- Boko Shield
+- Bokoblin Arm
+- Boomerang
+- Boomerang*
+- Boulder Breaker
+- Cobble Crusher
+- Cobble Crusher*
+- Construct Bow
+- Daybreaker
+- Decayed Master Sword
+- Demon King's Bow
+- Dragonbone Boko Bow
+- Dragonbone Boko Shield
+- Duplex Bow
+- Dusk Bow
+- Dusk Claymore
+- Eightfold Blade
+- Eightfold Blade*
+- Eightfold Longblade
+- Eightfold Longblade*
+- Emblazoned Shield
+- Falcon Bow
+- Farmer's Pitchfork
+- Farming Hoe
+- Feathered Edge
+- Feathered Edge*
+- Feathered Spear
+- Feathered Spear*
+- Fierce Deity Sword
+- Fisherman's Shield
+- Fishing Harpoon
+- Forest Dweller's Bow
+- Forest Dweller's Shield
+- Forest Dweller's Spear
+- Forest Dweller's Spear*
+- Forest Dweller's Sword
+- Forest Dweller's Sword*
+- Gerudo Bow
+- Gerudo Claymore
+- Gerudo Claymore*
+- Gerudo Scimitar
+- Gerudo Scimitar*
+- Gerudo Shield
+- Gerudo Spear
+- Gerudo Spear*
+- Giant Boomerang
+- Giant Boomerang*
+- Gloom Club
+- Gloom Spear
+- Gloom Sword
+- Gnarled Long Stick
+- Gnarled Thick Stick
+- Gnarled Wooden Stick
+- Great Eagle Bow
+- Hunter's Shield
+- Hylian Shield
+- Kite Shield
+- Knight's Bow
+- Knight's Broadsword
+- Knight's Broadsword*
+- Knight's Claymore
+- Knight's Claymore*
+- Knight's Halberd
+- Knight's Halberd*
+- Knight's Shield
+- Lightscale Trident
+- Lizal Boomerang
+- Lizal Bow
+- Lizal Shield
+- Lizalfos Arm
+- Long Stick
+- Lynel Bow
+- Lynel Shield
+- Magic Rod
+- Magic Scepter
+- Magic Staff
+- Master Sword
+- Master Sword (Awakened +15)
+- Master Sword (Awakened +30)
+- Master Sword (Prologue)
+- Mighty Construct Bow
+- Mighty Lynel Bow
+- Mighty Lynel Shield
+- Mighty Zonaite Longsword
+- Mighty Zonaite Shield
+- Mighty Zonaite Spear
+- Mighty Zonaite Sword
+- Mineru's Construct
+- Moblin Arm
+- None (Earthwake Technique)
+- Old Wooden Bow
+- Old Wooden Shield
+- Phrenic Bow
+- Pot Lid
+- Radiant Shield
+- Reinforced Lizal Shield
+- Royal Bow
+- Royal Broadsword
+- Royal Broadsword*
+- Royal Claymore
+- Royal Claymore*
+- Royal Guard's Bow
+- Royal Guard's Claymore
+- Royal Guard's Claymore*
+- Royal Guard's Shield
+- Royal Guard's Spear
+- Royal Guard's Spear*
+- Royal Guard's Sword
+- Royal Guard's Sword*
+- Royal Halberd
+- Royal Halberd*
+- Royal Shield
+- Rusty Broadsword
+- Rusty Claymore
+- Rusty Halberd
+- Rusty Shield
+- Savage Lynel Bow
+- Savage Lynel Shield
+- Scimitar of the Seven
+- Sea-Breeze Boomerang
+- Sea-Breeze Shield
+- Shield of the Mind's Eye
+- Soldier's Broadsword
+- Soldier's Broadsword*
+- Soldier's Claymore
+- Soldier's Claymore*
+- Soldier's Spear
+- Soldier's Spear*
+- Soldier’s Bow
+- Soldier’s Shield
+- Soup Ladle
+- Spiked Boko Bow
+- Spiked Boko Shield
+- Steel Lizal Bow
+- Steel Lizal Shield
+- Strengthened Lizal Bow
+- Strong Construct Bow
+- Strong Zonaite Longsword
+- Strong Zonaite Shield
+- Strong Zonaite Spear
+- Strong Zonaite Sword
+- Sturdy Long Stick
+- Sturdy Thick Stick
+- Sturdy Wooden Stick
+- Swallow Bow
+- Sword of the Hero
+- Thick Stick
+- Throwing Spear
+- Throwing Spear*
+- Torch
+- Traveler's Bow
+- Traveler's Claymore
+- Traveler's Claymore*
+- Traveler's Shield
+- Traveler's Spear
+- Traveler's Spear*
+- Traveler's Sword
+- Traveler's Sword*
+- Tree Branch
+- White Sword of the Sky
+- Wooden Bow
+- Wooden Mop
+- Wooden Shield
+- Wooden Stick
+- Zonaite Bow
+- Zonaite Longsword
+- Zonaite Shield
+- Zonaite Spear
+- Zonaite Sword
+- Zora Bow
+- Zora Longsword
+- Zora Longsword*
+- Zora Shield
+- Zora Spear
+- Zora Spear*
+- Zora Sword
+- Zora Sword*

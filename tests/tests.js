@@ -2,7 +2,7 @@
 import * as fs from 'fs'
 import assert from 'node:assert'
 
-import { Weapon, Fuse, Enemy, Input, Calculator } from '../assets/totkdc.js'
+import { Weapon, Fuse, Enemy, Input, Calculator, damage } from '../assets/totkdc.js'
 
 let ntests = 0
 
@@ -12,7 +12,6 @@ function deepStrictPartialEqual(result, expected) {
     }
     let keys = Object.keys(expected)
     for(const key of keys) {
-        console.log(key)
         assert.deepStrictEqual(result[key], expected[key])
     }
 }
@@ -28,6 +27,7 @@ function run_test(test) {
 
     let input = new Input()
     if(test.attackType) { input.attackType = test.attackType }
+    if(test.attackUpMod) { input.attackUpMod = test.attackUpMod }
     if(test.weakened !== undefined) { input.weakened = test.weakened }
     if(test.buff1) { input.buff1 = test.buff1 }
     if(test.buff2) { input.buff2 = test.buff2 }
@@ -35,6 +35,7 @@ function run_test(test) {
     if(test.sageWill !== undefined) { input.sageWill = test.sageWill }
     if(test.hp !== undefined) { input.hp = test.hp }
     if(test.wet !== undefined) { input.wet = test.wet }
+    if(test.frozen !== undefined) { input.frozen = test.frozen }
     if(test.durability !== undefined) { input.durability = test.durability }
 
     let calc = new Calculator(weapon, fuse, enemy, input)
@@ -247,4 +248,38 @@ run_test({weapon: "Eightfold Blade", enemy: "Bokoblin", fuse: "Silver Lynel Sabe
 run_test({weapon: "Royal Guard's Claymore*", enemy: "Lynel", fuse: "Silver Lynel Saber Horn", durability: 1,
           expected: { fusedName: "Silver Lynel Blade", damageOutput: 396 }})
 
+run_test({weapon: "Royal Guard's Claymore*", enemy: "Silver Boss Bokoblin",
+          fuse: "Gibdo Bone", durability: 1,
+          buff1: "Attack Up (Lv3)",
+          buff2: "Bone Weap. Prof.",
+          attackUpMod: 10,
+          attackType: "Sneakstrike",
+          frozen: true,
+          expected: { damageOutput: 24364 }})
+
 console.log(`Ran ${ntests} tests`)
+
+let c = damage("Royal Guard's Claymore*", "Gibdo Bone", "Silver Boss Bokoblin" )
+deepStrictPartialEqual(c, { damageOutput: 84, fusedName: 'Gibdo Claymore' } )
+
+c = damage("Royal Guard's Claymore*", "Gibdo Bone", "Silver Boss Bokoblin", {attackUpMod: 10} )
+deepStrictPartialEqual(c, { damageOutput: 94, fusedName: 'Gibdo Claymore' } )
+c = damage("Royal Guard's Claymore*", "Gibdo Bone", "Silver Boss Bokoblin", {
+    attackUpMod: 10, durability: 1} )
+deepStrictPartialEqual(c, { damageOutput: 376, fusedName: 'Gibdo Claymore' } )
+c = damage("Royal Guard's Claymore*", "Gibdo Bone", "Silver Boss Bokoblin", {
+    attackUpMod: 10, durability: 1, attackType: "Sneakstrike"} )
+deepStrictPartialEqual(c, { damageOutput: 3008, fusedName: 'Gibdo Claymore' } )
+c = damage("Royal Guard's Claymore*", "Gibdo Bone", "Silver Boss Bokoblin", {
+    attackUpMod: 10, durability: 1, attackType: "Sneakstrike", buff1: "Attack Up (Lv3)"} )
+deepStrictPartialEqual(c, { damageOutput: 4512, fusedName: 'Gibdo Claymore' } )
+c = damage("Royal Guard's Claymore*", "Gibdo Bone", "Silver Boss Bokoblin", {
+    attackUpMod: 10, durability: 1, attackType: "Sneakstrike", buff1: "Attack Up (Lv3)",
+    buff2: "Bone Weap. Prof.",
+} )
+deepStrictPartialEqual(c, { damageOutput: 8121, fusedName: 'Gibdo Claymore' } )
+c = damage("Royal Guard's Claymore*", "Gibdo Bone", "Silver Boss Bokoblin", {
+    attackUpMod: 10, durability: 1, attackType: "Sneakstrike", buff1: "Attack Up (Lv3)",
+    buff2: "Bone Weap. Prof.", frozen: true
+} )
+deepStrictPartialEqual(c, { damageOutput: 24364, fusedName: 'Gibdo Claymore' } )

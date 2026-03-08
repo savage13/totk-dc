@@ -20683,6 +20683,18 @@ function weapon_from_sort_order(n) {
 function enemy_from_sort_order(n) {
   return enemy_data_default.find((e) => e.sortOrder == n);
 }
+function damage(weapon, fuse, enemy, input) {
+  let w = Weapon.from_name(weapon);
+  let f = Fuse.from_name(fuse);
+  let e = Enemy.from_name(enemy);
+  if (!w || !f || !e) {
+    console.log(w, f, e);
+    return null;
+  }
+  let i = new Input(input);
+  let c = new Calculator(w, f, e, i);
+  return c.calc();
+}
 var attackOptions = [
   "Standard Attack",
   "Shoot Arrow",
@@ -20891,26 +20903,26 @@ var Input = class {
   freeMode;
   trueDamage;
   sortFuseByAttack;
-  constructor() {
-    this.attackUpMod = 0;
-    this.attackType = "Standard Attack";
-    this.criticalHitMod = false;
-    this.multishot = false;
-    this.zonaite = false;
-    this.sageWill = false;
-    this.durability = 40;
-    this.freezeDurability = false;
-    this.wet = false;
-    this.headshot = false;
-    this.frozen = false;
-    this.weakened = false;
-    this.fence = false;
-    this.hp = 38;
-    this.buff1 = "None";
-    this.buff2 = "None";
-    this.freeMode = false;
-    this.trueDamage = false;
-    this.sortFuseByAttack = false;
+  constructor(options = {}) {
+    this.attackUpMod = options.attackUpMod || 0;
+    this.attackType = options.attackType || "Standard Attack";
+    this.criticalHitMod = options.criticalHitMod || false;
+    this.multishot = options.multishot || false;
+    this.zonaite = options.zonaite || false;
+    this.sageWill = options.sageWill || false;
+    this.durability = options.durability || 40;
+    this.freezeDurability = options.freezeDurability || false;
+    this.wet = options.wet || false;
+    this.headshot = options.headshot || false;
+    this.frozen = options.frozen || false;
+    this.weakened = options.weakened || false;
+    this.fence = options.fence || false;
+    this.hp = options.fp || 38;
+    this.buff1 = options.buff1 || "None";
+    this.buff2 = options.buff2 || "None";
+    this.freeMode = options.freeMode || false;
+    this.trueDamage = options.trueDamage || false;
+    this.sortFuseByAttack = options.sortFuseByAttack || false;
   }
 };
 var Calculator = class _Calculator {
@@ -21169,25 +21181,25 @@ var Calculator = class _Calculator {
       return `${weaponName} (${fuseName} Arrow)`;
     }
     if (weaponType == 4) {
-      return `${adjective} ${baseName} `;
+      return `${adjective} ${baseName}`;
     }
     if (weaponType == 5) {
       return weaponName;
     }
     if (fuseIsWeapon) {
-      return `${adjective} ${baseName} `;
+      return `${adjective} ${baseName}`;
     }
     if (fuseNamingRule == "Whip") {
       return `${adjective} Tail Whip`;
     }
     if (fuseName == "Courser Bee Honey") {
-      return `${adjective} ${baseName} `;
+      return `${adjective} ${baseName}`;
     }
     if (meleeProjectileProperty) {
       if (weaponProperty == "Bone" || isBoomerang || isZonaiWeapon) {
         return `${adjective} Rod`;
       }
-      return `${adjective} ${baseName} `;
+      return `${adjective} ${baseName}`;
     }
     if (fuseNamingRule == "UnlikeHammer") {
       switch (weaponType) {
@@ -21206,7 +21218,7 @@ var Calculator = class _Calculator {
     }
     if (shatterProperty) {
       if (weaponName == "Gloom Club") {
-        return `${adjective} ${baseName} `;
+        return `${adjective} ${baseName}`;
       }
       if (isBoomerang) {
         return `${adjective} Boomerang`;
@@ -21220,11 +21232,11 @@ var Calculator = class _Calculator {
     }
     if (weaponNamingRule == "ImpressiveGrip") {
       if (weaponType == 2 && !weaponCanCut) {
-        return `${adjective} ${baseName} `;
+        return `${adjective} ${baseName}`;
       }
     }
     if ((weaponNamingRule == "ImpressiveGrip" || weaponNamingRule == "UnlikeBat") && !canCut) {
-      return `${adjective} ${baseName} `;
+      return `${adjective} ${baseName}`;
     }
     if (fuseNamingRule == "Fan") {
       if (weaponType == 2) {
@@ -21248,7 +21260,7 @@ var Calculator = class _Calculator {
             break;
         }
       }
-      return `Bouncy ${baseName} `;
+      return `Bouncy ${baseName}`;
     }
     if (fuseNamingRule == "ReuseSeedFireBurst") {
       elementAdjective = "Flame";
@@ -21278,7 +21290,7 @@ var Calculator = class _Calculator {
             break;
         }
       }
-      return `${elementAdjective} ${baseName} `;
+      return `${elementAdjective} ${baseName}`;
     }
     if (fuseNamingRule == "LongThrow" || fuseNamingRule == "SpWing") {
       if (isZonaiWeapon) {
@@ -21296,10 +21308,10 @@ var Calculator = class _Calculator {
             break;
         }
       }
-      return `Soaring ${baseName} `;
+      return `Soaring ${baseName}`;
     }
     if (isBoomerang) {
-      return `${adjective} ${baseName} `;
+      return `${adjective} ${baseName}`;
     }
     if (fuseNamingRule == "Torch") {
       return `${adjective} Torch`;
@@ -21350,9 +21362,9 @@ var Calculator = class _Calculator {
       }
     }
     if (canCut && !replaceProperties && bindType == "Replace") {
-      return `${adjective} ${baseName} `;
+      return `${adjective} ${baseName}`;
     }
-    return `${adjective} ${baseName} `;
+    return `${adjective} ${baseName}`;
   }
   getProperties() {
     this.properties = [];
@@ -22047,6 +22059,7 @@ export {
   Input,
   TotKCalculatorModel,
   Weapon,
-  weapon_data_exports as WeaponData
+  weapon_data_exports as WeaponData,
+  damage
 };
 //# sourceMappingURL=totkdc.js.map

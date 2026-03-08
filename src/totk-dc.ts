@@ -30,6 +30,20 @@ function enemy_from_sort_order(n: number): any | undefined {
 }
 
 
+export function damage(weapon: string, fuse: string, enemy: string, input: any): any | null {
+    let w = Weapon.from_name(weapon)
+    let f = Fuse.from_name(fuse)
+    let e = Enemy.from_name(enemy)
+    if (!w || !f || !e) {
+        console.log(w, f, e)
+        return null
+    }
+    let i = new Input(input)
+    let c = new Calculator(w, f, e, i)
+    return c.calc()
+
+}
+
 const attackOptions = [
     "Standard Attack",
     "Shoot Arrow",
@@ -242,26 +256,26 @@ export class Input {
     freeMode: boolean;
     trueDamage: boolean;
     sortFuseByAttack: boolean;
-    constructor() {
-        this.attackUpMod = 0
-        this.attackType = "Standard Attack"
-        this.criticalHitMod = false
-        this.multishot = false
-        this.zonaite = false
-        this.sageWill = false
-        this.durability = 40
-        this.freezeDurability = false
-        this.wet = false
-        this.headshot = false
-        this.frozen = false
-        this.weakened = false
-        this.fence = false
-        this.hp = 38
-        this.buff1 = "None"
-        this.buff2 = "None"
-        this.freeMode = false
-        this.trueDamage = false
-        this.sortFuseByAttack = false
+    constructor(options: any = {}) {
+        this.attackUpMod = options.attackUpMod || 0
+        this.attackType = options.attackType || "Standard Attack"
+        this.criticalHitMod = options.criticalHitMod || false
+        this.multishot = options.multishot || false
+        this.zonaite = options.zonaite || false
+        this.sageWill = options.sageWill || false
+        this.durability = options.durability || 40
+        this.freezeDurability = options.freezeDurability || false
+        this.wet = options.wet || false
+        this.headshot = options.headshot || false
+        this.frozen = options.frozen || false
+        this.weakened = options.weakened || false
+        this.fence = options.fence || false
+        this.hp = options.fp || 38
+        this.buff1 = options.buff1 || "None"
+        this.buff2 = options.buff2 || "None"
+        this.freeMode = options.freeMode || false
+        this.trueDamage = options.trueDamage || false
+        this.sortFuseByAttack = options.sortFuseByAttack || false
     }
 }
 
@@ -516,25 +530,25 @@ export class Calculator {
             return `${weaponName} (${fuseName} Arrow)`
         }
         if (weaponType == 4) {
-            return `${adjective} ${baseName} `
+            return `${adjective} ${baseName}`
         }
         if (weaponType == 5) {
             return weaponName
         }
         if (fuseIsWeapon) {
-            return `${adjective} ${baseName} `
+            return `${adjective} ${baseName}`
         }
         if (fuseNamingRule == "Whip") {
             return `${adjective} Tail Whip`
         }
         if (fuseName == "Courser Bee Honey") {
-            return `${adjective} ${baseName} `
+            return `${adjective} ${baseName}`
         }
         if (meleeProjectileProperty) {
             if (weaponProperty == "Bone" || isBoomerang || isZonaiWeapon) {
                 return `${adjective} Rod`
             }
-            return `${adjective} ${baseName} `
+            return `${adjective} ${baseName}`
         }
         if (fuseNamingRule == "UnlikeHammer") {
             switch (weaponType) {
@@ -546,7 +560,7 @@ export class Calculator {
         }
         if (shatterProperty) {
             if (weaponName == "Gloom Club") { // Removed code about bindType == Attach?
-                return `${adjective} ${baseName} `
+                return `${adjective} ${baseName}`
             }
             if (isBoomerang) {
                 return `${adjective} Boomerang`
@@ -561,14 +575,14 @@ export class Calculator {
 
         if (weaponNamingRule == "ImpressiveGrip") {
             if (weaponType == 2 && !weaponCanCut) {
-                return `${adjective} ${baseName} `
+                return `${adjective} ${baseName}`
             }
         }
 
         if ((weaponNamingRule == "ImpressiveGrip" ||
             weaponNamingRule == "UnlikeBat") &&
             !canCut) {
-            return `${adjective} ${baseName} `
+            return `${adjective} ${baseName}`
         }
 
         // Incorrect Rule?
@@ -591,7 +605,7 @@ export class Calculator {
                     default: break
                 }
             }
-            return `Bouncy ${baseName} `
+            return `Bouncy ${baseName}`
         }
 
         if (fuseNamingRule == "ReuseSeedFireBurst") {
@@ -615,7 +629,7 @@ export class Calculator {
                     default: break
                 }
             }
-            return `${elementAdjective} ${baseName} `
+            return `${elementAdjective} ${baseName}`
         }
 
         if (fuseNamingRule == "LongThrow" || fuseNamingRule == "SpWing") {
@@ -627,10 +641,10 @@ export class Calculator {
                     default: break
                 }
             }
-            return `Soaring ${baseName} `
+            return `Soaring ${baseName}`
         }
         if (isBoomerang) {
-            return `${adjective} ${baseName} `
+            return `${adjective} ${baseName}`
         }
 
         if (fuseNamingRule == "Torch") {
@@ -666,10 +680,10 @@ export class Calculator {
         //console.log("getName()", adjective, baseName)
         // Pointless check?
         if (canCut && !replaceProperties && bindType == "Replace") {
-            return `${adjective} ${baseName} `
+            return `${adjective} ${baseName}`
         }
 
-        return `${adjective} ${baseName} `
+        return `${adjective} ${baseName}`
     }
 
 

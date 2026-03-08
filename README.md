@@ -44,27 +44,28 @@ console.log(result)
 API
 ---
 
-```
-function damage(weapon, fuse, enemy, options): result | null
-     - weapon  - Weapon name (string, [see weapon.md](weapon.md])
-     - fuse    - Fuse name (string, [see fuse.md](fuse.md])
-     - enemy   - Enemy name (string, [see eneme.md](enemy.md])
-     - options -
+
+`function damage(weapon, fuse, enemy, options): result | null`
+
+   - weapon  - Weapon name (string, [see weapon.md](weapon.md))
+   - fuse    - Fuse name (string, [see fuse.md](fuse.md))
+   - enemy   - Enemy name (string, [see eneme.md](enemy.md))
+   - options -
         - attackUpMod - Weapon Attack Up Modifier (number)
         - attackType - (string)
-            - Standard Attack
-            - Shoot Arrow
-            - Shield Bash
-            - Perfect Parry
-            - Earthwake Technique
-            - Combo Finisher
-            - Throw
-            - Sneakstrike
-            - Flurry Rush
-            - Sidon's Water
-            - Riju's Lightning
-            - Master Sword Beam
-            - Horseback
+            - `Standard Attack`
+            - `Shoot Arrow`
+            - `Shield Bash`
+            - `Perfect Parry`
+            - `Earthwake Technique`
+            - `Combo Finisher`
+            - `Throw`
+            - `Sneakstrike`
+            - `Flurry Rush`
+            - `Sidon's Water`
+            - `Riju's Lightning`
+            - `Master Sword Beam`
+            - `Horseback
         - criticalHitMod - Allows for Flurry Rush and Combo Finisher attackType (boolean)
         - multishot - Multishot bow, sets to x5 (boolean)
         - zonaite - Adds Mineru Damage with Mineru's Construct weapon (boolean)
@@ -78,28 +79,28 @@ function damage(weapon, fuse, enemy, options): result | null
         - fence - If Seized Construct bounding electric fence was hit (boolean)
         - hp - Player HP, fun things happen at low numbers (boolean)
         - buff1 - Player Buff (boolean)
-            - Attack Up (Lv1)
-            - Attack Up (Lv2)
-            - Attack Up (Lv3)
-            - Bone Weap. Prof.
-            - Hot Weather Attack
-            - Cold Weather Attack
-            - Stormy Weather Attack
-            - Master Sword Beam Up
+            - `Attack Up (Lv1)`
+            - `Attack Up (Lv2)`
+            - `Attack Up (Lv3)`
+            - `Bone Weap. Prof.`
+            - `Hot Weather Attack`
+            - `Cold Weather Attack`
+            - `Stormy Weather Attack`
+            - `Master Sword Beam Up`
         - buff2 - Player Buff (boolean)
-            - Attack Up (Lv1)
-            - Attack Up (Lv2)
-            - Attack Up (Lv3)
-            - Bone Weap. Prof.
-            - Hot Weather Attack
-            - Cold Weather Attack
-            - Stormy Weather Attack
-            - Master Sword Beam Up
+            - `Attack Up (Lv1)`
+            - `Attack Up (Lv2)`
+            - `Attack Up (Lv3)`
+            - `Bone Weap. Prof.`
+            - `Hot Weather Attack`
+            - `Cold Weather Attack`
+            - `Stormy Weather Attack`
+            - `Master Sword Beam Up`
         - freeMode - only useful for UI (boolean)
         - trueDamage - Show true damage(boolean)
         - sortFuseByAttack - only useful for UI (boolean)
 
-```
+
 
 
 Derivative Work

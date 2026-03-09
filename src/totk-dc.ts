@@ -335,10 +335,10 @@ export class Calculator {
             if (this.getZonaiBonus() > 0) { Formula += ` + ZonaiBonus(${this.getZonaiBonus()})`; }
             Formula += ")";
         } else if (this.getAttackUpMod() > 0) {
-            Formula += ` + AttackUpMod({this.getAttackUpMod})`;
+            Formula += ` + AttackUpMod(${this.getAttackUpMod()})`;
         }
         if (this.getLowHealth() > 1) {
-            Formula += ` * LowHealth({this.getLowHealth})`;
+            Formula += ` * LowHealth(${this.getLowHealth()})`;
         }
         if (this.getWetPlayer() > 1) { Formula += ` * WetPlayer(${this.getWetPlayer()})`; }
         if (this.getSneakstrike() > 1) { Formula += ` * Sneakstrike(${this.getSneakstrike()})`; }
@@ -365,6 +365,18 @@ export class Calculator {
         //let id2 = ID.split("-").map(v => parseInt(v, 16))
         //console.log(id, ID, id2, this.decode_id(id))
 
+        // name vs fusedname
+        let name = fusedName
+        if (this.fuse.name == "None") {
+            if (this.weapon.name == "Master Sword (Prologue)") {
+                name = "MsgNotFound"
+            } else if (this.weapon.name == "Master Sword (Awakened +15)" ||
+                this.weapon.name == "Master Sword (Awakened +30)") {
+                name = "Master Sword"
+            } else {
+                name = this.weapon.name
+            }
+        }
 
         //`Base({TotalBaseAttack}) + Fuse(${TotalFuseAttack}) = ${TotalAttack}`;
         return {
@@ -374,6 +386,7 @@ export class Calculator {
             damageOutput,
             properties: this.properties,
             fusedName,
+            name,
             formula: Formula,
             damageNumList: this.damageNumList,
             blueDamageNum,
@@ -958,7 +971,8 @@ export class Calculator {
         }
 
         // MAIN DAMAGE FORMULA
-        //console.log('main damage', baseAttack, mineruBonus, this.fuseUIAdjust((fuseBaseAttack * gerudoBonus) + attackUpMod + zonaiBonus))
+        //console.log('main damage (1)', fuseBaseAttack, gerudoBonus, attackUpMod, zonaiBonus)
+        //console.log('main damage (2)', baseAttack, mineruBonus, this.fuseUIAdjust((fuseBaseAttack * gerudoBonus) + attackUpMod + zonaiBonus))
 
         let damageOutput = baseAttack + mineruBonus +
             this.fuseUIAdjust((fuseBaseAttack * gerudoBonus) +
@@ -985,7 +999,7 @@ export class Calculator {
         if (this.scanProperties("Melee Projectile")) {
             return this.damageBeforeElement + projectileDamage
         }
-        //console.log(damageOutput, projectileDamage, this.properties)
+        //console.log('damage, projectile, properties', damageOutput, projectileDamage, this.properties)
         return damageOutput + projectileDamage
     }
 
@@ -1012,6 +1026,7 @@ export class Calculator {
         }
     }
     fuseUIAdjust(input: number): number {
+        //console.log('    fuseUIAdjust', input, input * 0.7536613, 'type', this.weapon.type)
         switch (this.weapon.type) {
             case 1: return Math.floor(input * 1.052632)
             case 2: return Math.ceil(input * 0.7536613)
@@ -1412,9 +1427,10 @@ export class Calculator {
         }
 
         // WIND RAZOR
+        //console.log(this.properties)
         if (this.scanProperties("Wind Razor")) {
             this.damageNumList.push(damageOutput)
-
+            // console.log("wind razor (module)", windRazorAttack)
             windRazorAttack += this.getFuseBaseAttack()
             windRazorAttack *= this.getAttackUp()
             if (elementalMult != 0 && windRazorElement) {
@@ -1424,7 +1440,7 @@ export class Calculator {
             windRazorAttack *= waterMult * fireMult
             windRazorAttack += this.getContinuousFire()
             this.damageNumList.push(Math.floor(windRazorAttack))
-
+            //console.log("wind razor", windRazorAttack)
             //data.damageNumList = damageNumList
             return Math.floor(windRazorAttack)
         }

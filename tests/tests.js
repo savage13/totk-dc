@@ -41,7 +41,13 @@ function run_test(test) {
     let calc = new Calculator(weapon, fuse, enemy, input)
     let result = calc.calc()
     //console.log(result)
+    //console.log(weapon.name, fuse.name, enemy.name, input)
+    //console.log(result)
     deepStrictPartialEqual(result, test.expected)
+    if(result.name.includes( "-") && ! (result.name.startsWith("Ancient-Blade") || result.name.startsWith("Sea-Breeze"))) {
+        assert.equal(result.name, "-")
+    }
+
 }
 let tests = []
 try {
@@ -177,7 +183,81 @@ for(const weapon of weapons) {
                                  { weapon: weapon.name, expected: { damageOutput: Math.floor( (hp) * mul * mul2 + add ) }})
         run_test(test)
     }
-    
+    {
+        // Attack Up Mod
+        for(let i = 0; i <= 10; i += 1) {
+            let add20 = i
+            let add2 = i
+            let hp = weapon.baseAttack
+            //let w = Weapon.from_name(weapon.name)
+            //console.log("")
+            //console.log(weapon.name, 'hp', hp, 'add2', add2, 'type', weapon.type, '2H', Math.ceil(add2 * 0.7536613), add2 * 0.7536613)
+            if(weapon.type == 2) {
+                add2 = Math.ceil(add2 * 0.7536613)
+            } else if(weapon.type == 1) {
+                add2 = Math.floor(add2 * 1.052632)
+            }
+            //console.log('     ==> ', add2)
+            if(weapon.name == "None (Earthwake Technique)") { add2 = 0; mul = 1; }
+            let test = Object.assign({}, base, { weapon: weapon.name, attackUpMod: add20,
+                                                 expected: { damageOutput: Math.floor( (hp + add2) * mul + add ) }})
+            run_test(test)
+        }
+    }
+    {
+        // Zonai Bonus
+        //let add20 = i
+        //let add2 = 0
+        add = 0
+        let hp = weapon.baseAttack
+        let f = Fuse.from_name("Zonaite")
+        //let w = Weapon.from_name(weapon.name)
+        //console.log("")
+
+        let add2 = f.baseAttack // fuse base attack
+        if(weapon.type == 4) {
+            add2 = 0
+        }
+        if(weapon.type == 3) {
+            add2 += 0
+        }
+        
+        if(weapon.property == "Gerudo") { // gerudo bonus
+            add2 *= 2
+        }
+
+        if(weapon.property == "Zonai Lv1") {
+            add2 += 3
+        }
+        if(weapon.property == "Zonai Lv2") {
+            if(weapon.name == "Strong Zonaite Spear") {
+                add2 += 4
+            } else {
+                add2 += 5
+            }
+        }
+        if(weapon.property == "Zonai Lv3") {
+            if(weapon.name == "Mighty Zonaite Spear") {
+                add2 += 8
+            } else {
+                add2 += 10
+            }
+        }
+        //console.log()
+        //console.log(weapon.name, 'hp', hp, 'add2', add2, 'type', weapon.type, '2H', Math.ceil(add2 * 0.7536613), add2 * 0.7536613)
+        if(weapon.type == 2) {
+            add2 = Math.ceil(add2 * 0.7536613)
+        } else if(weapon.type == 1) {
+            add2 = Math.floor(add2 * 1.052632)
+        } else {
+            add2 = Math.floor(add2)
+        }
+        //console.log('     ==> ', hp, add2, mul, add)
+        if(weapon.name == "None (Earthwake Technique)") { add2 = 0; mul = 1; }
+        let test = Object.assign({}, base, { weapon: weapon.name, fuse: "Zonaite",
+                                             expected: { damageOutput: Math.floor( (hp + add2) * mul + add ) }})
+        run_test(test)
+    }
 
 }
 
@@ -257,7 +337,6 @@ run_test({weapon: "Royal Guard's Claymore*", enemy: "Silver Boss Bokoblin",
           frozen: true,
           expected: { damageOutput: 24364 }})
 
-console.log(`Ran ${ntests} tests`)
 
 let c = damage("Royal Guard's Claymore*", "Gibdo Bone", "Silver Boss Bokoblin" )
 deepStrictPartialEqual(c, { damageOutput: 84, fusedName: 'Gibdo Claymore' } )
@@ -283,3 +362,7 @@ c = damage("Royal Guard's Claymore*", "Gibdo Bone", "Silver Boss Bokoblin", {
     buff2: "Bone Weap. Prof.", frozen: true
 } )
 deepStrictPartialEqual(c, { damageOutput: 24364, fusedName: 'Gibdo Claymore' } )
+
+c = damage("Tree Branch", "None", "Bokoblin", {})
+deepStrictPartialEqual(c, { damageOutput: 2, fusedName: '- Club', name: 'Tree Branch' } )
+console.log(`Ran ${ntests} tests`)

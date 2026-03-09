@@ -1,7 +1,8 @@
 {
     "type": "module",
     "scripts": {
-        "dev": "esbuild --bundle --sourcemap ./src/totk-dc.ts --outfile=assets/totkdc.js --watch --tree-shaking=false --format=esm"
+        "dev": "esbuild --bundle --sourcemap ./src/totk-dc.ts --outfile=assets/totkdc.js --watch --tree-shaking=false --format=esm",
+        "test": "node --watch tests/tests.js"
     },
     "dependencies": {
     "esbuild": "^0.27.3"

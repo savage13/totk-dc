@@ -20977,10 +20977,10 @@ var Calculator = class _Calculator {
       }
       Formula += ")";
     } else if (this.getAttackUpMod() > 0) {
-      Formula += ` + AttackUpMod({this.getAttackUpMod})`;
+      Formula += ` + AttackUpMod(${this.getAttackUpMod()})`;
     }
     if (this.getLowHealth() > 1) {
-      Formula += ` * LowHealth({this.getLowHealth})`;
+      Formula += ` * LowHealth(${this.getLowHealth()})`;
     }
     if (this.getWetPlayer() > 1) {
       Formula += ` * WetPlayer(${this.getWetPlayer()})`;
@@ -21040,6 +21040,16 @@ var Calculator = class _Calculator {
       Formula += ` + ContinuousFire(${this.getContinuousFire()})`;
     }
     const id = this.encode_input();
+    let name = fusedName;
+    if (this.fuse.name == "None") {
+      if (this.weapon.name == "Master Sword (Prologue)") {
+        name = "MsgNotFound";
+      } else if (this.weapon.name == "Master Sword (Awakened +15)" || this.weapon.name == "Master Sword (Awakened +30)") {
+        name = "Master Sword";
+      } else {
+        name = this.weapon.name;
+      }
+    }
     return {
       success: true,
       message: "Success",
@@ -21047,6 +21057,7 @@ var Calculator = class _Calculator {
       damageOutput,
       properties: this.properties,
       fusedName,
+      name,
       formula: Formula,
       damageNumList: this.damageNumList,
       blueDamageNum,

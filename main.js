@@ -34,7 +34,8 @@ $(document).ready(function () {
 
     const wdd = $('#weaponDropdown')[0]
     for(const weapon of WeaponData.default) {
-        wdd.appendChild( new Option(weapon.name))
+        let text = weapon.name.replace("*", " ✨")
+        wdd.appendChild( new Option(text, weapon.name))
     }
     const edd = $('#enemyDropdown')[0]
     for(const enemy of EnemyData.default) {
@@ -495,10 +496,10 @@ function success (response, dropdownEdited, selectedWeaponObj, selectedFuseObj, 
         } else if (selectedWeaponObj,name == "Master Sword (Awakened +15)" || selectedWeaponObj.name == "Master Sword (Awakened +30)") {
             $('#WeaponNameText').text("Master Sword");
         } else {
-            $('#WeaponNameText').text(selectedWeaponObj.name);
+            $('#WeaponNameText').text(selectedWeaponObj.name.replace("*", " ✨"));
         }
     } else {
-        $('#WeaponNameText').text(response.fusedName);
+        $('#WeaponNameText').text(response.name.replace("*", " ✨"));
     }
 
     // Master Sword Awakened

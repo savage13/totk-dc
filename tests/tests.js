@@ -44,6 +44,7 @@ function run_test(test) {
     //console.log(weapon.name, fuse.name, enemy.name, input)
     //console.log(result)
     deepStrictPartialEqual(result, test.expected)
+    // Check for poorly named weapons
     if(result.name.includes( "-") && ! (result.name.startsWith("Ancient-Blade") || result.name.startsWith("Sea-Breeze"))) {
         assert.equal(result.name, "-")
     }
@@ -208,7 +209,7 @@ for(const weapon of weapons) {
         // Zonai Bonus
         //let add20 = i
         //let add2 = 0
-        add = 0
+        //add = add
         let hp = weapon.baseAttack
         let f = Fuse.from_name("Zonaite")
         //let w = Weapon.from_name(weapon.name)
@@ -255,10 +256,26 @@ for(const weapon of weapons) {
         //console.log('     ==> ', hp, add2, mul, add)
         if(weapon.name == "None (Earthwake Technique)") { add2 = 0; mul = 1; }
         let test = Object.assign({}, base, { weapon: weapon.name, fuse: "Zonaite",
-                                             expected: { damageOutput: Math.floor( (hp + add2) * mul + add ) }})
+                                             expected: { damageOutput: Math.floor( (hp + add2) * mul  ) }})
         run_test(test)
     }
 
+    {
+        // attackUp
+        let mul2 = 1.2
+        let hp = weapon.baseAttack
+        add = Math.floor(add * mul2)
+        //if(weapon.property == "Flurry Rush x2") { mul2 = 2 }
+        console.log()
+        console.log(weapon.name, hp, mul, mul2, add)
+        if(weapon.name == "None (Earthwake Technique)") { add = 0; mul = 1; mul2 = 1; }
+
+        let test = Object.assign({}, base, { weapon: weapon.name, expected: {
+            damageOutput: Math.floor( (hp) * mul * mul2 + add ) }, buff1: "Attack Up (Lv1)"})
+        run_test(test)
+    }
+
+    
 }
 
 // Chuchu with Wind Razor => Enemy.HP

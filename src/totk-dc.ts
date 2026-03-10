@@ -983,7 +983,7 @@ export class Calculator {
         damageOutput *= attackUp * headshot * _throw * oneDurability * frozen * treeCutter
         //console.log('damage', damageOutput)
         damageOutput *= arrowEnemyMult * criticalHit * horseback * demonDragon
-        //console.log('damage', damageOutput)
+        //console.log('damage (before element)', damageOutput)
         this.damageBeforeElement = damageOutput
         if (elementalMult != 0) {
             damageOutput += elementalDamage
@@ -993,7 +993,7 @@ export class Calculator {
         damageOutput += continuousFire
         damageOutput += fenceDamage
         damageOutput = Math.min(2147483647, Math.floor(damageOutput))
-
+        //console.log('damage, projectile', damageOutput)
         projectileDamage = this.createDamageNumList(damageOutput)
         //console.log('damage, projectile', damageOutput, projectileDamage)
         if (this.scanProperties("Melee Projectile")) {
@@ -1461,6 +1461,7 @@ export class Calculator {
             multishotCount = 5
         }
         if (multishotCount > 0) {
+            //console.log("multishot", this.damageBeforeElement)
             this.damageNumList.push(damageOutput)
 
             for (let i = 0; i < multishotCount - 1; i++) {
@@ -1481,6 +1482,7 @@ export class Calculator {
             //data.damageNumList = damageNumList
 
             if (true || this.getUsingBomb() || this.getUsingWater() || this.getUsingBeam()) { // TEMPORARILY MAKE ALWAYS TRUE
+                //console.log("output", (damageOutput - this.getContinuousFire()), multishotCount - 1)
                 return (damageOutput - this.getContinuousFire()) * (multishotCount - 1)
             }
 

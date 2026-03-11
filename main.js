@@ -1,4 +1,7 @@
 import { WeaponData, EnemyData, FuseData, Enemy, Input, Calculator } from './assets/totkdc.js'
+
+import { Context } from './assets/fuse_naming.js'
+
 var previousWeaponType = 0;
 let Properties = [];
 
@@ -10,7 +13,11 @@ const url_opts = {
     durability: '#numberDurability',
 }
 
-$(document).ready(function () {
+let ctx = null
+
+$(document).ready(async function () {
+    ctx = new Context()
+    await ctx.init("assets/")
     $('#weaponDropdown').select2();
     $('#weaponDropdown').on('select2:open', function () {
         window.setTimeout(function () {
@@ -465,6 +472,9 @@ function update(dropdownEdited, url_update = true) {
 
     let calc = new Calculator(selectedWeaponObj, selectedFuseObj, selectedEnemyObj, input).calc()
     //console.log(calc)
+    if(selectedFuseObj.name != "None") {
+        calc.name = ctx.get_resolved_name(selectedWeaponObj.actorID, selectedFuseObj.actorID)
+    }
     success(calc, dropdownEdited, selectedWeaponObj, selectedFuseObj, selectedEnemyObj)
 
     if(url_update) {
@@ -484,8 +494,6 @@ function update(dropdownEdited, url_update = true) {
         //console.log(args, url)
         history.replaceState('', '', url.toString())
     }
-    
-
 }
 
 

@@ -60,8 +60,7 @@ $(document).ready(async function () {
     $('#weaponDropdown').on('change', (ev) => { update('weapon') } )
     $('#checkboxZonaite')[0].addEventListener('change', (ev) => update() )
     $('#checkboxSagewill')[0].addEventListener('change', (ev) => update() )
-    $('#numberAttackUpMod')[0].addEventListener('change', (ev) => update() )
-    $('#numberAttackUpMod')[0].addEventListener('input', (ev) => restrictAttackUpMod(ev) )
+    $('#numberAttackUpMod')[0].addEventListener('input', (ev) => update('attackupmod') )
     $('#checkboxCritical')[0].addEventListener('change', (ev) => update() )
     $('#checkboxMultishot')[0].addEventListener('change', (ev) => update() )
 
@@ -83,7 +82,6 @@ $(document).ready(async function () {
 
     const url = new URL(window.location)
     const args = Object.fromEntries( new URLSearchParams(url.search) )
-    //console.log(url)
     let flag = false
     for(const [key, value] of Object.entries(args)) {
         if(key in url_opts) {
@@ -155,7 +153,7 @@ function updateFuseDropdown() {
     }
 }
 function update(dropdownEdited, url_update = true) {
-    //console.log('update')
+    restrictAttackUpMod()
     var weaponData = WeaponData.default //@Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.Weapons));
     var fuseData = FuseData.default //@Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.Fuses));
     var enemyData = EnemyData.default // @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.Enemies));
@@ -253,12 +251,22 @@ function update(dropdownEdited, url_update = true) {
             $('#numberDurability').val(MaxDurability);
         }
     }
+    if(dropdownEdited == 'attackupmod') {
+        if (selectedWeaponObj.canHaveAttackUpMod === false && !checkboxFreeMode.checked) {
+            //$('#numberAttackUpMod').prop('max', 0);
+            $('#numberAttackUpMod').val(0);
+        } else {
+            $('#numberAttackUpMod').prop('max', 10);
+        }
+        if (checkboxFreeMode.checked) {
+            $('#numberAttackUpMod').prop('max', 2147483647);
+        }
+    }
 
     // TRIGGER IF WEAPON DROPDOWN EDITED
-    if (dropdownEdited === 'weapon' || checkboxFreeMode.checked) {
+    if (dropdownEdited === 'weapon' && !checkboxFreeMode.checked) {
         // UPDATE ATTACK UP MOD MAXIMUM
         if (selectedWeaponObj.canHaveAttackUpMod === false) {
-            $('#numberAttackUpMod').prop('max', 0);
             $('#numberAttackUpMod').val(0);
         } else {
             $('#numberAttackUpMod').prop('max', 10);
@@ -672,9 +680,7 @@ function NewOption(OptionName) {
 }
 
 function restrictAttackUpMod(event) {
-    console.log("restrict attack up mod")
     if (!checkboxFreeMode.checked) {
-        //console.log("not free mode")
         var AttackUpMod = $('#numberAttackUpMod').val();
         if (AttackUpMod == 2) {
             $('#numberAttackUpMod').val(0);
@@ -683,7 +689,6 @@ function restrictAttackUpMod(event) {
             $('#numberAttackUpMod').prop('step', 1);
         }
     } else {
-        console.log("free mode")
         $('#numberAttackUpMod').prop('step', 1);
         $('#numberAttackUpMod').prop('max', 2147483647);
     }

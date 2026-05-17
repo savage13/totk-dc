@@ -337,7 +337,7 @@ function get_naming_rule_with_details(ctx, base, attachment) {
   } else if (pouch_category == "Weapon") {
     tbl = ctx.naming_rule_table["ConditionalNamingRuleListWeapon"] || [];
   } else {
-    tbl = get_base_filename(ctx.naming_rule_table["DefaultNamingRule"] || []);
+    return [get_base_filename(ctx.naming_rule_table["DefaultNamingRule"] || []), null, 0];
   }
   let index = match_naming_rule(ctx, base, attachment, tbl);
   if (index > -1 && index < tbl.length) {
@@ -357,7 +357,7 @@ export function get_naming_rule(ctx, base, attachment) {
   } else if (pouch_category == "Weapon") {
     tbl = ctx.naming_rule_table["ConditionalNamingRuleListWeapon"] || [];
   } else {
-    tbl = get_base_filename(ctx.naming_rule_table["DefaultNamingRule"] || []);
+    return get_base_filename(ctx.naming_rule_table["DefaultNamingRule"] || []);
   }
   let index = match_naming_rule(ctx, base, attachment, tbl);
   if (index > -1 && index < tbl.length) {
@@ -366,11 +366,16 @@ export function get_naming_rule(ctx, base, attachment) {
   return get_base_filename(ctx.naming_rule_table["DefaultNamingRule"] || "");
 }
 function resolve_equipment_base_name(ctx, name) {
-  let out = ctx.pouch_content_msg[`${name}_BaseName`];
-  if (!out) {
-    throw new Error(`${name} does not have a BaseName`);
+  let out = null;
+  out = ctx.pouch_content_msg[`${name}_BaseName`];
+  if (out) {
+    return out;
   }
-  return out;
+  out = ctx.pouch_content_msg[`${name}_Name`];
+  if (out) {
+    return out;
+  }
+  throw new Error(`${name} does not have a BaseName`);
 }
 function get_actor_name(ctx, actor) {
   let row = ctx.actor_info_table[actor] || null;
@@ -555,28 +560,32 @@ async function main() {
   let filename = "names.csv";
   let split_ch = ",";
   let tests = (await read_file_api(filename, { encoding: "utf-8" })).split("\n");
+  let equip = "Weapon_Bow_001";
+  let fuse = "Item_Enemy_69";
+  let out = get_resolved_name(ctx, equip, fuse);
+  console.log(out);
   let ok = 0;
   for (const test of tests.slice(1)) {
     if (test.trim().length == 0)
       continue;
-    let [equip, fuse, name] = test.split(split_ch);
+    let [equip2, fuse2, name] = test.split(split_ch);
     name = name.trim();
-    if (equip.endsWith("_Base") || fuse.endsWith("_Base") || !equip.startsWith("Weapon")) {
+    if (equip2.endsWith("_Base") || fuse2.endsWith("_Base") || !equip2.startsWith("Weapon")) {
       continue;
     }
     if (name.length == 0) {
       continue;
     }
-    let out = "";
+    let out2 = "";
     try {
-      out = get_resolved_name(ctx, equip, fuse);
+      out2 = get_resolved_name(ctx, equip2, fuse2);
     } catch (e) {
       continue;
     }
-    if (out && out != name) {
-      console.log("out", out);
+    if (out2 && out2 != name) {
+      console.log("out", out2);
       console.log("name", name);
-      console.log(equip, fuse);
+      console.log(equip2, fuse2);
       console.log("error");
       break;
     }

@@ -20665,6 +20665,12 @@ var enemy_data_default = [
 ];
 
 // src/totk-dc.ts
+var DEBUG = false;
+function debug(...args) {
+  if (DEBUG) {
+    console.log.apply(console, args);
+  }
+}
 function weapon_from_name(name) {
   return weapon_data_default.find((w) => w.name == name);
 }
@@ -20948,6 +20954,7 @@ var Calculator = class _Calculator {
     let attackPowerUI = this.calculateAttackPowerUI();
     let blueDamageNum = this.getGerudoBonus() > 1 || this.getZonaiBonus() > 0 || this.getLowHealth() > 1 || this.getLowDurability() > 1 || this.getWetPlayer() > 1;
     let damageOutput = this.calculate();
+    debug("damageOutput (calc)", damageOutput);
     if (this.enemy.name == "Frox" && damageOutput > 140)
       damageOutput = 140;
     if (this.enemy.name == "Obsidian Frox" && damageOutput > 270)
@@ -21038,6 +21045,9 @@ var Calculator = class _Calculator {
     }
     if (this.getContinuousFire() > 0) {
       Formula += ` + ContinuousFire(${this.getContinuousFire()})`;
+    }
+    if (this.scanProperties("Melee Projectile")) {
+      Formula += this.getMeleeAttackFormula();
     }
     const id = this.encode_input();
     let name = fusedName;
@@ -21152,7 +21162,7 @@ var Calculator = class _Calculator {
     let enemy_id = id >> NF + NW & (1 << NE) - 1;
     let attack_id = id >> NF + NW + NE & (1 << NA) - 1;
     let durability = id2 & (1 << ND) - 1;
-    console.log(id, id2, fuse_id, weapon_id, enemy_id, attack_id, attackOptions[attack_id], durability);
+    debug(id, id2, fuse_id, weapon_id, enemy_id, attack_id, attackOptions[attack_id], durability);
   }
   getName() {
     let adjective = this.fuse.adjective;
@@ -21524,6 +21534,7 @@ var Calculator = class _Calculator {
     let lowDurability = this.getLowDurability();
     let wetPlayer = this.getWetPlayer();
     let mineruBonus = this.getMineruBonus();
+    debug("ATTACKUP", attackUpMod);
     if (attackType == "Perfect Parry" && (this.enemy.name == "Aerocuda" || isKeese)) {
       return this.enemy.hp;
     }
@@ -21593,9 +21604,14 @@ var Calculator = class _Calculator {
       }
       return baseAttack * attackUp;
     }
+    debug("main damage (1)", fuseBaseAttack, gerudoBonus, attackUpMod, zonaiBonus);
+    debug("main damage (2)", baseAttack, mineruBonus, this.fuseUIAdjust(fuseBaseAttack * gerudoBonus + attackUpMod + zonaiBonus));
     let damageOutput = baseAttack + mineruBonus + this.fuseUIAdjust(fuseBaseAttack * gerudoBonus + attackUpMod + zonaiBonus);
+    debug("damage mult", damageOutput, lowHealth, wetPlayer, sneakstrike, lowDurability);
     damageOutput *= lowHealth * wetPlayer * sneakstrike * lowDurability * bone * flurryRush * shatter;
+    debug("damage", damageOutput);
     damageOutput *= attackUp * headshot * _throw * oneDurability * frozen * treeCutter;
+    debug("damage", damageOutput);
     damageOutput *= arrowEnemyMult * criticalHit * horseback * demonDragon;
     this.damageBeforeElement = damageOutput;
     if (elementalMult != 0) {
@@ -21606,9 +21622,12 @@ var Calculator = class _Calculator {
     damageOutput += fenceDamage;
     damageOutput = Math.min(2147483647, Math.floor(damageOutput));
     projectileDamage = this.createDamageNumList(damageOutput);
+    debug("damage, projectile", damageOutput, projectileDamage);
     if (this.scanProperties("Melee Projectile")) {
+      debug("melee damage, projectile", this.damageBeforeElement, projectileDamage);
       return this.damageBeforeElement + projectileDamage;
     }
+    debug("damage, projectile, properties", damageOutput, projectileDamage, this.properties);
     return damageOutput + projectileDamage;
   }
   getBaseAttack() {
@@ -22022,7 +22041,8 @@ var Calculator = class _Calculator {
       return this.damageBeforeElement * (multishotCount - 1);
     }
     if (meleeProjectile) {
-      projectileAttack = this.fuse.projectileAttack;
+      let attackUp = this.getAttackUp();
+      projectileAttack = this.fuse.projectileAttack * attackUp;
       if (this.weapon.property == "Rod") {
         projectileAttack *= 2;
         if (this.fuse.property1 != "Ice Burst") {
@@ -22034,8 +22054,10 @@ var Calculator = class _Calculator {
       if (elementalMult != 0) {
         firstProjectileAttack = projectileAttack + this.getElementalDamage();
         firstProjectileAttack *= elementalMult;
+        debug("projectileAttack", projectileAttack, this.getElementalDamage(), elementalMult);
       }
       firstProjectileAttack += this.getContinuousFire();
+      debug("firstProjectileAttack", firstProjectileAttack, projectileAttack, extraProjectileCount, this.getAttackUp());
       firstProjectileAttack = Math.floor(firstProjectileAttack);
       this.damageNumList.push(firstProjectileAttack);
       for (let i = 0; i < extraProjectileCount; i++) {
@@ -22059,6 +22081,50 @@ var Calculator = class _Calculator {
   }
   getAttackUpMod() {
     return this.input.attackUpMod;
+  }
+  getMeleeAttackFormula() {
+    let meleeProjectile = this.scanProperties("Melee Projectile");
+    let waterMult = 1;
+    let fireMult = 1;
+    let projectileAttack = 0;
+    let extraProjectileCount = 0;
+    let firstProjectileAttack = 0;
+    let elementalMult = this.getElementalMult();
+    let enemyElement = this.enemy.element;
+    if (enemyElement == "Fire" && this.getUsingWater()) {
+      waterMult = 1.5;
+    }
+    if (enemyElement == "Ice" && this.getUsingFire()) {
+      fireMult = 2;
+    }
+    if (meleeProjectile) {
+      let attackUp = this.getAttackUp();
+      projectileAttack = this.fuse.projectileAttack * attackUp;
+      if (this.weapon.property == "Rod") {
+        projectileAttack *= 2;
+        if (this.fuse.property1 != "Ice Burst") {
+          extraProjectileCount = 2;
+        }
+      }
+      projectileAttack *= waterMult * fireMult;
+      let projectileAttack_s = `ProjectileAttack(${projectileAttack})`;
+      if (elementalMult != 0) {
+        firstProjectileAttack = projectileAttack + this.getElementalDamage();
+        firstProjectileAttack *= elementalMult;
+      }
+      firstProjectileAttack += this.getContinuousFire();
+      let firstProjectileAttack_s = `FirstProjectileAttack(${Math.floor(firstProjectileAttack)})`;
+      for (let i = 0; i < extraProjectileCount; i++) {
+        if (this.getUsingWater()) {
+        } else {
+        }
+      }
+      if (this.getUsingWater()) {
+        return ` Projectile(${firstProjectileAttack_s} + ${firstProjectileAttack_s} * ${extraProjectileCount})`;
+      }
+      return ` + Projectile(${firstProjectileAttack_s} + ${projectileAttack_s} * ${extraProjectileCount})`;
+    }
+    return "";
   }
 };
 export {

@@ -1,7 +1,17 @@
 
-//import { TotKCalculatorModel } from './totk-calc'
+import { Expr } from './equation'
 
-const DEBUG = false
+const WEAPON_TYPE = {
+    OneHanded: 0,
+    TwoHanded: 1,
+    Spear: 2,
+    Bow: 3,
+    Sheild: 4
+} as const;
+export type WeaponType = typeof WEAPON_TYPE[keyof typeof WEAPON_TYPE];
+
+
+let DEBUG = false
 function debug(...args) {
     if (DEBUG) {
         console.log.apply(console, args)
@@ -295,6 +305,7 @@ export class Calculator {
     properties: string[];
     damageNumList: number[];
     damageBeforeElement: number;
+    formula: Expr;
     constructor(weapon: Weapon, fuse: Fuse, enemy: Enemy, input: Input) {
         this.weapon = weapon
         this.fuse = fuse
@@ -304,6 +315,7 @@ export class Calculator {
         this.damageNumList = []
         this.damageBeforeElement = 0
         this.getProperties()
+        this.formula = new Expr("None", 0)
     }
     calc() {
         let fusedName = this.getName()
@@ -363,7 +375,7 @@ export class Calculator {
         if (this.getCriticalHit() > 1) { Formula += ` * CriticalHit(${this.getCriticalHit()})`; }
         if (this.getHorseback() > 1) { Formula += ` * Horseback(${this.getHorseback()})`; }
         if (this.getDemonDragon() > 1) { Formula += ` * DemonDragon(${this.getDemonDragon()})`; }
-        if (this.getElementalDamage() > 0) { Formula += ` + ElementalDamage(${this.getElementalDamage()})`; }
+        if (this.getElementalDamage() > 0 && !this.scanProperties('Melee Projectile')) { Formula += ` + ElementalDamage(${this.getElementalDamage()})`; }
         if (this.getElementalMult() > 1) { Formula += `; Multiply result by ElementalMult(${this.getElementalMult()})`; }
         if (this.getContinuousFire() > 0) { Formula += ` + ContinuousFire(${this.getContinuousFire()})`; }
         if (this.scanProperties('Melee Projectile')) {
@@ -397,6 +409,7 @@ export class Calculator {
             fusedName,
             name,
             formula: Formula,
+            _formula: this.formula,
             damageNumList: this.damageNumList,
             blueDamageNum,
             defeated,
@@ -879,16 +892,28 @@ export class Calculator {
         // Aerocuda/Keese Shield Bash Instalkill
         if (attackType == "Perfect Parry" && (this.enemy.name == "Aerocuda" || isKeese)) {
             //debug("perfect parry on thing")
+            let name = (isKeese) ? "Keese" : "Areocuda"
+            this.formula = new Expr(`PerfectParry${name}`, this.enemy.hp)
             return this.enemy.hp
         }
         //debug("calculate 2")
         // No damage if shield bash from weapon with shield fuse
         if (weaponType < 3 && (attackType == "Shield Bash" || attackType == "Perfect Parry")) {
+            if (attackType == "Shield Bash") {
+                this.formula = new Expr("ShieldFusedWeaponShieldBash", 0)
+            } else if (attackType == "Perfect Parry") {
+                this.formula = new Expr("ShieldFusedWeaponPerfectParry", 0)
+            }
             return 0
         }
         //debug("calculate 2b", this.fuse.name, isChuchu)
         // Return enemy's HP if ancient blade or wind razor chuchu
         if ((this.fuse.name == "Ancient Blade" && this.enemy.ancientBladeDefeat == true) || (isChuchu && windRazor)) {
+            if (this.fuse.name == "Ancient Blade") {
+                this.formula = new Expr("AncientBlade", this.enemy.hp)
+            } else if (isChuchu && windRazor) {
+                this.formula = new Expr("ChuchuWindRazor", this.enemy.hp)
+            }
             return this.enemy.hp
         }
         //debug("calculate 3")
@@ -897,6 +922,11 @@ export class Calculator {
             //debug("pebblit")
             if (attackType == "Master Sword Beam" || attackType == "Sidon's Water") {
                 //debug("    Master sword or Sidon Water")
+                if (attackType == "Master Sword Beam") {
+                    this.formula = new Expr("PebblitMasterSwordBeam", 0)
+                } else if (attackType == "Sidon's Water") {
+                    this.formula = new Expr("PebblitSidonsWater", 0)
+                }
                 return 0
             }
             //debug("   Shatter", shatter)
@@ -904,15 +934,22 @@ export class Calculator {
                 //debug("   Shatter Thrown", shatter)
                 if (this.weapon.property == "Boomerang" && weaponType == 0) {
                     //debug("   Boomerang")
+                    this.formula = new Expr("PebblitBoomerang", this.enemy.hp / 2)
                     return this.enemy.hp / 2
                 }
+                this.formula = new Expr("PebblitThrown", this.enemy.hp)
                 return this.enemy.hp
             }
             if (shatter == 1.5 || isBomb || attackType == "Riju's Lightning") {
                 //debug("   Riju's Lightning or Bomb shatter ", shatter)
+                let kind = "Shatter"
+                if (isBomb) { kind = "Bomb" }
+                if (attackType == "Riju's Lightning") { kind = "RijusLightning" }
+                this.formula = new Expr(`Pebblit${kind}`, this.enemy.hp)
                 return this.enemy.hp
             }
             if (shatter == 1.25) {
+                this.formula = new Expr("PebblitShatter", this.enemy.hp / 2)
                 return this.enemy.hp / 2
             }
             return 0
@@ -920,12 +957,14 @@ export class Calculator {
         //debug("calculate 4")
         // No damage if armored and no shatter
         if (this.enemy.name.includes("(Armored)") && shatter == 1 && !this.input.weakened) {
+            this.formula = new Expr("ArmoredUnWeakened", 0)
             return 0
         }
 
         // Gibdo unweakened
         if (isGibdo) {
             if (!usingFire && !usingIce && !usingShock && !usingWater && this.fuse.property1 != "Dazzle" && !this.input.weakened) {
+                this.formula = new Expr("GibdoUnWeakened", 1)
                 return 1
             }
         }
@@ -933,6 +972,7 @@ export class Calculator {
         // Fire Chuchu Water Instakill
         if (this.enemy.name.includes("Fire Chuchu")) {
             if (this.scanProperties("Water") || attackType == "Sidon's Water") {
+                this.formula = new Expr("WaterOnFireChuchu", this.enemy.hp)
                 return this.enemy.hp
             }
         }
@@ -945,6 +985,12 @@ export class Calculator {
                 this.input.buff2 == "Master Sword Beam Up") {
                 masterSwordBeamUp = 1.5
             }
+            let formula = new Expr("ProjectileAttack", this.weapon.projectileAttack)
+            formula.mul("MasterSwordBeamUp", masterSwordBeamUp)
+            formula.mul("AttackUp", attackUp)
+            formula.mul("DemonDragon", demonDragon)
+            formula.floor()
+            this.formula = formula
             return Math.floor(this.weapon.projectileAttack * masterSwordBeamUp * attackUp * demonDragon)
         }
         //debug("help", this.enemy.name, this.weapon.name, attackType)
@@ -955,8 +1001,18 @@ export class Calculator {
                 waterMult = 1.5
             }
             //debug("     sidon's water")
-            return Math.floor((baseAttack + this.fuseUIAdjust((fuseBaseAttack * gerudoBonus) +
-                attackUpMod + zonaiBonus)) *
+            let formula = new Expr("BaseAttack", baseAttack)
+            let fuse = new Expr("FuseBaseAttack", fuseBaseAttack)
+            fuse.mul("GerudoBonus", gerudoBonus)
+            formula.add_term(fuse)
+            formula.add("AttackUpMod", attackUpMod)
+            formula.add("ZonaiBonus", zonaiBonus)
+            formula.mul("AttackUp", attackUp)
+            formula.mul("Frozen", frozen)
+            formula.mul("WaterMult", waterMult)
+            formula.floor()
+            this.formula = formula
+            return Math.floor((baseAttack + this.fuseUIAdjust((fuseBaseAttack * gerudoBonus) + attackUpMod + zonaiBonus)) *
                 attackUp * frozen * waterMult)
         }
 
@@ -965,17 +1021,26 @@ export class Calculator {
             //debug("    earthwake", attackType)
             if (attackType == "Throw") {
                 if (this.enemy.name == "Evermean") {
+                    this.formula = new Expr("EarthwakeThrowEvermean", 0)
                     return 0
                 }
                 //debug("    earthwake fuseBaseAttack", fuseBaseAttack)
                 let damageOutput = this.fuseUIAdjust(fuseBaseAttack)
+                let formula = new Expr("FuseBaseAttack", damageOutput)
                 if (elementalMult != 0) {
+                    formula.add("ElementalDamage", elementalDamage)
+                    formula.mul("ElementalMult", elementalMult)
                     damageOutput += elementalDamage
                     damageOutput *= elementalMult
                 }
+                formula.add("ContinuousFire", continuousFire)
+                this.formula = formula
                 damageOutput += continuousFire
                 return damageOutput
             }
+            let formula = new Expr("BaseAttack", baseAttack)
+            formula.mul("AttackUp", attackUp)
+            this.formula = formula
             return baseAttack * attackUp
         }
 
@@ -983,34 +1048,86 @@ export class Calculator {
         debug('main damage (1)', fuseBaseAttack, gerudoBonus, attackUpMod, zonaiBonus)
         debug('main damage (2)', baseAttack, mineruBonus, this.fuseUIAdjust((fuseBaseAttack * gerudoBonus) + attackUpMod + zonaiBonus))
 
+        let formula = new Expr("BaseAttack", baseAttack)
+        formula.add("MineruBonus", mineruBonus)
+
+        let fuse_form = new Expr("FuseBaseAttack", fuseBaseAttack)
+        fuse_form.mul("GerudoBonus", gerudoBonus)
+        fuse_form.add("AttackUpMod", attackUpMod)
+        fuse_form.add("ZonaiBonus", zonaiBonus)
+        // fuseUIAdjust( input )
+
+        if (this.weapon.type == 1) { fuse_form.mul("FuseUIAdjust", 1.052632); fuse_form.floor() }
+        else if (this.weapon.type == 2) { fuse_form.mul("FuseUIAdjust", 0.7536613); fuse_form.ceil() }
+        else { fuse_form.floor() }
+
+        formula.add_term(fuse_form)
+
         let damageOutput = baseAttack + mineruBonus +
             this.fuseUIAdjust((fuseBaseAttack * gerudoBonus) +
                 attackUpMod + zonaiBonus)
         debug('damage mult', damageOutput, lowHealth, wetPlayer, sneakstrike, lowDurability)
         damageOutput *= lowHealth * wetPlayer * sneakstrike * lowDurability * bone * flurryRush * shatter
-        debug('damage', damageOutput)
+
+        formula.mul("LowHealth", lowHealth)
+        formula.mul("WetPlayer", wetPlayer)
+        formula.mul("SneakStrike", sneakstrike)
+        formula.mul("LowDurability", lowDurability)
+        formula.mul("Bone", bone)
+        formula.mul("FlurryRush", flurryRush)
+        formula.mul("Shatter", shatter)
+
+        debug('damage', damageOutput, attackUp)
         damageOutput *= attackUp * headshot * _throw * oneDurability * frozen * treeCutter
+
+        formula.mul("AttackUp", attackUp)
+        formula.mul("HeadShot", headshot)
+        formula.mul("Throw", _throw)
+        formula.mul("OneDurability", oneDurability)
+        formula.mul("Frozen", frozen)
+        formula.mul("TreeCutter", treeCutter)
+        //console.log(formula.str())
+
         debug('damage', damageOutput)
         damageOutput *= arrowEnemyMult * criticalHit * horseback * demonDragon
+        formula.mul("ArrowEnemyMult", arrowEnemyMult)
+        formula.mul("CriticalHit", criticalHit)
+        formula.mul("Horseback", horseback)
+        formula.mul("DemonDragon", demonDragon)
+
         //debug('damage (before element)', damageOutput)
         this.damageBeforeElement = damageOutput
+
+        let formulaBeforeElement = formula.clone()
+
         if (elementalMult != 0) {
+            formula.add("ElementalDamage", elementalDamage)
+            formula.mul("ElementalMult", elementalMult)
             damageOutput += elementalDamage
             damageOutput *= elementalMult
         }
         //debug('after main damage formula', damageOutput)
         damageOutput += continuousFire
         damageOutput += fenceDamage
+        formula.add("ContinuousFire", continuousFire)
+        formula.add("FenceDamage", fenceDamage)
+        formula.floor()
         damageOutput = Math.min(2147483647, Math.floor(damageOutput))
         //debug('after continuous / fence', damageOutput)
         //debug('damage, projectile', damageOutput)
-        projectileDamage = this.createDamageNumList(damageOutput)
+        let tmp = this.createDamageNumList(damageOutput, formula)
+        projectileDamage = tmp.projectileDamage
+        let projectileDamageFormula = tmp.projectileDamageFormula
+
         debug('damage, projectile', damageOutput, projectileDamage)
         if (this.scanProperties("Melee Projectile")) {
-            debug('melee damage, projectile', this.damageBeforeElement, projectileDamage)
+            formulaBeforeElement.add_term(projectileDamageFormula)
+            this.formula = formulaBeforeElement
             return this.damageBeforeElement + projectileDamage
         }
         debug('damage, projectile, properties', damageOutput, projectileDamage, this.properties)
+        formula.add_term(projectileDamageFormula)
+        this.formula = formula
         return damageOutput + projectileDamage
     }
 
@@ -1039,8 +1156,8 @@ export class Calculator {
     fuseUIAdjust(input: number): number {
         //debug('    fuseUIAdjust', input, input * 0.7536613, 'type', this.weapon.type)
         switch (this.weapon.type) {
-            case 1: return Math.floor(input * 1.052632)
-            case 2: return Math.ceil(input * 0.7536613)
+            case 1: return Math.floor(input * 1.052632) // Two Handed Weapon
+            case 2: return Math.ceil(input * 0.7536613) // Spears
             default: return Math.floor(input)
         }
     }
@@ -1412,7 +1529,7 @@ export class Calculator {
         }
         return mineruBonus
     }
-    createDamageNumList(damageOutput: number): number {
+    createDamageNumList(damageOutput: number, damageOutputFormula: Expr): { projectileDamage: number, projectileDamageFormula: Expr } {
         let windRazorAttack = 10
         let windRazorElement = this.scanProperties("Fire") || this.scanProperties("Ice") || this.scanProperties("Shock")
         let multishotCount = 0
@@ -1442,23 +1559,33 @@ export class Calculator {
         if (this.scanProperties("Wind Razor")) {
             this.damageNumList.push(damageOutput)
             // debug("wind razor (module)", windRazorAttack)
+            let formula = new Expr("WindRazorAttack", 10)
             windRazorAttack += this.getFuseBaseAttack()
             windRazorAttack *= this.getAttackUp()
+            formula.add("FuseBaseAttack", this.getFuseBaseAttack())
+            formula.mul("AttackUp", this.getAttackUp())
             if (elementalMult != 0 && windRazorElement) {
                 windRazorAttack += this.getElementalDamage()
                 windRazorAttack *= elementalMult
+                formula.add("ElementalDamage", this.getElementalDamage())
+                formula.mul("ElementalMult", elementalMult)
             }
+            formula.mul("WaterMult", waterMult)
+            formula.mul("FireMult", fireMult)
+            formula.add("ContinuousFire", this.getContinuousFire())
+            formula.floor()
             windRazorAttack *= waterMult * fireMult
             windRazorAttack += this.getContinuousFire()
+
             this.damageNumList.push(Math.floor(windRazorAttack))
-            //debug("wind razor", windRazorAttack)
             //data.damageNumList = damageNumList
-            return Math.floor(windRazorAttack)
+            // return Math.floor(windRazorAttack)
+            return { projectileDamage: Math.floor(windRazorAttack), projectileDamageFormula: formula }
         }
 
         // IF USING ICE
         if ((this.getUsingIce() && this.enemy.canFreeze == true) || this.input.frozen == true) {
-            return 0
+            return { projectileDamage: 0, projectileDamageFormula: new Expr("None", 0) }
         }
 
         // MULTISHOT
@@ -1472,8 +1599,8 @@ export class Calculator {
             multishotCount = 5
         }
         if (multishotCount > 0) {
-            //debug("multishot", this.damageBeforeElement)
             this.damageNumList.push(damageOutput)
+
             for (let i = 0; i < multishotCount - 1; i++) {
                 if (true || this.getUsingBomb() || this.getUsingWater() || this.getUsingBeam()) { // TEMPORARILY MAKE ALWAYS TRUE
                     this.damageNumList.push(damageOutput - this.getContinuousFire())
@@ -1482,45 +1609,73 @@ export class Calculator {
                     this.damageNumList.push(this.damageBeforeElement)
                 }
             }
-
             if (this.input.attackType == "Riju's Lightning") {
                 this.damageNumList.push(rijuDamage)
+                let formula = damageOutputFormula.clone()
+                formula.add("ContinuousFore", -this.getContinuousFire())
+                formula.mul("MultiShotCount", multishotCount - 1)
+                formula.add("RijuDamage", rijuDamage)
                 //data.damageNumList = damageNumList
-                return (damageOutput - this.getContinuousFire()) * (multishotCount - 1) + rijuDamage
+                return {
+                    projectileDamage: (damageOutput - this.getContinuousFire()) * (multishotCount - 1) + rijuDamage,
+                    projectileDamageFormula: formula
+                }
             }
 
             //data.damageNumList = damageNumList
 
             if (true || this.getUsingBomb() || this.getUsingWater() || this.getUsingBeam()) { // TEMPORARILY MAKE ALWAYS TRUE
                 //debug("output", (damageOutput - this.getContinuousFire()), multishotCount - 1)
-                return (damageOutput - this.getContinuousFire()) * (multishotCount - 1)
+                let formula = damageOutputFormula.clone()
+                formula.add("ContinuousFire", -this.getContinuousFire())
+                formula.mul("MultiShotCount", multishotCount - 1)
+                return {
+                    projectileDamage: (damageOutput - this.getContinuousFire()) * (multishotCount - 1),
+                    projectileDamageFormula: formula
+                }
             }
-
-            return this.damageBeforeElement * (multishotCount - 1)
+            // @ts-ignore
+            let formula = new Expr("Projectile", this.damageBeforeElement)
+            formula.mul("MultiShotCount", multishotCount - 1)
+            return {
+                projectileDamage: this.damageBeforeElement * (multishotCount - 1),
+                projectileDamageFormula: formula
+            }
         }
 
         // MELEE PROJECTILE
         if (meleeProjectile) {
             let attackUp = this.getAttackUp()
+            let formula = new Expr("ProjectileAttack", this.fuse.projectileAttack)
+            formula.mul("AttackUp", attackUp)
             projectileAttack = this.fuse.projectileAttack * attackUp
             if (this.weapon.property == "Rod") {
                 projectileAttack *= 2
+                formula.mul("Rod", 2)
                 if (this.fuse.property1 != "Ice Burst") {
                     extraProjectileCount = 2
                 }
             }
             projectileAttack *= waterMult * fireMult
-
+            formula.mul("WaterMul", waterMult)
+            formula.mul("FireMul", fireMult)
             this.damageNumList.push(this.damageBeforeElement)
 
+            let formula_first = formula.clone()
             if (elementalMult != 0) {
                 firstProjectileAttack = projectileAttack + this.getElementalDamage()
                 firstProjectileAttack *= elementalMult
-                debug('projectileAttack', projectileAttack, this.getElementalDamage(), elementalMult)
+                formula_first.add("ElementalDamage", this.getElementalDamage())
+                formula_first.mul("ElementalMult", elementalMult)
+                debug('projectileAttack', projectileAttack, this.getElementalDamage(), elementalMult, this.fuse.projectileAttack)
             }
+            formula_first.add("ContinuousFire", this.getContinuousFire())
             firstProjectileAttack += this.getContinuousFire()
+
             debug('firstProjectileAttack', firstProjectileAttack, projectileAttack, extraProjectileCount, this.getAttackUp())
+
             firstProjectileAttack = Math.floor(firstProjectileAttack)
+            formula_first.floor()
             this.damageNumList.push(firstProjectileAttack)
 
             for (let i = 0; i < extraProjectileCount; i++) {
@@ -1534,9 +1689,22 @@ export class Calculator {
             //data.damageNumList = damageNumList
 
             if (this.getUsingWater()) {
-                return firstProjectileAttack + firstProjectileAttack * extraProjectileCount
+                let mult = formula_first.clone()
+                mult.mul("ExtraProjectileCount", extraProjectileCount)
+                formula_first.add_term(mult)
+                return {
+                    projectileDamage: firstProjectileAttack + firstProjectileAttack * extraProjectileCount,
+                    projectileDamageFormula: formula_first
+                }
+
             }
-            return firstProjectileAttack + projectileAttack * extraProjectileCount
+            formula.mul("ExtraProjectileCount", extraProjectileCount)
+            formula_first.add_term(formula)
+            debug('output melee', firstProjectileAttack, projectileAttack, extraProjectileCount)
+            return {
+                projectileDamage: firstProjectileAttack + projectileAttack * extraProjectileCount,
+                projectileDamageFormula: formula_first
+            }
         }
 
         // RIJU'S LIGHTNING
@@ -1544,9 +1712,9 @@ export class Calculator {
             this.damageNumList.push(damageOutput)
             this.damageNumList.push(rijuDamage)
             // data.damageNumList = damageNumList
-            return rijuDamage
+            return { projectileDamage: rijuDamage, projectileDamageFormula: new Expr("RijusLightning", rijuDamage) }
         }
-        return 0
+        return { projectileDamage: 0, projectileDamageFormula: new Expr("None", 0) }
     }
     getAttackUpMod(): number {
         return this.input.attackUpMod
@@ -1569,50 +1737,54 @@ export class Calculator {
             fireMult = 2
         }
 
-
-        if (meleeProjectile) {
-            let attackUp = this.getAttackUp()
-            projectileAttack = this.fuse.projectileAttack * attackUp
-            if (this.weapon.property == "Rod") {
-                projectileAttack *= 2
-                if (this.fuse.property1 != "Ice Burst") {
-                    extraProjectileCount = 2
-                }
-            }
-            projectileAttack *= waterMult * fireMult
-            let projectileAttack_s = `ProjectileAttack(${projectileAttack})`
-            //this.damageNumList.push(this.damageBeforeElement)
-            //this.damageNameList["meleeProjectileBefore"] = this.damageBeforeElement
-
-            if (elementalMult != 0) {
-                firstProjectileAttack = projectileAttack + this.getElementalDamage()
-                firstProjectileAttack *= elementalMult
-                //debug('projectileAttack', projectileAttack, this.getElementalDamage(), elementalMult)
-            }
-            firstProjectileAttack += this.getContinuousFire()
-            //debug('firstProjectileAttack', firstProjectileAttack, projectileAttack, extraProjectileCount, this.getAttackUp())
-            let firstProjectileAttack_s = `FirstProjectileAttack(${Math.floor(firstProjectileAttack)})`
-            //this.damageNumList.push(firstProjectileAttack)
-            //this.damageNameList["firstProjectileAttack"] = firstProjectileAttack
-
-            for (let i = 0; i < extraProjectileCount; i++) {
-                if (this.getUsingWater()) {
-                    //this.damageNumList.push(firstProjectileAttack)
-                    //this.damageNameList[`extraProjective ${i + 1}`] = firstProjectileAttack
-                } else {
-                    //this.damageNumList.push(projectileAttack)
-                    //this.damageNameList[`extraProjective ${i + 1}`] = projectileAttack
-                }
-            }
-
-            //data.damageNumList = damageNumList
-
-            if (this.getUsingWater()) {
-                return ` Projectile(${firstProjectileAttack_s} + ${firstProjectileAttack_s} * ${extraProjectileCount})`
-            }
-            return ` + Projectile(${firstProjectileAttack_s} + ${projectileAttack_s} * ${extraProjectileCount})`
+        if (!meleeProjectile) {
+            return ""
         }
-        return ''
+        let attackUp = this.getAttackUp()
+        projectileAttack = this.fuse.projectileAttack * attackUp
+        if (this.weapon.property == "Rod") {
+            projectileAttack *= 2
+            if (this.fuse.property1 != "Ice Burst") {
+                extraProjectileCount = 2
+            }
+        }
+        projectileAttack *= waterMult * fireMult
+        let projectileAttack_s = `ProjectileAttack(${projectileAttack})`
+        //this.damageNumList.push(this.damageBeforeElement)
+        //this.damageNameList["meleeProjectileBefore"] = this.damageBeforeElement
+
+        if (elementalMult != 0) {
+            firstProjectileAttack = projectileAttack + this.getElementalDamage()
+            firstProjectileAttack *= elementalMult
+            //debug('projectileAttack', projectileAttack, this.getElementalDamage(), elementalMult)
+        }
+        firstProjectileAttack += this.getContinuousFire()
+        //debug('firstProjectileAttack', firstProjectileAttack, projectileAttack, extraProjectileCount, this.getAttackUp())
+        let firstProjectileAttack_s = `FirstProjectileAttack(${Math.floor(firstProjectileAttack)})`
+        //this.damageNumList.push(firstProjectileAttack)
+        //this.damageNameList["firstProjectileAttack"] = firstProjectileAttack
+
+        for (let i = 0; i < extraProjectileCount; i++) {
+            if (this.getUsingWater()) {
+                //this.damageNumList.push(firstProjectileAttack)
+                //this.damageNameList[`extraProjective ${i + 1}`] = firstProjectileAttack
+            } else {
+                //this.damageNumList.push(projectileAttack)
+                //this.damageNameList[`extraProjective ${i + 1}`] = projectileAttack
+            }
+        }
+
+        //data.damageNumList = damageNumList
+
+        let multiple = ""
+        if (extraProjectileCount) {
+            if (this.getUsingWater()) {
+                multiple = ` + ${firstProjectileAttack_s} * ${extraProjectileCount})`
+            } else {
+                multiple = ` + ${projectileAttack_s} * ${extraProjectileCount})`
+            }
+        }
+        return ` + Projectile(${firstProjectileAttack_s}${multiple})`
     }
 }
 

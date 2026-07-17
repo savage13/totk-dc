@@ -4,6 +4,163 @@ var __export = (target, all) => {
     __defProp(target, name, { get: all[name], enumerable: true });
 };
 
+// src/equation.ts
+var _index = 0;
+var Value = class {
+  name;
+  value;
+  constructor(name, value) {
+    this.name = name;
+    this.value = value;
+  }
+  str(names = true, level) {
+    let value = this.value instanceof Expr ? this.value.str(names, level + 1) : this.value;
+    let t = `${this.name}`;
+    _index += 1;
+    if (names) {
+      return `<span class="${t}">${this.name}(${value})</span>`;
+    }
+    return `<span class="${t}">${value}</span>`;
+  }
+  valueOf() {
+    if (this.value instanceof Expr) {
+      return this.value.valueOf();
+    }
+    return this.value;
+  }
+};
+var Terms = class {
+  values;
+  constructor(value) {
+    this.values = [value];
+  }
+  mul(value) {
+    this.values.push(value);
+  }
+  str(names = true, level) {
+    return this.values.map((v) => v.str(names, level + 1)).join(" * ");
+  }
+  valueOf() {
+    let out = 1;
+    for (const v of this.values) {
+      out *= v.valueOf();
+    }
+    return out;
+  }
+};
+var Expr = class _Expr {
+  terms;
+  _floor;
+  _ceil;
+  constructor(name, value) {
+    let v = new Terms(new Value(name, value));
+    this.terms = [v];
+    this._floor = false;
+    this._ceil = false;
+  }
+  add_term(value) {
+    if (value.valueOf() == 0) {
+      return;
+    }
+    this.terms.push(value);
+  }
+  add(name, value) {
+    let t = new Terms(new Value(name, value));
+    if (value == 0) {
+      return;
+    }
+    this.add_term(t);
+  }
+  clone() {
+    let t = new _Expr("empty", 0);
+    t.terms = [...this.terms];
+    return t;
+  }
+  mul_term(value) {
+    if (value.valueOf() == 1) {
+      return;
+    }
+    let t = new Terms(this.clone());
+    t.mul(value);
+    this.terms = [t];
+  }
+  mul(name, value) {
+    if (value == 1) {
+      return;
+    }
+    let t = new Value(name, value);
+    this.mul_term(t);
+  }
+  str(names = true, level = 0) {
+    if (level == 0) {
+      _index = 0;
+    }
+    let FL = "floor(";
+    let FR = ")";
+    let CL = "ceil(";
+    let CR = ")";
+    let s = this.terms.map((t) => t.str(names, level + 1)).join(" + ");
+    if (this.terms.length > 1 && level > 0 && !this._floor && !this._ceil) {
+      s = `(${s})`;
+    } else {
+      if (this._floor) {
+        s = `<span class="func">${FL}${s}${FR}</span>`;
+      }
+      if (this._ceil) {
+        s = `<span class="func">${CL}${s}${CR}</span>`;
+      }
+    }
+    return s;
+  }
+  wrap() {
+    const t = this.clone();
+    t._floor = false;
+    t._ceil = false;
+    this.terms = [t];
+    return t;
+  }
+  floor() {
+    let t = this.wrap();
+    t._floor = true;
+  }
+  ceil() {
+    let t = this.wrap();
+    t._ceil = true;
+  }
+  valueOf() {
+    let out = 0;
+    for (let t of this.terms) {
+      out += t.valueOf();
+    }
+    if (this._floor) {
+      out = Math.floor(out);
+    }
+    if (this._ceil) {
+      out = Math.ceil(out);
+    }
+    return out;
+  }
+};
+function testing() {
+  let e = new Expr("BaseAttack", 5);
+  e.add("FuseBAseAttack", 1);
+  e.mul("AttackUp", 1.2);
+  e.add("Elemental", 17);
+  let pro = new Expr("Projectile", 15);
+  pro.mul("AttackUp", 1.2);
+  e.add_term(pro);
+  let e3 = new Expr("BaseAttack", 28);
+  e3.mul("AttackUp", 1.2);
+  e3.floor();
+  e3.add("Projectile", 33);
+  console.log(e3.terms);
+  console.log(e3.terms[0]);
+  console.log(e3.terms[1]);
+  console.log(e3.str());
+  console.log(e3.str(false));
+  console.log(e3.valueOf());
+}
+
 // src/weapon_data.json
 var weapon_data_exports = {};
 __export(weapon_data_exports, {
@@ -20665,6 +20822,13 @@ var enemy_data_default = [
 ];
 
 // src/totk-dc.ts
+var WEAPON_TYPE = {
+  OneHanded: 0,
+  TwoHanded: 1,
+  Spear: 2,
+  Bow: 3,
+  Sheild: 4
+};
 var DEBUG = false;
 function debug(...args) {
   if (DEBUG) {
@@ -20939,6 +21103,7 @@ var Calculator = class _Calculator {
   properties;
   damageNumList;
   damageBeforeElement;
+  formula;
   constructor(weapon, fuse, enemy, input) {
     this.weapon = weapon;
     this.fuse = fuse;
@@ -20948,6 +21113,7 @@ var Calculator = class _Calculator {
     this.damageNumList = [];
     this.damageBeforeElement = 0;
     this.getProperties();
+    this.formula = new Expr("None", 0);
   }
   calc() {
     let fusedName = this.getName();
@@ -21037,7 +21203,7 @@ var Calculator = class _Calculator {
     if (this.getDemonDragon() > 1) {
       Formula += ` * DemonDragon(${this.getDemonDragon()})`;
     }
-    if (this.getElementalDamage() > 0) {
+    if (this.getElementalDamage() > 0 && !this.scanProperties("Melee Projectile")) {
       Formula += ` + ElementalDamage(${this.getElementalDamage()})`;
     }
     if (this.getElementalMult() > 1) {
@@ -21069,6 +21235,7 @@ var Calculator = class _Calculator {
       fusedName,
       name,
       formula: Formula,
+      _formula: this.formula,
       damageNumList: this.damageNumList,
       blueDamageNum,
       defeated,
@@ -21536,42 +21703,73 @@ var Calculator = class _Calculator {
     let mineruBonus = this.getMineruBonus();
     debug("ATTACKUP", attackUpMod);
     if (attackType == "Perfect Parry" && (this.enemy.name == "Aerocuda" || isKeese)) {
+      let name = isKeese ? "Keese" : "Areocuda";
+      this.formula = new Expr(`PerfectParry${name}`, this.enemy.hp);
       return this.enemy.hp;
     }
     if (weaponType < 3 && (attackType == "Shield Bash" || attackType == "Perfect Parry")) {
+      if (attackType == "Shield Bash") {
+        this.formula = new Expr("ShieldFusedWeaponShieldBash", 0);
+      } else if (attackType == "Perfect Parry") {
+        this.formula = new Expr("ShieldFusedWeaponPerfectParry", 0);
+      }
       return 0;
     }
     if (this.fuse.name == "Ancient Blade" && this.enemy.ancientBladeDefeat == true || isChuchu && windRazor) {
+      if (this.fuse.name == "Ancient Blade") {
+        this.formula = new Expr("AncientBlade", this.enemy.hp);
+      } else if (isChuchu && windRazor) {
+        this.formula = new Expr("ChuchuWindRazor", this.enemy.hp);
+      }
       return this.enemy.hp;
     }
     if (isPebblit) {
       if (attackType == "Master Sword Beam" || attackType == "Sidon's Water") {
+        if (attackType == "Master Sword Beam") {
+          this.formula = new Expr("PebblitMasterSwordBeam", 0);
+        } else if (attackType == "Sidon's Water") {
+          this.formula = new Expr("PebblitSidonsWater", 0);
+        }
         return 0;
       }
       if (shatter > 1 && attackType == "Throw") {
         if (this.weapon.property == "Boomerang" && weaponType == 0) {
+          this.formula = new Expr("PebblitBoomerang", this.enemy.hp / 2);
           return this.enemy.hp / 2;
         }
+        this.formula = new Expr("PebblitThrown", this.enemy.hp);
         return this.enemy.hp;
       }
       if (shatter == 1.5 || isBomb || attackType == "Riju's Lightning") {
+        let kind = "Shatter";
+        if (isBomb) {
+          kind = "Bomb";
+        }
+        if (attackType == "Riju's Lightning") {
+          kind = "RijusLightning";
+        }
+        this.formula = new Expr(`Pebblit${kind}`, this.enemy.hp);
         return this.enemy.hp;
       }
       if (shatter == 1.25) {
+        this.formula = new Expr("PebblitShatter", this.enemy.hp / 2);
         return this.enemy.hp / 2;
       }
       return 0;
     }
     if (this.enemy.name.includes("(Armored)") && shatter == 1 && !this.input.weakened) {
+      this.formula = new Expr("ArmoredUnWeakened", 0);
       return 0;
     }
     if (isGibdo) {
       if (!usingFire && !usingIce && !usingShock && !usingWater && this.fuse.property1 != "Dazzle" && !this.input.weakened) {
+        this.formula = new Expr("GibdoUnWeakened", 1);
         return 1;
       }
     }
     if (this.enemy.name.includes("Fire Chuchu")) {
       if (this.scanProperties("Water") || attackType == "Sidon's Water") {
+        this.formula = new Expr("WaterOnFireChuchu", this.enemy.hp);
         return this.enemy.hp;
       }
     }
@@ -21580,6 +21778,12 @@ var Calculator = class _Calculator {
       if (this.input.buff1 == "Master Sword Beam Up" || this.input.buff2 == "Master Sword Beam Up") {
         masterSwordBeamUp = 1.5;
       }
+      let formula2 = new Expr("ProjectileAttack", this.weapon.projectileAttack);
+      formula2.mul("MasterSwordBeamUp", masterSwordBeamUp);
+      formula2.mul("AttackUp", attackUp);
+      formula2.mul("DemonDragon", demonDragon);
+      formula2.floor();
+      this.formula = formula2;
       return Math.floor(this.weapon.projectileAttack * masterSwordBeamUp * attackUp * demonDragon);
     }
     if (attackType == "Sidon's Water") {
@@ -21587,47 +21791,111 @@ var Calculator = class _Calculator {
       if (this.enemy.element == "Fire") {
         waterMult = 1.5;
       }
+      let formula2 = new Expr("BaseAttack", baseAttack);
+      let fuse = new Expr("FuseBaseAttack", fuseBaseAttack);
+      fuse.mul("GerudoBonus", gerudoBonus);
+      formula2.add_term(fuse);
+      formula2.add("AttackUpMod", attackUpMod);
+      formula2.add("ZonaiBonus", zonaiBonus);
+      formula2.mul("AttackUp", attackUp);
+      formula2.mul("Frozen", frozen);
+      formula2.mul("WaterMult", waterMult);
+      formula2.floor();
+      this.formula = formula2;
       return Math.floor((baseAttack + this.fuseUIAdjust(fuseBaseAttack * gerudoBonus + attackUpMod + zonaiBonus)) * attackUp * frozen * waterMult);
     }
     if (this.weapon.name == "None (Earthwake Technique)") {
       if (attackType == "Throw") {
         if (this.enemy.name == "Evermean") {
+          this.formula = new Expr("EarthwakeThrowEvermean", 0);
           return 0;
         }
         let damageOutput2 = this.fuseUIAdjust(fuseBaseAttack);
+        let formula3 = new Expr("FuseBaseAttack", damageOutput2);
         if (elementalMult != 0) {
+          formula3.add("ElementalDamage", elementalDamage);
+          formula3.mul("ElementalMult", elementalMult);
           damageOutput2 += elementalDamage;
           damageOutput2 *= elementalMult;
         }
+        formula3.add("ContinuousFire", continuousFire);
+        this.formula = formula3;
         damageOutput2 += continuousFire;
         return damageOutput2;
       }
+      let formula2 = new Expr("BaseAttack", baseAttack);
+      formula2.mul("AttackUp", attackUp);
+      this.formula = formula2;
       return baseAttack * attackUp;
     }
     debug("main damage (1)", fuseBaseAttack, gerudoBonus, attackUpMod, zonaiBonus);
     debug("main damage (2)", baseAttack, mineruBonus, this.fuseUIAdjust(fuseBaseAttack * gerudoBonus + attackUpMod + zonaiBonus));
+    let formula = new Expr("BaseAttack", baseAttack);
+    formula.add("MineruBonus", mineruBonus);
+    let fuse_form = new Expr("FuseBaseAttack", fuseBaseAttack);
+    fuse_form.mul("GerudoBonus", gerudoBonus);
+    fuse_form.add("AttackUpMod", attackUpMod);
+    fuse_form.add("ZonaiBonus", zonaiBonus);
+    if (this.weapon.type == 1) {
+      fuse_form.mul("FuseUIAdjust", 1.052632);
+      fuse_form.floor();
+    } else if (this.weapon.type == 2) {
+      fuse_form.mul("FuseUIAdjust", 0.7536613);
+      fuse_form.ceil();
+    } else {
+      fuse_form.floor();
+    }
+    formula.add_term(fuse_form);
     let damageOutput = baseAttack + mineruBonus + this.fuseUIAdjust(fuseBaseAttack * gerudoBonus + attackUpMod + zonaiBonus);
     debug("damage mult", damageOutput, lowHealth, wetPlayer, sneakstrike, lowDurability);
     damageOutput *= lowHealth * wetPlayer * sneakstrike * lowDurability * bone * flurryRush * shatter;
-    debug("damage", damageOutput);
+    formula.mul("LowHealth", lowHealth);
+    formula.mul("WetPlayer", wetPlayer);
+    formula.mul("SneakStrike", sneakstrike);
+    formula.mul("LowDurability", lowDurability);
+    formula.mul("Bone", bone);
+    formula.mul("FlurryRush", flurryRush);
+    formula.mul("Shatter", shatter);
+    debug("damage", damageOutput, attackUp);
     damageOutput *= attackUp * headshot * _throw * oneDurability * frozen * treeCutter;
+    formula.mul("AttackUp", attackUp);
+    formula.mul("HeadShot", headshot);
+    formula.mul("Throw", _throw);
+    formula.mul("OneDurability", oneDurability);
+    formula.mul("Frozen", frozen);
+    formula.mul("TreeCutter", treeCutter);
     debug("damage", damageOutput);
     damageOutput *= arrowEnemyMult * criticalHit * horseback * demonDragon;
+    formula.mul("ArrowEnemyMult", arrowEnemyMult);
+    formula.mul("CriticalHit", criticalHit);
+    formula.mul("Horseback", horseback);
+    formula.mul("DemonDragon", demonDragon);
     this.damageBeforeElement = damageOutput;
+    let formulaBeforeElement = formula.clone();
     if (elementalMult != 0) {
+      formula.add("ElementalDamage", elementalDamage);
+      formula.mul("ElementalMult", elementalMult);
       damageOutput += elementalDamage;
       damageOutput *= elementalMult;
     }
     damageOutput += continuousFire;
     damageOutput += fenceDamage;
+    formula.add("ContinuousFire", continuousFire);
+    formula.add("FenceDamage", fenceDamage);
+    formula.floor();
     damageOutput = Math.min(2147483647, Math.floor(damageOutput));
-    projectileDamage = this.createDamageNumList(damageOutput);
+    let tmp = this.createDamageNumList(damageOutput, formula);
+    projectileDamage = tmp.projectileDamage;
+    let projectileDamageFormula = tmp.projectileDamageFormula;
     debug("damage, projectile", damageOutput, projectileDamage);
     if (this.scanProperties("Melee Projectile")) {
-      debug("melee damage, projectile", this.damageBeforeElement, projectileDamage);
+      formulaBeforeElement.add_term(projectileDamageFormula);
+      this.formula = formulaBeforeElement;
       return this.damageBeforeElement + projectileDamage;
     }
     debug("damage, projectile, properties", damageOutput, projectileDamage, this.properties);
+    formula.add_term(projectileDamageFormula);
+    this.formula = formula;
     return damageOutput + projectileDamage;
   }
   getBaseAttack() {
@@ -21654,8 +21922,10 @@ var Calculator = class _Calculator {
     switch (this.weapon.type) {
       case 1:
         return Math.floor(input * 1.052632);
+      // Two Handed Weapon
       case 2:
         return Math.ceil(input * 0.7536613);
+      // Spears
       default:
         return Math.floor(input);
     }
@@ -21978,7 +22248,7 @@ var Calculator = class _Calculator {
     }
     return mineruBonus;
   }
-  createDamageNumList(damageOutput) {
+  createDamageNumList(damageOutput, damageOutputFormula) {
     let windRazorAttack = 10;
     let windRazorElement = this.scanProperties("Fire") || this.scanProperties("Ice") || this.scanProperties("Shock");
     let multishotCount = 0;
@@ -22000,19 +22270,28 @@ var Calculator = class _Calculator {
     }
     if (this.scanProperties("Wind Razor")) {
       this.damageNumList.push(damageOutput);
+      let formula = new Expr("WindRazorAttack", 10);
       windRazorAttack += this.getFuseBaseAttack();
       windRazorAttack *= this.getAttackUp();
+      formula.add("FuseBaseAttack", this.getFuseBaseAttack());
+      formula.mul("AttackUp", this.getAttackUp());
       if (elementalMult != 0 && windRazorElement) {
         windRazorAttack += this.getElementalDamage();
         windRazorAttack *= elementalMult;
+        formula.add("ElementalDamage", this.getElementalDamage());
+        formula.mul("ElementalMult", elementalMult);
       }
+      formula.mul("WaterMult", waterMult);
+      formula.mul("FireMult", fireMult);
+      formula.add("ContinuousFire", this.getContinuousFire());
+      formula.floor();
       windRazorAttack *= waterMult * fireMult;
       windRazorAttack += this.getContinuousFire();
       this.damageNumList.push(Math.floor(windRazorAttack));
-      return Math.floor(windRazorAttack);
+      return { projectileDamage: Math.floor(windRazorAttack), projectileDamageFormula: formula };
     }
     if (this.getUsingIce() && this.enemy.canFreeze == true || this.input.frozen == true) {
-      return 0;
+      return { projectileDamage: 0, projectileDamageFormula: new Expr("None", 0) };
     }
     if (this.weapon.property == "Multishot x2") {
       multishotCount = 2;
@@ -22033,32 +22312,60 @@ var Calculator = class _Calculator {
       }
       if (this.input.attackType == "Riju's Lightning") {
         this.damageNumList.push(rijuDamage);
-        return (damageOutput - this.getContinuousFire()) * (multishotCount - 1) + rijuDamage;
+        let formula2 = damageOutputFormula.clone();
+        formula2.add("ContinuousFore", -this.getContinuousFire());
+        formula2.mul("MultiShotCount", multishotCount - 1);
+        formula2.add("RijuDamage", rijuDamage);
+        return {
+          projectileDamage: (damageOutput - this.getContinuousFire()) * (multishotCount - 1) + rijuDamage,
+          projectileDamageFormula: formula2
+        };
       }
       if (true) {
-        return (damageOutput - this.getContinuousFire()) * (multishotCount - 1);
+        let formula2 = damageOutputFormula.clone();
+        formula2.add("ContinuousFire", -this.getContinuousFire());
+        formula2.mul("MultiShotCount", multishotCount - 1);
+        return {
+          projectileDamage: (damageOutput - this.getContinuousFire()) * (multishotCount - 1),
+          projectileDamageFormula: formula2
+        };
       }
-      return this.damageBeforeElement * (multishotCount - 1);
+      let formula = new Expr("Projectile", this.damageBeforeElement);
+      formula.mul("MultiShotCount", multishotCount - 1);
+      return {
+        projectileDamage: this.damageBeforeElement * (multishotCount - 1),
+        projectileDamageFormula: formula
+      };
     }
     if (meleeProjectile) {
       let attackUp = this.getAttackUp();
+      let formula = new Expr("ProjectileAttack", this.fuse.projectileAttack);
+      formula.mul("AttackUp", attackUp);
       projectileAttack = this.fuse.projectileAttack * attackUp;
       if (this.weapon.property == "Rod") {
         projectileAttack *= 2;
+        formula.mul("Rod", 2);
         if (this.fuse.property1 != "Ice Burst") {
           extraProjectileCount = 2;
         }
       }
       projectileAttack *= waterMult * fireMult;
+      formula.mul("WaterMul", waterMult);
+      formula.mul("FireMul", fireMult);
       this.damageNumList.push(this.damageBeforeElement);
+      let formula_first = formula.clone();
       if (elementalMult != 0) {
         firstProjectileAttack = projectileAttack + this.getElementalDamage();
         firstProjectileAttack *= elementalMult;
-        debug("projectileAttack", projectileAttack, this.getElementalDamage(), elementalMult);
+        formula_first.add("ElementalDamage", this.getElementalDamage());
+        formula_first.mul("ElementalMult", elementalMult);
+        debug("projectileAttack", projectileAttack, this.getElementalDamage(), elementalMult, this.fuse.projectileAttack);
       }
+      formula_first.add("ContinuousFire", this.getContinuousFire());
       firstProjectileAttack += this.getContinuousFire();
       debug("firstProjectileAttack", firstProjectileAttack, projectileAttack, extraProjectileCount, this.getAttackUp());
       firstProjectileAttack = Math.floor(firstProjectileAttack);
+      formula_first.floor();
       this.damageNumList.push(firstProjectileAttack);
       for (let i = 0; i < extraProjectileCount; i++) {
         if (this.getUsingWater()) {
@@ -22068,16 +22375,28 @@ var Calculator = class _Calculator {
         }
       }
       if (this.getUsingWater()) {
-        return firstProjectileAttack + firstProjectileAttack * extraProjectileCount;
+        let mult = formula_first.clone();
+        mult.mul("ExtraProjectileCount", extraProjectileCount);
+        formula_first.add_term(mult);
+        return {
+          projectileDamage: firstProjectileAttack + firstProjectileAttack * extraProjectileCount,
+          projectileDamageFormula: formula_first
+        };
       }
-      return firstProjectileAttack + projectileAttack * extraProjectileCount;
+      formula.mul("ExtraProjectileCount", extraProjectileCount);
+      formula_first.add_term(formula);
+      debug("output melee", firstProjectileAttack, projectileAttack, extraProjectileCount);
+      return {
+        projectileDamage: firstProjectileAttack + projectileAttack * extraProjectileCount,
+        projectileDamageFormula: formula_first
+      };
     }
     if (this.input.attackType == "Riju's Lightning") {
       this.damageNumList.push(damageOutput);
       this.damageNumList.push(rijuDamage);
-      return rijuDamage;
+      return { projectileDamage: rijuDamage, projectileDamageFormula: new Expr("RijusLightning", rijuDamage) };
     }
-    return 0;
+    return { projectileDamage: 0, projectileDamageFormula: new Expr("None", 0) };
   }
   getAttackUpMod() {
     return this.input.attackUpMod;
@@ -22097,34 +22416,39 @@ var Calculator = class _Calculator {
     if (enemyElement == "Ice" && this.getUsingFire()) {
       fireMult = 2;
     }
-    if (meleeProjectile) {
-      let attackUp = this.getAttackUp();
-      projectileAttack = this.fuse.projectileAttack * attackUp;
-      if (this.weapon.property == "Rod") {
-        projectileAttack *= 2;
-        if (this.fuse.property1 != "Ice Burst") {
-          extraProjectileCount = 2;
-        }
-      }
-      projectileAttack *= waterMult * fireMult;
-      let projectileAttack_s = `ProjectileAttack(${projectileAttack})`;
-      if (elementalMult != 0) {
-        firstProjectileAttack = projectileAttack + this.getElementalDamage();
-        firstProjectileAttack *= elementalMult;
-      }
-      firstProjectileAttack += this.getContinuousFire();
-      let firstProjectileAttack_s = `FirstProjectileAttack(${Math.floor(firstProjectileAttack)})`;
-      for (let i = 0; i < extraProjectileCount; i++) {
-        if (this.getUsingWater()) {
-        } else {
-        }
-      }
-      if (this.getUsingWater()) {
-        return ` Projectile(${firstProjectileAttack_s} + ${firstProjectileAttack_s} * ${extraProjectileCount})`;
-      }
-      return ` + Projectile(${firstProjectileAttack_s} + ${projectileAttack_s} * ${extraProjectileCount})`;
+    if (!meleeProjectile) {
+      return "";
     }
-    return "";
+    let attackUp = this.getAttackUp();
+    projectileAttack = this.fuse.projectileAttack * attackUp;
+    if (this.weapon.property == "Rod") {
+      projectileAttack *= 2;
+      if (this.fuse.property1 != "Ice Burst") {
+        extraProjectileCount = 2;
+      }
+    }
+    projectileAttack *= waterMult * fireMult;
+    let projectileAttack_s = `ProjectileAttack(${projectileAttack})`;
+    if (elementalMult != 0) {
+      firstProjectileAttack = projectileAttack + this.getElementalDamage();
+      firstProjectileAttack *= elementalMult;
+    }
+    firstProjectileAttack += this.getContinuousFire();
+    let firstProjectileAttack_s = `FirstProjectileAttack(${Math.floor(firstProjectileAttack)})`;
+    for (let i = 0; i < extraProjectileCount; i++) {
+      if (this.getUsingWater()) {
+      } else {
+      }
+    }
+    let multiple = "";
+    if (extraProjectileCount) {
+      if (this.getUsingWater()) {
+        multiple = ` + ${firstProjectileAttack_s} * ${extraProjectileCount})`;
+      } else {
+        multiple = ` + ${projectileAttack_s} * ${extraProjectileCount})`;
+      }
+    }
+    return ` + Projectile(${firstProjectileAttack_s}${multiple})`;
   }
 };
 export {

@@ -555,10 +555,22 @@ function success (response, dropdownEdited, selectedWeaponObj, selectedFuseObj, 
         DefeatedText.classList.add("hidden");
     }
 
-    var fullDamageText = response.damageNumList.join(' + ');
+    const limitDecimals = (value) => {
+        if(Math.floor(value) == value) {
+            return value.toString()
+        }
+        return value.toFixed(2)
+    }
+    var fullDamageText = response.damageNumList.map(limitDecimals).join(' + ');
     $('#FullDamageText').text(fullDamageText);
 
-    $('#FormulaText').text(response.formula);
+    $('#FormulaText').html([
+        `Formula: ${response._formula.str()}`,
+        `<span style="color:#ffffff00;">Formula:</span> ${response._formula.str(false)}`,
+        `<span style="color:#ffffff00;">Formula:</span> ${response._formula.valueOf()}`,
+        'Original ' + response.formula,
+
+    ].join("<br/>"))
 
     // UPDATE ATTACK TYPE DROPDOWN
     if (dropdownEdited === 'weapon' || dropdownEdited === 'fuse' || dropdownEdited === 'enemy' || dropdownEdited === 'frozen' || checkboxFreeMode.checked) {

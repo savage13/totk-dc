@@ -43,6 +43,13 @@ function run_test(test) {
     //console.log(result)
     //console.log(weapon.name, fuse.name, enemy.name, input)
     //console.log(result)
+    if(result._formula.valueOf() != result.damageOutput) {
+        console.log(result)
+        console.log(result._formula.str())
+        console.log(result.formula)
+        console.log(result._formula.valueOf(), result.damageOutput)
+        console.log()
+    }
     deepStrictPartialEqual(result, test.expected)
     // Check for poorly named weapons
     if(result.name.includes( "-") && ! (result.name.startsWith("Ancient-Blade") || result.name.startsWith("Sea-Breeze"))) {
@@ -59,6 +66,7 @@ try {
 }
 
 for(const test of tests) {
+    //console.log(test)
     run_test(test)
 }
 
@@ -266,12 +274,13 @@ for(const weapon of weapons) {
         let hp = weapon.baseAttack
         add = Math.floor(add * mul2)
         //if(weapon.property == "Flurry Rush x2") { mul2 = 2 }
-        console.log()
-        console.log(weapon.name, hp, mul, mul2, add)
-        if(weapon.name == "None (Earthwake Technique)") { add = 0; mul = 1; mul2 = 1; }
+        //console.log()
+        if(weapon.name == "Mineru's Construct") { mul2 = 1 }
+        //console.log(weapon.name, hp, mul, mul2, add)
+        if(weapon.name == "None (Earthwake Technique)") { add = 0; mul = 1; mul2 = 1.2; }
 
-        let test = Object.assign({}, base, { weapon: weapon.name, expected: {
-            damageOutput: Math.floor( (hp) * mul * mul2 + add ) }, buff1: "Attack Up (Lv1)"})
+        let damageOutput = Math.floor( hp * mul2) *mul + add
+        let test = Object.assign({}, base, { weapon: weapon.name, expected: { damageOutput }, buff1: "Attack Up (Lv1)"})
         run_test(test)
     }
 
@@ -382,4 +391,33 @@ deepStrictPartialEqual(c, { damageOutput: 24364, fusedName: 'Gibdo Claymore' } )
 
 c = damage("Tree Branch", "None", "Bokoblin", {})
 deepStrictPartialEqual(c, { damageOutput: 2, fusedName: '- Club', name: 'Tree Branch' } )
+
+
+c = damage("Tree Branch", "None", "Bokoblin", {
+    buff1: "Attack Up (Lv1)", frozen: true, attackType: "Throw" 
+})
+//console.log(c._formula.str())
+//console.log(c._formula.str(false))
+//console.log(c._formula.valueOf())
+c = damage("Tree Branch", "Stone Talus Heart", "Bokoblin", {
+    buff1: "Attack Up (Lv1)", frozen: true, attackType: "Throw" 
+})
+//console.log(c._formula.str())
+//console.log(c._formula.str(false))
+//console.log(c._formula.valueOf())
+
+c = damage("Traveler's Spear", "Stone Talus Heart", "Bokoblin", {
+    buff1: "Attack Up (Lv1)", frozen: true, attackType: "Throw" 
+})
+//console.log(c._formula.str())
+//console.log(c._formula.str(false))
+//console.log(c._formula.valueOf())
+
+c = damage("Soldier's Claymore", "Stone Talus Heart", "Bokoblin", {
+    buff1: "Attack Up (Lv1)", frozen: true, attackType: "Throw" 
+})
+//console.log(c._formula.str())
+//console.log(c._formula.str(false))
+//console.log(c._formula.valueOf())
+
 console.log(`Ran ${ntests} tests`)

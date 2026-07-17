@@ -2,7 +2,7 @@
     "type": "module",
     "scripts": {
         "dev": "esbuild --bundle --sourcemap ./src/totk-dc.ts --outfile=assets/totkdc.js --watch --tree-shaking=false --format=esm",
-        "test": "node --watch tests/tests.js"
+        "test": "node --watch --enable-source-maps tests/tests.js"
     },
     "dependencies": {
     "esbuild": "^0.27.3"

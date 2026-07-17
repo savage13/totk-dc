@@ -351,3 +351,17 @@ ul.horizontal-list {
         margin-right:20px !important;
     }
 }
+
+
+
+html:has(span.BaseAttack:hover) span.BaseAttack                     { color: #dddc8d; }
+html:has(span.FuseBaseAttack:hover) span.FuseBaseAttack             { color: #dddc8d; }
+html:has(span.Projectile:hover) span.Projectile                     { color: #dddc8d; }
+html:has(span.RijuLightning:hover) span.RijuLightning               { color: #dddc8d; }
+html:has(span.AttackUp:hover) span.AttackUp                         { color: #dddc8d; }
+html:has(span.MultiShotCount:hover) span.MultiShotCount             { color: #dddc8d; }
+html:has(span.ExtraProjectileCount:hover) span.ExtraProjectileCount { color: #dddc8d; }
+html:has(span.ElementalDamage:hover) span.ElementalDamage           { color: #dddc8d; }
+html:has(span.ProjectileAttack:hover) span.ProjectileAttack         { color: #dddc8d; }
+html:has(span.Rod:hover) span.Rod                                   { color: #dddc8d; }
+html:has(span.FuseUIAdjust:hover) span.FuseUIAdjust                 { color: #dddc8d; }

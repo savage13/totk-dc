@@ -1,14 +1,14 @@
 
 import { Expr } from './equation'
 
-const WEAPON_TYPE = {
+const WeaponType = {
     OneHanded: 0,
     TwoHanded: 1,
     Spear: 2,
     Bow: 3,
     Sheild: 4
 } as const;
-export type WeaponType = typeof WEAPON_TYPE[keyof typeof WEAPON_TYPE];
+//export type WeaponType = typeof WEAPON_TYPE[keyof typeof WEAPON_TYPE];
 
 
 let DEBUG = false
@@ -319,7 +319,7 @@ export class Calculator {
     }
     calc() {
         let fusedName = this.getName()
-        let attackPowerUI = this.calculateAttackPowerUI()
+        let { attackPowerUI, attackPowerUIFormula } = this.calculateAttackPowerUI()
         let blueDamageNum = (this.getGerudoBonus() > 1 || this.getZonaiBonus() > 0 ||
             this.getLowHealth() > 1 || this.getLowDurability() > 1 || this.getWetPlayer() > 1);
         let damageOutput = this.calculate()
@@ -404,6 +404,7 @@ export class Calculator {
             success: true,
             message: "Success",
             attackPowerUI,
+            attackPowerUIFormula,
             damageOutput,
             properties: this.properties,
             fusedName,
@@ -801,26 +802,65 @@ export class Calculator {
         let mineruBonus = this.getMineruBonus()
 
         if (this.weapon.type == 5) {
-            return baseAttack
+            return { attackPowerUI: baseAttack, attackPowerUIFormula: new Expr("BaseAttack", baseAttack) }
         }
         if (this.input.trueDamage) {
             let zonaiBonus = this.getZonaiBonus()
-            return Math.floor(baseAttack + mineruBonus +
+
+            let formula = new Expr("BaseAttack", baseAttack);
+            formula.add("MineruBonus", mineruBonus)
+
+            let fuse_gerudo = new Expr("FuseBaseAttack", fuseAttackUI)
+            fuse_gerudo.mul("GerudoBonus", gerudoBonus)
+            fuse_gerudo = this.fuseUIAdjustFormula(fuse_gerudo)
+
+            formula.add_term(fuse_gerudo)
+                .add("AttackUpMod", attackUpMod)
+                .add("zonaiBonus", zonaiBonus)
+                .mul("LowHealth", lowHealth)
+                .mul("LowDurability", lowDurability)
+                .mul("WetPlayer", wetPlayer)
+                .floor()
+
+            let attackPowerUI = Math.floor(baseAttack + mineruBonus +
                 this.fuseUIAdjust((fuseAttackUI * gerudoBonus) +
                     attackUpMod + zonaiBonus) *
                 lowHealth * lowDurability * wetPlayer)
+            return { attackPowerUI, attackPowerUIFormula: formula }
         }
         let baseAttackUI = (this.weaponUIAdjust(baseAttack) + mineruBonus +
             (fuseAttackUI * gerudoBonus) + attackUpMod + zonaiBonusUI) *
             lowHealth * lowDurability * wetPlayer
 
-        return Math.floor(baseAttackUI)
+        let formula = new Expr("BaseAttack", baseAttack)
+        formula = this.weaponUIAdjustFormula(formula)
+        formula.add("MineruBonus", mineruBonus)
+
+        let fuse_gerudo = new Expr("FuseBaseAttack", fuseAttackUI)
+        fuse_gerudo.mul("GerudoBonus", gerudoBonus)
+        formula.add_term(fuse_gerudo)
+            .add("AttackUpMod", attackUpMod)
+            .add("zonaiBonusUI", zonaiBonusUI)
+            .mul("LowHealth", lowHealth)
+            .mul("LowDurability", lowDurability)
+            .mul("WetPlayer", wetPlayer)
+            .floor()
+
+        return { attackPowerUI: Math.floor(baseAttackUI), attackPowerUIFormula: formula }
     }
     weaponUIAdjust(input: number) {
         switch (this.weapon.type) {
             case 1: return Math.floor(input * 0.95) // 2H
             case 2: return Math.floor(input * 1.326856) // Spear
             default: return Math.floor(input)
+        }
+    }
+    weaponUIAdjustFormula(input: Expr): Expr {
+        switch (this.weapon.type) {
+            case WeaponType.TwoHanded: return input.mul("WeaponUIAdjust", 0.95).floor()
+            case WeaponType.Spear: return input.mul("WeaponUIAdjust", 1.326856).floor()
+            default:
+                return input.floor()
         }
     }
 
@@ -1159,6 +1199,13 @@ export class Calculator {
             case 1: return Math.floor(input * 1.052632) // Two Handed Weapon
             case 2: return Math.ceil(input * 0.7536613) // Spears
             default: return Math.floor(input)
+        }
+    }
+    fuseUIAdjustFormula(input: Expr): Expr {
+        switch (this.weapon.type) {
+            case WeaponType.TwoHanded: return input.mul("FuseUIAdjust", 1.052632).floor()
+            case WeaponType.Spear: return input.mul("FuseUIAdjust", 0.7536613).ceil()
+            default: return input.floor()
         }
     }
     scanProperties(search: string) {

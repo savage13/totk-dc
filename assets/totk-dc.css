@@ -365,3 +365,4 @@ html:has(span.ElementalDamage:hover) span.ElementalDamage           { color: #dd
 html:has(span.ProjectileAttack:hover) span.ProjectileAttack         { color: #dddc8d; }
 html:has(span.Rod:hover) span.Rod                                   { color: #dddc8d; }
 html:has(span.FuseUIAdjust:hover) span.FuseUIAdjust                 { color: #dddc8d; }
+html:has(span.WeaponUIAdjust:hover) span.WeaponUIAdjust             { color: #dddc8d; }

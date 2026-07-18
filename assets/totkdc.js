@@ -5,7 +5,6 @@ var __export = (target, all) => {
 };
 
 // src/equation.ts
-var _index = 0;
 var Value = class {
   name;
   value;
@@ -13,14 +12,19 @@ var Value = class {
     this.name = name;
     this.value = value;
   }
-  str(names = true, level) {
+  str(names = true, html = true, level) {
     let value = this.value instanceof Expr ? this.value.str(names, level + 1) : this.value;
     let t = `${this.name}`;
-    _index += 1;
+    let s = "";
     if (names) {
-      return `<span class="${t}">${this.name}(${value})</span>`;
+      s = `${this.name}(${value})`;
+    } else {
+      s = `${value}`;
     }
-    return `<span class="${t}">${value}</span>`;
+    if (html) {
+      s = `<span class="${t}">${s}</span>`;
+    }
+    return s;
   }
   valueOf() {
     if (this.value instanceof Expr) {
@@ -37,8 +41,8 @@ var Terms = class {
   mul(value) {
     this.values.push(value);
   }
-  str(names = true, level) {
-    return this.values.map((v) => v.str(names, level + 1)).join(" * ");
+  str(names = true, html = true, level) {
+    return this.values.map((v) => v.str(names, html, level + 1)).join(" * ");
   }
   valueOf() {
     let out = 1;
@@ -60,16 +64,17 @@ var Expr = class _Expr {
   }
   add_term(value) {
     if (value.valueOf() == 0) {
-      return;
+      return this;
     }
     this.terms.push(value);
+    return this;
   }
   add(name, value) {
     let t = new Terms(new Value(name, value));
     if (value == 0) {
-      return;
+      return this;
     }
-    this.add_term(t);
+    return this.add_term(t);
   }
   clone() {
     let t = new _Expr("empty", 0);
@@ -78,37 +83,33 @@ var Expr = class _Expr {
   }
   mul_term(value) {
     if (value.valueOf() == 1) {
-      return;
+      return this;
     }
     let t = new Terms(this.clone());
     t.mul(value);
     this.terms = [t];
+    return this;
   }
   mul(name, value) {
     if (value == 1) {
-      return;
+      return this;
     }
     let t = new Value(name, value);
-    this.mul_term(t);
+    return this.mul_term(t);
   }
-  str(names = true, level = 0) {
-    if (level == 0) {
-      _index = 0;
-    }
-    let FL = "floor(";
-    let FR = ")";
-    let CL = "ceil(";
-    let CR = ")";
-    let s = this.terms.map((t) => t.str(names, level + 1)).join(" + ");
+  html(names = true, level = 0) {
+    return this.str(names, true, level);
+  }
+  raw(names = true, level = 0) {
+    return this.str(names, false, level);
+  }
+  str(names = true, html = true, level = 0) {
+    let s = this.terms.map((t) => t.str(names, html, level + 1)).join(" + ");
     if (this.terms.length > 1 && level > 0 && !this._floor && !this._ceil) {
       s = `(${s})`;
     } else {
-      if (this._floor) {
-        s = `<span class="func">${FL}${s}${FR}</span>`;
-      }
-      if (this._ceil) {
-        s = `<span class="func">${CL}${s}${CR}</span>`;
-      }
+      s = func_wrap(s, this._floor, "floor", html);
+      s = func_wrap(s, this._ceil, "ceil", html);
     }
     return s;
   }
@@ -122,10 +123,12 @@ var Expr = class _Expr {
   floor() {
     let t = this.wrap();
     t._floor = true;
+    return this;
   }
   ceil() {
     let t = this.wrap();
     t._ceil = true;
+    return this;
   }
   valueOf() {
     let out = 0;
@@ -141,7 +144,20 @@ var Expr = class _Expr {
     return out;
   }
 };
-function testing() {
+function func_wrap(v, flag, name, html) {
+  if (!flag) {
+    return v;
+  }
+  if (html) {
+    name = `<span class="funcname">${name}</span>`;
+  }
+  v = `${name}(${v})`;
+  if (html) {
+    v = `<span class="func">${v}</span>`;
+  }
+  return v;
+}
+function _testing() {
   let e = new Expr("BaseAttack", 5);
   e.add("FuseBAseAttack", 1);
   e.mul("AttackUp", 1.2);
@@ -20822,7 +20838,7 @@ var enemy_data_default = [
 ];
 
 // src/totk-dc.ts
-var WEAPON_TYPE = {
+var WeaponType = {
   OneHanded: 0,
   TwoHanded: 1,
   Spear: 2,
@@ -21117,7 +21133,7 @@ var Calculator = class _Calculator {
   }
   calc() {
     let fusedName = this.getName();
-    let attackPowerUI = this.calculateAttackPowerUI();
+    let { attackPowerUI, attackPowerUIFormula } = this.calculateAttackPowerUI();
     let blueDamageNum = this.getGerudoBonus() > 1 || this.getZonaiBonus() > 0 || this.getLowHealth() > 1 || this.getLowDurability() > 1 || this.getWetPlayer() > 1;
     let damageOutput = this.calculate();
     debug("damageOutput (calc)", damageOutput);
@@ -21230,6 +21246,7 @@ var Calculator = class _Calculator {
       success: true,
       message: "Success",
       attackPowerUI,
+      attackPowerUIFormula,
       damageOutput,
       properties: this.properties,
       fusedName,
@@ -21622,14 +21639,27 @@ var Calculator = class _Calculator {
     let wetPlayer = this.getWetPlayer();
     let mineruBonus = this.getMineruBonus();
     if (this.weapon.type == 5) {
-      return baseAttack;
+      return { attackPowerUI: baseAttack, attackPowerUIFormula: new Expr("BaseAttack", baseAttack) };
     }
     if (this.input.trueDamage) {
       let zonaiBonus = this.getZonaiBonus();
-      return Math.floor(baseAttack + mineruBonus + this.fuseUIAdjust(fuseAttackUI * gerudoBonus + attackUpMod + zonaiBonus) * lowHealth * lowDurability * wetPlayer);
+      let formula2 = new Expr("BaseAttack", baseAttack);
+      formula2.add("MineruBonus", mineruBonus);
+      let fuse_gerudo2 = new Expr("FuseBaseAttack", fuseAttackUI);
+      fuse_gerudo2.mul("GerudoBonus", gerudoBonus);
+      fuse_gerudo2 = this.fuseUIAdjustFormula(fuse_gerudo2);
+      formula2.add_term(fuse_gerudo2).add("AttackUpMod", attackUpMod).add("zonaiBonus", zonaiBonus).mul("LowHealth", lowHealth).mul("LowDurability", lowDurability).mul("WetPlayer", wetPlayer).floor();
+      let attackPowerUI = Math.floor(baseAttack + mineruBonus + this.fuseUIAdjust(fuseAttackUI * gerudoBonus + attackUpMod + zonaiBonus) * lowHealth * lowDurability * wetPlayer);
+      return { attackPowerUI, attackPowerUIFormula: formula2 };
     }
     let baseAttackUI = (this.weaponUIAdjust(baseAttack) + mineruBonus + fuseAttackUI * gerudoBonus + attackUpMod + zonaiBonusUI) * lowHealth * lowDurability * wetPlayer;
-    return Math.floor(baseAttackUI);
+    let formula = new Expr("BaseAttack", baseAttack);
+    formula = this.weaponUIAdjustFormula(formula);
+    formula.add("MineruBonus", mineruBonus);
+    let fuse_gerudo = new Expr("FuseBaseAttack", fuseAttackUI);
+    fuse_gerudo.mul("GerudoBonus", gerudoBonus);
+    formula.add_term(fuse_gerudo).add("AttackUpMod", attackUpMod).add("zonaiBonusUI", zonaiBonusUI).mul("LowHealth", lowHealth).mul("LowDurability", lowDurability).mul("WetPlayer", wetPlayer).floor();
+    return { attackPowerUI: Math.floor(baseAttackUI), attackPowerUIFormula: formula };
   }
   weaponUIAdjust(input) {
     switch (this.weapon.type) {
@@ -21641,6 +21671,16 @@ var Calculator = class _Calculator {
       // Spear
       default:
         return Math.floor(input);
+    }
+  }
+  weaponUIAdjustFormula(input) {
+    switch (this.weapon.type) {
+      case WeaponType.TwoHanded:
+        return input.mul("WeaponUIAdjust", 0.95).floor();
+      case WeaponType.Spear:
+        return input.mul("WeaponUIAdjust", 1.326856).floor();
+      default:
+        return input.floor();
     }
   }
   getZonaiBonusUI() {
@@ -21928,6 +21968,16 @@ var Calculator = class _Calculator {
       // Spears
       default:
         return Math.floor(input);
+    }
+  }
+  fuseUIAdjustFormula(input) {
+    switch (this.weapon.type) {
+      case WeaponType.TwoHanded:
+        return input.mul("FuseUIAdjust", 1.052632).floor();
+      case WeaponType.Spear:
+        return input.mul("FuseUIAdjust", 0.7536613).ceil();
+      default:
+        return input.floor();
     }
   }
   scanProperties(search) {

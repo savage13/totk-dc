@@ -1,9 +1,8 @@
 interface Equation {
-    str(names: boolean, level: number): string;
+    str(names: boolean, html: boolean, level: number): string;
     valueOf(): number;
 }
 
-let _index = 0
 
 export class Value implements Equation {
     name: String
@@ -12,14 +11,19 @@ export class Value implements Equation {
         this.name = name
         this.value = value
     }
-    str(names: boolean = true, level: number) {
+    str(names: boolean = true, html: boolean = true, level: number) {
         let value = (this.value instanceof Expr) ? this.value.str(names, level + 1) : this.value
         let t = `${this.name}`
-        _index += 1
+        let s = ""
         if (names) {
-            return `<span class="${t}">${this.name}(${value})</span>`
+            s = `${this.name}(${value})`
+        } else {
+            s = `${value}`
         }
-        return `<span class="${t}">${value}</span>`
+        if (html) {
+            s = `<span class="${t}">${s}</span>`
+        }
+        return s
     }
     valueOf(): number {
         if (this.value instanceof Expr) {
@@ -37,8 +41,8 @@ export class Terms implements Equation {
     mul(value: Equation) {
         this.values.push(value)
     }
-    str(names: boolean = true, level: number) {
-        return this.values.map(v => v.str(names, level + 1)).join(' * ')
+    str(names: boolean = true, html: boolean = true, level: number) {
+        return this.values.map(v => v.str(names, html, level + 1)).join(' * ')
     }
     valueOf() {
         let out = 1
@@ -59,43 +63,46 @@ export class Expr implements Equation {
         this._floor = false
         this._ceil = false
     }
-    add_term(value: Equation) {
-        if (value.valueOf() == 0) { return }
+    add_term(value: Equation): Expr {
+        if (value.valueOf() == 0) { return this }
         this.terms.push(value)
+        return this
     }
-    add(name: string, value: number) {
+    add(name: string, value: number): Expr {
         let t = new Terms(new Value(name, value))
-        if (value == 0) { return }
-        this.add_term(t)
+        if (value == 0) { return this }
+        return this.add_term(t)
     }
-    clone() {
+    clone(): Expr {
         let t = new Expr("empty", 0)
         t.terms = [...this.terms]
         return t
     }
-    mul_term(value: Equation) {
-        if (value.valueOf() == 1) { return }
+    mul_term(value: Equation): Expr {
+        if (value.valueOf() == 1) { return this }
         let t = new Terms(this.clone())
         t.mul(value)
         this.terms = [t]
+        return this
     }
-    mul(name: string, value: number) {
-        if (value == 1) { return }
+    mul(name: string, value: number): Expr {
+        if (value == 1) { return this }
         let t = new Value(name, value)
-        this.mul_term(t)
+        return this.mul_term(t)
     }
-    str(names: boolean = true, level: number = 0): string {
-        if (level == 0) { _index = 0 }
-        let FL = "floor("
-        let FR = ")"
-        let CL = "ceil("
-        let CR = ")"
-        let s = this.terms.map(t => t.str(names, level + 1)).join(" + ")
+    html(names: boolean = true, level: number = 0): string {
+        return this.str(names, true, level)
+    }
+    raw(names: boolean = true, level: number = 0): string {
+        return this.str(names, false, level)
+    }
+    str(names: boolean = true, html: boolean = true, level: number = 0): string {
+        let s = this.terms.map(t => t.str(names, html, level + 1)).join(" + ")
         if (this.terms.length > 1 && level > 0 && !this._floor && !this._ceil) {
             s = `(${s})`
         } else {
-            if (this._floor) { s = `<span class="func">${FL}${s}${FR}</span>` }
-            if (this._ceil) { s = `<span class="func">${CL}${s}${CR}</span>` }
+            s = func_wrap(s, this._floor, "floor", html)
+            s = func_wrap(s, this._ceil, "ceil", html)
         }
         return s
     }
@@ -106,13 +113,15 @@ export class Expr implements Equation {
         this.terms = [t]
         return t
     }
-    floor() {
+    floor(): Expr {
         let t = this.wrap()
         t._floor = true
+        return this
     }
-    ceil() {
+    ceil(): Expr {
         let t = this.wrap()
         t._ceil = true
+        return this
     }
     valueOf() {
         let out = 0
@@ -128,8 +137,20 @@ export class Expr implements Equation {
         return out
     }
 }
+function func_wrap(v: string, flag: boolean, name: string, html: boolean) {
+    if (!flag) { return v }
+    if (html) {
+        name = `<span class="funcname">${name}</span>`
+    }
+    v = `${name}(${v})`
+    if (html) {
+        v = `<span class="func">${v}</span>`
+    }
+    return v
+}
 
-function testing() {
+
+function _testing() {
     let e = new Expr("BaseAttack", 5)
     //let fba = new Expr("FuseBaseAttack", 1)
     //let atk = new Expr("AttackUp", 1.2)

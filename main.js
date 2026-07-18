@@ -568,6 +568,9 @@ function success (response, dropdownEdited, selectedWeaponObj, selectedFuseObj, 
         `Formula: ${response._formula.str()}`,
         `<span style="color:#ffffff00;">Formula:</span> ${response._formula.str(false)}`,
         `<span style="color:#ffffff00;">Formula:</span> ${response._formula.valueOf()}`,
+        `AttackPower: ${response.attackPowerUIFormula.str()}`,
+        `<span style="color:#ffffff00;">AttackPower:</span> ${response.attackPowerUIFormula.str(false)}`,
+        `<span style="color:#ffffff00;">AttackPower:</span> ${response.attackPowerUIFormula.valueOf()}`,
         'Original ' + response.formula,
 
     ].join("<br/>"))

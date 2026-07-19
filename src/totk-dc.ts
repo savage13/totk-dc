@@ -851,14 +851,14 @@ export class Calculator {
     weaponUIAdjust(input: number) {
         switch (this.weapon.type) {
             case 1: return Math.floor(input * 0.95) // 2H
-            case 2: return Math.floor(input * 1.326856) // Spear
+            case 2: return Math.ceil(input * 1.326856) // Spear
             default: return Math.floor(input)
         }
     }
     weaponUIAdjustFormula(input: Expr): Expr {
         switch (this.weapon.type) {
             case WeaponType.TwoHanded: return input.mul("WeaponUIAdjust", 0.95).floor()
-            case WeaponType.Spear: return input.mul("WeaponUIAdjust", 1.326856).floor()
+            case WeaponType.Spear: return input.mul("WeaponUIAdjust", 1.326856).ceil()
             default:
                 return input.floor()
         }

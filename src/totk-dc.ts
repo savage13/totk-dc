@@ -48,11 +48,13 @@ function enemy_from_sort_order(n: number): any | undefined {
 
 
 export function damage(weapon: string, fuse: string, enemy: string, input: any): any | null {
+    weapon = weapon.replaceAll("✨", "*")
+    fuse = fuse.replaceAll("✨", "*")
     let w = Weapon.from_name(weapon)
     let f = Fuse.from_name(fuse)
     let e = Enemy.from_name(enemy)
     if (!w || !f || !e) {
-        console.log(w, f, e)
+        //console.log(w, f, e)
         return null
     }
     let i = new Input(input)

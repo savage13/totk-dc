@@ -20870,11 +20870,12 @@ function enemy_from_sort_order(n) {
   return enemy_data_default.find((e) => e.sortOrder == n);
 }
 function damage(weapon, fuse, enemy, input) {
+  weapon = weapon.replaceAll("\u2728", "*");
+  fuse = fuse.replaceAll("\u2728", "*");
   let w = Weapon.from_name(weapon);
   let f = Fuse.from_name(fuse);
   let e = Enemy.from_name(enemy);
   if (!w || !f || !e) {
-    console.log(w, f, e);
     return null;
   }
   let i = new Input(input);

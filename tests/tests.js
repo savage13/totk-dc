@@ -420,4 +420,71 @@ c = damage("Soldier's Claymore", "Stone Talus Heart", "Bokoblin", {
 //console.log(c._formula.str(false))
 //console.log(c._formula.valueOf())
 
+function split_quote(data, value) {
+    let parts = []
+    let quote = false
+    let start = 0
+    for(let i = 0; i < data.length; i++) {
+        const c = data[i]
+        if(c == '\"') {
+            quote = !quote
+        } else if(c == value && !quote) {
+            parts.push(data.slice(start, i))
+            start = i+1
+        }
+    }
+    parts.push(data.slice(start))
+    return parts
+}
+
+let weapon_data = fs.readFileSync("tests/TotK_Weapons.csv", "utf8")
+weapon_data = split_quote(weapon_data, "\n")
+//console.log(split_quote(weapon_data[1], ","))
+let fields = weapon_data[0].split(",").map(value => value.trim())
+weapon_data = weapon_data.slice(1)
+    .map(line => split_quote(line, ","))
+    .map(line =>
+        Object.fromEntries(
+            line.map(value => value.trim())
+            .map((value,i) => [fields[i], value])
+        )
+    )
+for(const line of weapon_data) {
+    // Check Base Attack Power UI
+    let base_ui = parseInt(line['Base Attack Power (UI)'])
+    if(!isFinite(base_ui)) {
+        base_ui = parseInt(line['Base Attack Power'])
+    }
+    let c = damage(line.Name, "None", "Bokoblin")
+    if(!c) {
+        console.log(line.Name, base_ui)
+        continue
+    }
+    if(c.attackPowerUI != base_ui) {
+        console.log(line.Name, base_ui, c.attackPowerUI)
+    }
+    if(c.attackPowerUIFormula.valueOf() != base_ui) {
+        console.log(line.Name, base_ui, c.attackPowerUI)
+    }
+
+    // Check Fuse Attack Power UI
+    let fuse_attack_power = parseInt(line['Fuse Attack Power'])
+    if(!isFinite(fuse_attack_power)) {
+        continue
+    }
+    c = damage("Master Sword", line.Name, "Bokoblin")
+    if(!c) {
+        console.log("Fuse", line.Name)
+    }
+    if(c.attackPowerUI != 30 + fuse_attack_power) {
+        console.log("Fuse", line.Name, c.attackPowerUI)
+    }
+    if(c.attackPowerUIFormula.valueOf() != 30 + fuse_attack_power) {
+        console.log("Fuse", line.Name, c.attackPowerUI)
+    }
+}
+
 console.log(`Ran ${ntests} tests`)
+
+
+0
